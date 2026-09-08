@@ -1,0 +1,2898 @@
+[
+ {
+  "name": "hero-cloud",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p02_x4_4844x2703.jpg",
+  "cropped_size": [
+   4805,
+   2703
+  ],
+  "outputs": [
+   {
+    "file": "hero-cloud-960.webp",
+    "w": 960,
+    "h": 540,
+    "bytes": 9140
+   },
+   {
+    "file": "hero-cloud-960.jpg",
+    "w": 960,
+    "h": 540,
+    "bytes": 19834
+   },
+   {
+    "file": "hero-cloud-1600.webp",
+    "w": 1600,
+    "h": 900,
+    "bytes": 17730
+   },
+   {
+    "file": "hero-cloud-1600.jpg",
+    "w": 1600,
+    "h": 900,
+    "bytes": 41531
+   },
+   {
+    "file": "hero-cloud-2400.webp",
+    "w": 2400,
+    "h": 1350,
+    "bytes": 30112
+   },
+   {
+    "file": "hero-cloud-2400.jpg",
+    "w": 2400,
+    "h": 1350,
+    "bytes": 75737
+   }
+  ]
+ },
+ {
+  "name": "hero-cloud-m",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p02_x4_4844x2703.jpg",
+  "cropped_size": [
+   2161,
+   2701
+  ],
+  "outputs": [
+   {
+    "file": "hero-cloud-m-720.webp",
+    "w": 720,
+    "h": 900,
+    "bytes": 13872
+   },
+   {
+    "file": "hero-cloud-m-720.jpg",
+    "w": 720,
+    "h": 900,
+    "bytes": 30973
+   },
+   {
+    "file": "hero-cloud-m-1080.webp",
+    "w": 1080,
+    "h": 1350,
+    "bytes": 22928
+   },
+   {
+    "file": "hero-cloud-m-1080.jpg",
+    "w": 1080,
+    "h": 1350,
+    "bytes": 55275
+   }
+  ]
+ },
+ {
+  "name": "about-portrait",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p03_x8_2654x1494.jpg",
+  "cropped_size": [
+   2654,
+   1494
+  ],
+  "outputs": [
+   {
+    "file": "about-portrait-1200.webp",
+    "w": 1200,
+    "h": 676,
+    "bytes": 10378
+   },
+   {
+    "file": "about-portrait-1200.jpg",
+    "w": 1200,
+    "h": 676,
+    "bytes": 26958
+   },
+   {
+    "file": "about-portrait-2000.webp",
+    "w": 2000,
+    "h": 1126,
+    "bytes": 22670
+   },
+   {
+    "file": "about-portrait-2000.jpg",
+    "w": 2000,
+    "h": 1126,
+    "bytes": 60935
+   }
+  ]
+ },
+ {
+  "name": "about-portrait-m",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p03_x8_2654x1494.jpg",
+  "cropped_size": [
+   1195,
+   1494
+  ],
+  "outputs": [
+   {
+    "file": "about-portrait-m-720.webp",
+    "w": 720,
+    "h": 900,
+    "bytes": 10318
+   },
+   {
+    "file": "about-portrait-m-720.jpg",
+    "w": 720,
+    "h": 900,
+    "bytes": 25641
+   },
+   {
+    "file": "about-portrait-m-1080.webp",
+    "w": 1080,
+    "h": 1350,
+    "bytes": 19036
+   },
+   {
+    "file": "about-portrait-m-1080.jpg",
+    "w": 1080,
+    "h": 1350,
+    "bytes": 48960
+   }
+  ]
+ },
+ {
+  "name": "cta-cloud",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p48_x469_2553x1436.jpg",
+  "cropped_size": [
+   2553,
+   1436
+  ],
+  "outputs": [
+   {
+    "file": "cta-cloud-1200.webp",
+    "w": 1200,
+    "h": 675,
+    "bytes": 7220
+   },
+   {
+    "file": "cta-cloud-1200.jpg",
+    "w": 1200,
+    "h": 675,
+    "bytes": 20757
+   },
+   {
+    "file": "cta-cloud-2000.webp",
+    "w": 2000,
+    "h": 1125,
+    "bytes": 15112
+   },
+   {
+    "file": "cta-cloud-2000.jpg",
+    "w": 2000,
+    "h": 1125,
+    "bytes": 45949
+   }
+  ]
+ },
+ {
+  "name": "cloud-plate",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p43_x445_1976x1113.jpg",
+  "cropped_size": [
+   1976,
+   1113
+  ],
+  "outputs": [
+   {
+    "file": "cloud-plate-1200.webp",
+    "w": 1200,
+    "h": 676,
+    "bytes": 5656
+   },
+   {
+    "file": "cloud-plate-1200.jpg",
+    "w": 1200,
+    "h": 676,
+    "bytes": 17267
+   },
+   {
+    "file": "cloud-plate-1900.webp",
+    "w": 1900,
+    "h": 1070,
+    "bytes": 11250
+   },
+   {
+    "file": "cloud-plate-1900.jpg",
+    "w": 1900,
+    "h": 1070,
+    "bytes": 36526
+   }
+  ]
+ },
+ {
+  "name": "projects-intro",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p04_x12_2737x1536.jpg",
+  "cropped_size": [
+   2737,
+   1536
+  ],
+  "outputs": [
+   {
+    "file": "projects-intro-1200.webp",
+    "w": 1200,
+    "h": 673,
+    "bytes": 25678
+   },
+   {
+    "file": "projects-intro-1200.jpg",
+    "w": 1200,
+    "h": 673,
+    "bytes": 54167
+   },
+   {
+    "file": "projects-intro-2000.webp",
+    "w": 2000,
+    "h": 1122,
+    "bytes": 83794
+   },
+   {
+    "file": "projects-intro-2000.jpg",
+    "w": 2000,
+    "h": 1122,
+    "bytes": 155906
+   }
+  ]
+ },
+ {
+  "name": "mont-arena",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p06_x26_2821x1273.jpg",
+  "cropped_size": [
+   2263,
+   1273
+  ],
+  "outputs": [
+   {
+    "file": "mont-arena-1600.webp",
+    "w": 1600,
+    "h": 900,
+    "bytes": 144540
+   },
+   {
+    "file": "mont-arena-1600.jpg",
+    "w": 1600,
+    "h": 900,
+    "bytes": 218337
+   }
+  ]
+ },
+ {
+  "name": "mont-kings",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p11_x50_4000x2250.jpg",
+  "cropped_size": [
+   4000,
+   2250
+  ],
+  "outputs": [
+   {
+    "file": "mont-kings-1600.webp",
+    "w": 1600,
+    "h": 900,
+    "bytes": 249218
+   },
+   {
+    "file": "mont-kings-1600.jpg",
+    "w": 1600,
+    "h": 900,
+    "bytes": 314713
+   }
+  ]
+ },
+ {
+  "name": "mont-tower",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p13_x60_2048x1151.jpg",
+  "cropped_size": [
+   2046,
+   1151
+  ],
+  "outputs": [
+   {
+    "file": "mont-tower-1600.webp",
+    "w": 1600,
+    "h": 900,
+    "bytes": 86484
+   },
+   {
+    "file": "mont-tower-1600.jpg",
+    "w": 1600,
+    "h": 900,
+    "bytes": 142926
+   }
+  ]
+ },
+ {
+  "name": "mont-fight",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p24_x120_1920x1080.jpg",
+  "cropped_size": [
+   1920,
+   1080
+  ],
+  "outputs": [
+   {
+    "file": "mont-fight-1600.webp",
+    "w": 1600,
+    "h": 900,
+    "bytes": 93686
+   },
+   {
+    "file": "mont-fight-1600.jpg",
+    "w": 1600,
+    "h": 900,
+    "bytes": 146814
+   }
+  ]
+ },
+ {
+  "name": "mont-sphere",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p15_x72_4396x2243.jpg",
+  "cropped_size": [
+   3987,
+   2243
+  ],
+  "outputs": [
+   {
+    "file": "mont-sphere-1600.webp",
+    "w": 1600,
+    "h": 900,
+    "bytes": 158868
+   },
+   {
+    "file": "mont-sphere-1600.jpg",
+    "w": 1600,
+    "h": 900,
+    "bytes": 221144
+   }
+  ]
+ },
+ {
+  "name": "mont-city",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p31_x203_1600x995.jpg",
+  "cropped_size": [
+   1600,
+   900
+  ],
+  "outputs": [
+   {
+    "file": "mont-city-1600.webp",
+    "w": 1600,
+    "h": 900,
+    "bytes": 173552
+   },
+   {
+    "file": "mont-city-1600.jpg",
+    "w": 1600,
+    "h": 900,
+    "bytes": 227429
+   }
+  ]
+ },
+ {
+  "name": "mont-world",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p39_x241_5000x2954.jpg",
+  "cropped_size": [
+   5000,
+   2812
+  ],
+  "outputs": [
+   {
+    "file": "mont-world-1600.webp",
+    "w": 1600,
+    "h": 900,
+    "bytes": 206478
+   },
+   {
+    "file": "mont-world-1600.jpg",
+    "w": 1600,
+    "h": 900,
+    "bytes": 265376
+   }
+  ]
+ },
+ {
+  "name": "mont-next",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p46_x461_1144x1370.jpg",
+  "cropped_size": [
+   1144,
+   643
+  ],
+  "outputs": [
+   {
+    "file": "mont-next-1144.webp",
+    "w": 1144,
+    "h": 643,
+    "bytes": 147940
+   },
+   {
+    "file": "mont-next-1144.jpg",
+    "w": 1144,
+    "h": 643,
+    "bytes": 157765
+   }
+  ]
+ },
+ {
+  "name": "fly-sphere",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p15_x72_4396x2243.jpg",
+  "cropped_size": [
+   3987,
+   2243
+  ],
+  "outputs": [
+   {
+    "file": "fly-sphere-1200.webp",
+    "w": 1200,
+    "h": 675,
+    "bytes": 117854
+   },
+   {
+    "file": "fly-sphere-1200.jpg",
+    "w": 1200,
+    "h": 675,
+    "bytes": 151218
+   },
+   {
+    "file": "fly-sphere-1800.webp",
+    "w": 1800,
+    "h": 1013,
+    "bytes": 214562
+   },
+   {
+    "file": "fly-sphere-1800.jpg",
+    "w": 1800,
+    "h": 1013,
+    "bytes": 292806
+   }
+  ]
+ },
+ {
+  "name": "fly-tower",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p13_x60_2048x1151.jpg",
+  "cropped_size": [
+   2046,
+   1151
+  ],
+  "outputs": [
+   {
+    "file": "fly-tower-1200.webp",
+    "w": 1200,
+    "h": 675,
+    "bytes": 68238
+   },
+   {
+    "file": "fly-tower-1200.jpg",
+    "w": 1200,
+    "h": 675,
+    "bytes": 101871
+   },
+   {
+    "file": "fly-tower-1800.webp",
+    "w": 1800,
+    "h": 1013,
+    "bytes": 114178
+   },
+   {
+    "file": "fly-tower-1800.jpg",
+    "w": 1800,
+    "h": 1013,
+    "bytes": 186863
+   }
+  ]
+ },
+ {
+  "name": "fly-rcf",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p08_x40_1318x740.jpg",
+  "cropped_size": [
+   1318,
+   740
+  ],
+  "outputs": [
+   {
+    "file": "fly-rcf-1300.webp",
+    "w": 1300,
+    "h": 730,
+    "bytes": 103758
+   },
+   {
+    "file": "fly-rcf-1300.jpg",
+    "w": 1300,
+    "h": 730,
+    "bytes": 153664
+   }
+  ]
+ },
+ {
+  "name": "fly-greece",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p39_x241_5000x2954.jpg",
+  "cropped_size": [
+   5000,
+   2812
+  ],
+  "outputs": [
+   {
+    "file": "fly-greece-1200.webp",
+    "w": 1200,
+    "h": 675,
+    "bytes": 144956
+   },
+   {
+    "file": "fly-greece-1200.jpg",
+    "w": 1200,
+    "h": 675,
+    "bytes": 175502
+   },
+   {
+    "file": "fly-greece-1800.webp",
+    "w": 1800,
+    "h": 1012,
+    "bytes": 282878
+   },
+   {
+    "file": "fly-greece-1800.jpg",
+    "w": 1800,
+    "h": 1012,
+    "bytes": 356954
+   }
+  ]
+ },
+ {
+  "name": "fly-citywalk",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p34_x218_4240x2489.jpg",
+  "cropped_size": [
+   4240,
+   2385
+  ],
+  "outputs": [
+   {
+    "file": "fly-citywalk-1200.webp",
+    "w": 1200,
+    "h": 675,
+    "bytes": 102274
+   },
+   {
+    "file": "fly-citywalk-1200.jpg",
+    "w": 1200,
+    "h": 675,
+    "bytes": 130539
+   },
+   {
+    "file": "fly-citywalk-1800.webp",
+    "w": 1800,
+    "h": 1012,
+    "bytes": 196384
+   },
+   {
+    "file": "fly-citywalk-1800.jpg",
+    "w": 1800,
+    "h": 1012,
+    "bytes": 258992
+   }
+  ]
+ },
+ {
+  "name": "rcf-theatre",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p05_x19_3693x1973.jpg",
+  "cropped_size": [
+   3507,
+   1973
+  ],
+  "outputs": [
+   {
+    "file": "rcf-theatre-1200.webp",
+    "w": 1200,
+    "h": 675,
+    "bytes": 107410
+   },
+   {
+    "file": "rcf-theatre-1200.jpg",
+    "w": 1200,
+    "h": 675,
+    "bytes": 142817
+   },
+   {
+    "file": "rcf-theatre-2000.webp",
+    "w": 2000,
+    "h": 1125,
+    "bytes": 224626
+   },
+   {
+    "file": "rcf-theatre-2000.jpg",
+    "w": 2000,
+    "h": 1125,
+    "bytes": 326274
+   }
+  ]
+ },
+ {
+  "name": "rcf-arena",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p06_x26_2821x1273.jpg",
+  "cropped_size": [
+   2821,
+   1209
+  ],
+  "outputs": [
+   {
+    "file": "rcf-arena-1200.webp",
+    "w": 1200,
+    "h": 514,
+    "bytes": 96250
+   },
+   {
+    "file": "rcf-arena-1200.jpg",
+    "w": 1200,
+    "h": 514,
+    "bytes": 124689
+   },
+   {
+    "file": "rcf-arena-2000.webp",
+    "w": 2000,
+    "h": 857,
+    "bytes": 190754
+   },
+   {
+    "file": "rcf-arena-2000.jpg",
+    "w": 2000,
+    "h": 857,
+    "bytes": 277014
+   }
+  ]
+ },
+ {
+  "name": "rcf-street-1",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p07_x30_1712x1011.jpg",
+  "cropped_size": [
+   1712,
+   1011
+  ],
+  "outputs": [
+   {
+    "file": "rcf-street-1-900.webp",
+    "w": 900,
+    "h": 531,
+    "bytes": 71988
+   },
+   {
+    "file": "rcf-street-1-900.jpg",
+    "w": 900,
+    "h": 531,
+    "bytes": 95865
+   },
+   {
+    "file": "rcf-street-1-1400.webp",
+    "w": 1400,
+    "h": 827,
+    "bytes": 132788
+   },
+   {
+    "file": "rcf-street-1-1400.jpg",
+    "w": 1400,
+    "h": 827,
+    "bytes": 191456
+   }
+  ]
+ },
+ {
+  "name": "rcf-street-2",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p07_x31_1343x1303.jpg",
+  "cropped_size": [
+   1303,
+   1303
+  ],
+  "outputs": [
+   {
+    "file": "rcf-street-2-800.webp",
+    "w": 800,
+    "h": 800,
+    "bytes": 41308
+   },
+   {
+    "file": "rcf-street-2-800.jpg",
+    "w": 800,
+    "h": 800,
+    "bytes": 66383
+   },
+   {
+    "file": "rcf-street-2-1200.webp",
+    "w": 1200,
+    "h": 1200,
+    "bytes": 68292
+   },
+   {
+    "file": "rcf-street-2-1200.jpg",
+    "w": 1200,
+    "h": 1200,
+    "bytes": 121554
+   }
+  ]
+ },
+ {
+  "name": "rcf-street-3",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p07_x32_1953x1376.jpg",
+  "cropped_size": [
+   1953,
+   1376
+  ],
+  "outputs": [
+   {
+    "file": "rcf-street-3-900.webp",
+    "w": 900,
+    "h": 634,
+    "bytes": 41760
+   },
+   {
+    "file": "rcf-street-3-900.jpg",
+    "w": 900,
+    "h": 634,
+    "bytes": 67195
+   },
+   {
+    "file": "rcf-street-3-1400.webp",
+    "w": 1400,
+    "h": 986,
+    "bytes": 68726
+   },
+   {
+    "file": "rcf-street-3-1400.jpg",
+    "w": 1400,
+    "h": 986,
+    "bytes": 125657
+   }
+  ]
+ },
+ {
+  "name": "rcf-street-4",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p07_x33_1441x1312.jpg",
+  "cropped_size": [
+   1312,
+   1312
+  ],
+  "outputs": [
+   {
+    "file": "rcf-street-4-800.webp",
+    "w": 800,
+    "h": 800,
+    "bytes": 99732
+   },
+   {
+    "file": "rcf-street-4-800.jpg",
+    "w": 800,
+    "h": 800,
+    "bytes": 126704
+   },
+   {
+    "file": "rcf-street-4-1200.webp",
+    "w": 1200,
+    "h": 1200,
+    "bytes": 186410
+   },
+   {
+    "file": "rcf-street-4-1200.jpg",
+    "w": 1200,
+    "h": 1200,
+    "bytes": 250335
+   }
+  ]
+ },
+ {
+  "name": "rcf-street-5",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p07_x34_1786x997.jpg",
+  "cropped_size": [
+   1786,
+   997
+  ],
+  "outputs": [
+   {
+    "file": "rcf-street-5-900.webp",
+    "w": 900,
+    "h": 502,
+    "bytes": 51844
+   },
+   {
+    "file": "rcf-street-5-900.jpg",
+    "w": 900,
+    "h": 502,
+    "bytes": 73805
+   },
+   {
+    "file": "rcf-street-5-1400.webp",
+    "w": 1400,
+    "h": 782,
+    "bytes": 93398
+   },
+   {
+    "file": "rcf-street-5-1400.jpg",
+    "w": 1400,
+    "h": 782,
+    "bytes": 145603
+   }
+  ]
+ },
+ {
+  "name": "rcf-street-6",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p07_x36_1360x1010.jpg",
+  "cropped_size": [
+   1360,
+   1010
+  ],
+  "outputs": [
+   {
+    "file": "rcf-street-6-900.webp",
+    "w": 900,
+    "h": 668,
+    "bytes": 74672
+   },
+   {
+    "file": "rcf-street-6-900.jpg",
+    "w": 900,
+    "h": 668,
+    "bytes": 105514
+   },
+   {
+    "file": "rcf-street-6-1300.webp",
+    "w": 1300,
+    "h": 965,
+    "bytes": 131870
+   },
+   {
+    "file": "rcf-street-6-1300.jpg",
+    "w": 1300,
+    "h": 965,
+    "bytes": 194554
+   }
+  ]
+ },
+ {
+  "name": "rcf-merch",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p09_x43_4535x2531.jpg",
+  "cropped_size": [
+   3796,
+   2531
+  ],
+  "outputs": [
+   {
+    "file": "rcf-merch-1200.webp",
+    "w": 1200,
+    "h": 800,
+    "bytes": 57980
+   },
+   {
+    "file": "rcf-merch-1200.jpg",
+    "w": 1200,
+    "h": 800,
+    "bytes": 95725
+   },
+   {
+    "file": "rcf-merch-2000.webp",
+    "w": 2000,
+    "h": 1334,
+    "bytes": 108554
+   },
+   {
+    "file": "rcf-merch-2000.jpg",
+    "w": 2000,
+    "h": 1334,
+    "bytes": 206637
+   }
+  ]
+ },
+ {
+  "name": "rcf-proscenium",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p10_x46_1178x582.jpg",
+  "cropped_size": [
+   1002,
+   582
+  ],
+  "outputs": [
+   {
+    "file": "rcf-proscenium-1000.webp",
+    "w": 1000,
+    "h": 581,
+    "bytes": 52622
+   },
+   {
+    "file": "rcf-proscenium-1000.jpg",
+    "w": 1000,
+    "h": 581,
+    "bytes": 83304
+   }
+  ]
+ },
+ {
+  "name": "rcf-facade",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p08_x40_1318x740.jpg",
+  "cropped_size": [
+   1318,
+   740
+  ],
+  "outputs": [
+   {
+    "file": "rcf-facade-1300.webp",
+    "w": 1300,
+    "h": 730,
+    "bytes": 103758
+   },
+   {
+    "file": "rcf-facade-1300.jpg",
+    "w": 1300,
+    "h": 730,
+    "bytes": 153664
+   }
+  ]
+ },
+ {
+  "name": "kings-key",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p11_x50_4000x2250.jpg",
+  "cropped_size": [
+   4000,
+   2250
+  ],
+  "outputs": [
+   {
+    "file": "kings-key-1200.webp",
+    "w": 1200,
+    "h": 675,
+    "bytes": 179968
+   },
+   {
+    "file": "kings-key-1200.jpg",
+    "w": 1200,
+    "h": 675,
+    "bytes": 211056
+   },
+   {
+    "file": "kings-key-2000.webp",
+    "w": 2000,
+    "h": 1125,
+    "bytes": 459542
+   },
+   {
+    "file": "kings-key-2000.jpg",
+    "w": 2000,
+    "h": 1125,
+    "bytes": 548366
+   },
+   {
+    "file": "kings-key-2800.webp",
+    "w": 2800,
+    "h": 1575,
+    "bytes": 822342
+   },
+   {
+    "file": "kings-key-2800.jpg",
+    "w": 2800,
+    "h": 1575,
+    "bytes": 1002429
+   }
+  ]
+ },
+ {
+  "name": "kings-key-m",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p11_x50_4000x2250.jpg",
+  "cropped_size": [
+   1600,
+   2000
+  ],
+  "outputs": [
+   {
+    "file": "kings-key-m-800.webp",
+    "w": 800,
+    "h": 1000,
+    "bytes": 165370
+   },
+   {
+    "file": "kings-key-m-800.jpg",
+    "w": 800,
+    "h": 1000,
+    "bytes": 198748
+   },
+   {
+    "file": "kings-key-m-1200.webp",
+    "w": 1200,
+    "h": 1500,
+    "bytes": 334860
+   },
+   {
+    "file": "kings-key-m-1200.jpg",
+    "w": 1200,
+    "h": 1500,
+    "bytes": 408866
+   }
+  ]
+ },
+ {
+  "name": "kings-tower",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p13_x60_2048x1151.jpg",
+  "cropped_size": [
+   2048,
+   1151
+  ],
+  "outputs": [
+   {
+    "file": "kings-tower-1200.webp",
+    "w": 1200,
+    "h": 674,
+    "bytes": 68234
+   },
+   {
+    "file": "kings-tower-1200.jpg",
+    "w": 1200,
+    "h": 674,
+    "bytes": 102047
+   },
+   {
+    "file": "kings-tower-2000.webp",
+    "w": 2000,
+    "h": 1124,
+    "bytes": 129040
+   },
+   {
+    "file": "kings-tower-2000.jpg",
+    "w": 2000,
+    "h": 1124,
+    "bytes": 218108
+   }
+  ]
+ },
+ {
+  "name": "kings-court-v",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p12_x55_852x1484.jpg",
+  "cropped_size": [
+   852,
+   1484
+  ],
+  "outputs": [
+   {
+    "file": "kings-court-v-850.webp",
+    "w": 850,
+    "h": 1481,
+    "bytes": 162814
+   },
+   {
+    "file": "kings-court-v-850.jpg",
+    "w": 850,
+    "h": 1481,
+    "bytes": 218325
+   }
+  ]
+ },
+ {
+  "name": "kings-sphere",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p15_x72_4396x2243.jpg",
+  "cropped_size": [
+   3987,
+   2243
+  ],
+  "outputs": [
+   {
+    "file": "kings-sphere-1200.webp",
+    "w": 1200,
+    "h": 675,
+    "bytes": 117854
+   },
+   {
+    "file": "kings-sphere-1200.jpg",
+    "w": 1200,
+    "h": 675,
+    "bytes": 151218
+   },
+   {
+    "file": "kings-sphere-2000.webp",
+    "w": 2000,
+    "h": 1125,
+    "bytes": 245032
+   },
+   {
+    "file": "kings-sphere-2000.jpg",
+    "w": 2000,
+    "h": 1125,
+    "bytes": 345264
+   }
+  ]
+ },
+ {
+  "name": "kings-fan-1",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p14_x69_4738x2567.jpg",
+  "cropped_size": [
+   4738,
+   2567
+  ],
+  "outputs": [
+   {
+    "file": "kings-fan-1-1200.webp",
+    "w": 1200,
+    "h": 650,
+    "bytes": 91890
+   },
+   {
+    "file": "kings-fan-1-1200.jpg",
+    "w": 1200,
+    "h": 650,
+    "bytes": 128894
+   },
+   {
+    "file": "kings-fan-1-2000.webp",
+    "w": 2000,
+    "h": 1084,
+    "bytes": 212940
+   },
+   {
+    "file": "kings-fan-1-2000.jpg",
+    "w": 2000,
+    "h": 1084,
+    "bytes": 308174
+   }
+  ]
+ },
+ {
+  "name": "kings-fan-2",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p14_x65_1551x1152.jpg",
+  "cropped_size": [
+   1551,
+   1152
+  ],
+  "outputs": [
+   {
+    "file": "kings-fan-2-900.webp",
+    "w": 900,
+    "h": 668,
+    "bytes": 74418
+   },
+   {
+    "file": "kings-fan-2-900.jpg",
+    "w": 900,
+    "h": 668,
+    "bytes": 98976
+   },
+   {
+    "file": "kings-fan-2-1400.webp",
+    "w": 1400,
+    "h": 1040,
+    "bytes": 136344
+   },
+   {
+    "file": "kings-fan-2-1400.jpg",
+    "w": 1400,
+    "h": 1040,
+    "bytes": 195784
+   }
+  ]
+ },
+ {
+  "name": "kings-fan-3",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p14_x66_2167x1426.jpg",
+  "cropped_size": [
+   2167,
+   1426
+  ],
+  "outputs": [
+   {
+    "file": "kings-fan-3-900.webp",
+    "w": 900,
+    "h": 592,
+    "bytes": 86454
+   },
+   {
+    "file": "kings-fan-3-900.jpg",
+    "w": 900,
+    "h": 592,
+    "bytes": 110868
+   },
+   {
+    "file": "kings-fan-3-1400.webp",
+    "w": 1400,
+    "h": 921,
+    "bytes": 155428
+   },
+   {
+    "file": "kings-fan-3-1400.jpg",
+    "w": 1400,
+    "h": 921,
+    "bytes": 221650
+   }
+  ]
+ },
+ {
+  "name": "kings-fan-4",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p14_x68_2145x1197.jpg",
+  "cropped_size": [
+   2145,
+   1197
+  ],
+  "outputs": [
+   {
+    "file": "kings-fan-4-900.webp",
+    "w": 900,
+    "h": 502,
+    "bytes": 66016
+   },
+   {
+    "file": "kings-fan-4-900.jpg",
+    "w": 900,
+    "h": 502,
+    "bytes": 89075
+   },
+   {
+    "file": "kings-fan-4-1400.webp",
+    "w": 1400,
+    "h": 781,
+    "bytes": 123588
+   },
+   {
+    "file": "kings-fan-4-1400.jpg",
+    "w": 1400,
+    "h": 781,
+    "bytes": 185172
+   }
+  ]
+ },
+ {
+  "name": "kings-show-1",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p17_x82_3140x1628.jpg",
+  "cropped_size": [
+   3140,
+   1628
+  ],
+  "outputs": [
+   {
+    "file": "kings-show-1-1200.webp",
+    "w": 1200,
+    "h": 622,
+    "bytes": 70586
+   },
+   {
+    "file": "kings-show-1-1200.jpg",
+    "w": 1200,
+    "h": 622,
+    "bytes": 97604
+   },
+   {
+    "file": "kings-show-1-2000.webp",
+    "w": 2000,
+    "h": 1037,
+    "bytes": 141036
+   },
+   {
+    "file": "kings-show-1-2000.jpg",
+    "w": 2000,
+    "h": 1037,
+    "bytes": 213726
+   }
+  ]
+ },
+ {
+  "name": "kings-show-2",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p16_x78_1534x917.jpg",
+  "cropped_size": [
+   1534,
+   917
+  ],
+  "outputs": [
+   {
+    "file": "kings-show-2-1200.webp",
+    "w": 1200,
+    "h": 717,
+    "bytes": 57116
+   },
+   {
+    "file": "kings-show-2-1200.jpg",
+    "w": 1200,
+    "h": 717,
+    "bytes": 96934
+   },
+   {
+    "file": "kings-show-2-1500.webp",
+    "w": 1500,
+    "h": 897,
+    "bytes": 75278
+   },
+   {
+    "file": "kings-show-2-1500.jpg",
+    "w": 1500,
+    "h": 897,
+    "bytes": 134176
+   }
+  ]
+ },
+ {
+  "name": "k24-warriors",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p18_x88_7783x1538.jpg",
+  "cropped_size": [
+   7783,
+   1538
+  ],
+  "outputs": [
+   {
+    "file": "k24-warriors-1600.webp",
+    "w": 1600,
+    "h": 316,
+    "bytes": 44738
+   },
+   {
+    "file": "k24-warriors-1600.jpg",
+    "w": 1600,
+    "h": 316,
+    "bytes": 74356
+   },
+   {
+    "file": "k24-warriors-2400.webp",
+    "w": 2400,
+    "h": 474,
+    "bytes": 83496
+   },
+   {
+    "file": "k24-warriors-2400.jpg",
+    "w": 2400,
+    "h": 474,
+    "bytes": 150668
+   },
+   {
+    "file": "k24-warriors-3600.webp",
+    "w": 3600,
+    "h": 711,
+    "bytes": 151460
+   },
+   {
+    "file": "k24-warriors-3600.jpg",
+    "w": 3600,
+    "h": 711,
+    "bytes": 286916
+   }
+  ]
+ },
+ {
+  "name": "k24-warriors-c",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p18_x88_7783x1538.jpg",
+  "cropped_size": [
+   2734,
+   1538
+  ],
+  "outputs": [
+   {
+    "file": "k24-warriors-c-1200.webp",
+    "w": 1200,
+    "h": 675,
+    "bytes": 43552
+   },
+   {
+    "file": "k24-warriors-c-1200.jpg",
+    "w": 1200,
+    "h": 675,
+    "bytes": 87142
+   },
+   {
+    "file": "k24-warriors-c-2000.webp",
+    "w": 2000,
+    "h": 1125,
+    "bytes": 86554
+   },
+   {
+    "file": "k24-warriors-c-2000.jpg",
+    "w": 2000,
+    "h": 1125,
+    "bytes": 183669
+   }
+  ]
+ },
+ {
+  "name": "k24-hologram",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p19_x94_1669x1699.jpg",
+  "cropped_size": [
+   1669,
+   1669
+  ],
+  "outputs": [
+   {
+    "file": "k24-hologram-900.webp",
+    "w": 900,
+    "h": 900,
+    "bytes": 67612
+   },
+   {
+    "file": "k24-hologram-900.jpg",
+    "w": 900,
+    "h": 900,
+    "bytes": 108179
+   },
+   {
+    "file": "k24-hologram-1400.webp",
+    "w": 1400,
+    "h": 1400,
+    "bytes": 119794
+   },
+   {
+    "file": "k24-hologram-1400.jpg",
+    "w": 1400,
+    "h": 1400,
+    "bytes": 213541
+   }
+  ]
+ },
+ {
+  "name": "k24-hand",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p21_x104_1068x1078.jpg",
+  "cropped_size": [
+   1068,
+   1068
+  ],
+  "outputs": [
+   {
+    "file": "k24-hand-1000.webp",
+    "w": 1000,
+    "h": 1000,
+    "bytes": 144488
+   },
+   {
+    "file": "k24-hand-1000.jpg",
+    "w": 1000,
+    "h": 1000,
+    "bytes": 185747
+   }
+  ]
+ },
+ {
+  "name": "k24-ring",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p22_x108_1716x1366.jpg",
+  "cropped_size": [
+   1716,
+   1366
+  ],
+  "outputs": [
+   {
+    "file": "k24-ring-1200.webp",
+    "w": 1200,
+    "h": 955,
+    "bytes": 144654
+   },
+   {
+    "file": "k24-ring-1200.jpg",
+    "w": 1200,
+    "h": 955,
+    "bytes": 191482
+   },
+   {
+    "file": "k24-ring-1600.webp",
+    "w": 1600,
+    "h": 1274,
+    "bytes": 225616
+   },
+   {
+    "file": "k24-ring-1600.jpg",
+    "w": 1600,
+    "h": 1274,
+    "bytes": 308038
+   }
+  ]
+ },
+ {
+  "name": "k24-stands",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p22_x109_1332x1252.jpg",
+  "cropped_size": [
+   1252,
+   1252
+  ],
+  "outputs": [
+   {
+    "file": "k24-stands-1200.webp",
+    "w": 1200,
+    "h": 1200,
+    "bytes": 131604
+   },
+   {
+    "file": "k24-stands-1200.jpg",
+    "w": 1200,
+    "h": 1200,
+    "bytes": 192025
+   }
+  ]
+ },
+ {
+  "name": "k24-rig",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p20_x98_1324x955.jpg",
+  "cropped_size": [
+   1324,
+   897
+  ],
+  "outputs": [
+   {
+    "file": "k24-rig-1200.webp",
+    "w": 1200,
+    "h": 813,
+    "bytes": 50476
+   },
+   {
+    "file": "k24-rig-1200.jpg",
+    "w": 1200,
+    "h": 813,
+    "bytes": 95927
+   }
+  ]
+ },
+ {
+  "name": "k24-roman",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p20_x100_2048x2240.jpg",
+  "cropped_size": [
+   2048,
+   1164
+  ],
+  "outputs": [
+   {
+    "file": "k24-roman-1200.webp",
+    "w": 1200,
+    "h": 682,
+    "bytes": 44726
+   },
+   {
+    "file": "k24-roman-1200.jpg",
+    "w": 1200,
+    "h": 682,
+    "bytes": 76884
+   },
+   {
+    "file": "k24-roman-2000.webp",
+    "w": 2000,
+    "h": 1137,
+    "bytes": 99486
+   },
+   {
+    "file": "k24-roman-2000.jpg",
+    "w": 2000,
+    "h": 1137,
+    "bytes": 178475
+   }
+  ]
+ },
+ {
+  "name": "k24-fanzone",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p20_x100_2048x2240.jpg",
+  "cropped_size": [
+   2048,
+   1076
+  ],
+  "outputs": [
+   {
+    "file": "k24-fanzone-1200.webp",
+    "w": 1200,
+    "h": 630,
+    "bytes": 63234
+   },
+   {
+    "file": "k24-fanzone-1200.jpg",
+    "w": 1200,
+    "h": 630,
+    "bytes": 92784
+   },
+   {
+    "file": "k24-fanzone-2000.webp",
+    "w": 2000,
+    "h": 1051,
+    "bytes": 138148
+   },
+   {
+    "file": "k24-fanzone-2000.jpg",
+    "w": 2000,
+    "h": 1051,
+    "bytes": 216887
+   }
+  ]
+ },
+ {
+  "name": "usyk-key",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p24_x120_1920x1080.jpg",
+  "cropped_size": [
+   1920,
+   1080
+  ],
+  "outputs": [
+   {
+    "file": "usyk-key-1200.webp",
+    "w": 1200,
+    "h": 675,
+    "bytes": 77834
+   },
+   {
+    "file": "usyk-key-1200.jpg",
+    "w": 1200,
+    "h": 675,
+    "bytes": 107160
+   },
+   {
+    "file": "usyk-key-1920.webp",
+    "w": 1920,
+    "h": 1080,
+    "bytes": 179238
+   },
+   {
+    "file": "usyk-key-1920.jpg",
+    "w": 1920,
+    "h": 1080,
+    "bytes": 211322
+   }
+  ]
+ },
+ {
+  "name": "usyk-clock",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p25_x176_1069x1078.jpg",
+  "cropped_size": [
+   1069,
+   1069
+  ],
+  "outputs": [
+   {
+    "file": "usyk-clock-1000.webp",
+    "w": 1000,
+    "h": 1000,
+    "bytes": 27050
+   },
+   {
+    "file": "usyk-clock-1000.jpg",
+    "w": 1000,
+    "h": 1000,
+    "bytes": 53445
+   }
+  ]
+ },
+ {
+  "name": "usyk-arena-1",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p26_x180_3946x2265.jpg",
+  "cropped_size": [
+   3946,
+   2265
+  ],
+  "outputs": [
+   {
+    "file": "usyk-arena-1-1200.webp",
+    "w": 1200,
+    "h": 689,
+    "bytes": 130372
+   },
+   {
+    "file": "usyk-arena-1-1200.jpg",
+    "w": 1200,
+    "h": 689,
+    "bytes": 167074
+   },
+   {
+    "file": "usyk-arena-1-2000.webp",
+    "w": 2000,
+    "h": 1148,
+    "bytes": 283880
+   },
+   {
+    "file": "usyk-arena-1-2000.jpg",
+    "w": 2000,
+    "h": 1148,
+    "bytes": 389728
+   }
+  ]
+ },
+ {
+  "name": "usyk-arena-2",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p26_x181_3317x1865.jpg",
+  "cropped_size": [
+   3317,
+   1865
+  ],
+  "outputs": [
+   {
+    "file": "usyk-arena-2-1200.webp",
+    "w": 1200,
+    "h": 675,
+    "bytes": 25904
+   },
+   {
+    "file": "usyk-arena-2-1200.jpg",
+    "w": 1200,
+    "h": 675,
+    "bytes": 41010
+   },
+   {
+    "file": "usyk-arena-2-2000.webp",
+    "w": 2000,
+    "h": 1125,
+    "bytes": 47546
+   },
+   {
+    "file": "usyk-arena-2-2000.jpg",
+    "w": 2000,
+    "h": 1125,
+    "bytes": 82946
+   }
+  ]
+ },
+ {
+  "name": "usyk-arena-3",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p26_x182_3840x2160.jpg",
+  "cropped_size": [
+   3840,
+   2160
+  ],
+  "outputs": [
+   {
+    "file": "usyk-arena-3-1200.webp",
+    "w": 1200,
+    "h": 675,
+    "bytes": 25334
+   },
+   {
+    "file": "usyk-arena-3-1200.jpg",
+    "w": 1200,
+    "h": 675,
+    "bytes": 40972
+   },
+   {
+    "file": "usyk-arena-3-2000.webp",
+    "w": 2000,
+    "h": 1125,
+    "bytes": 48372
+   },
+   {
+    "file": "usyk-arena-3-2000.jpg",
+    "w": 2000,
+    "h": 1125,
+    "bytes": 84663
+   }
+  ]
+ },
+ {
+  "name": "usyk-arena-4",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p26_x183_3351x1909.jpg",
+  "cropped_size": [
+   3351,
+   1909
+  ],
+  "outputs": [
+   {
+    "file": "usyk-arena-4-1200.webp",
+    "w": 1200,
+    "h": 684,
+    "bytes": 28256
+   },
+   {
+    "file": "usyk-arena-4-1200.jpg",
+    "w": 1200,
+    "h": 684,
+    "bytes": 45506
+   },
+   {
+    "file": "usyk-arena-4-2000.webp",
+    "w": 2000,
+    "h": 1139,
+    "bytes": 50302
+   },
+   {
+    "file": "usyk-arena-4-2000.jpg",
+    "w": 2000,
+    "h": 1139,
+    "bytes": 92059
+   }
+  ]
+ },
+ {
+  "name": "ka-render",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p27_x186_1536x1536.jpg",
+  "cropped_size": [
+   1536,
+   1536
+  ],
+  "outputs": [
+   {
+    "file": "ka-render-1000.webp",
+    "w": 1000,
+    "h": 1000,
+    "bytes": 77934
+   },
+   {
+    "file": "ka-render-1000.jpg",
+    "w": 1000,
+    "h": 1000,
+    "bytes": 139916
+   },
+   {
+    "file": "ka-render-1500.webp",
+    "w": 1500,
+    "h": 1500,
+    "bytes": 125898
+   },
+   {
+    "file": "ka-render-1500.jpg",
+    "w": 1500,
+    "h": 1500,
+    "bytes": 256953
+   }
+  ]
+ },
+ {
+  "name": "ka-palms",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p27_x188_1429x1357.jpg",
+  "cropped_size": [
+   1357,
+   1357
+  ],
+  "outputs": [
+   {
+    "file": "ka-palms-1000.webp",
+    "w": 1000,
+    "h": 1000,
+    "bytes": 53054
+   },
+   {
+    "file": "ka-palms-1000.jpg",
+    "w": 1000,
+    "h": 1000,
+    "bytes": 83682
+   },
+   {
+    "file": "ka-palms-1350.webp",
+    "w": 1350,
+    "h": 1350,
+    "bytes": 75996
+   },
+   {
+    "file": "ka-palms-1350.jpg",
+    "w": 1350,
+    "h": 1350,
+    "bytes": 130398
+   }
+  ]
+ },
+ {
+  "name": "fifa-stage",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p30_x199_2055x1373.jpg",
+  "cropped_size": [
+   2055,
+   1370
+  ],
+  "outputs": [
+   {
+    "file": "fifa-stage-1200.webp",
+    "w": 1200,
+    "h": 800,
+    "bytes": 87160
+   },
+   {
+    "file": "fifa-stage-1200.jpg",
+    "w": 1200,
+    "h": 800,
+    "bytes": 135765
+   },
+   {
+    "file": "fifa-stage-2000.webp",
+    "w": 2000,
+    "h": 1333,
+    "bytes": 183176
+   },
+   {
+    "file": "fifa-stage-2000.jpg",
+    "w": 2000,
+    "h": 1333,
+    "bytes": 303823
+   }
+  ]
+ },
+ {
+  "name": "fifa-venue",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p28_x192_1956x1114.jpg",
+  "cropped_size": [
+   1956,
+   1114
+  ],
+  "outputs": [
+   {
+    "file": "fifa-venue-1200.webp",
+    "w": 1200,
+    "h": 683,
+    "bytes": 68254
+   },
+   {
+    "file": "fifa-venue-1200.jpg",
+    "w": 1200,
+    "h": 683,
+    "bytes": 113713
+   },
+   {
+    "file": "fifa-venue-1900.webp",
+    "w": 1900,
+    "h": 1082,
+    "bytes": 123482
+   },
+   {
+    "file": "fifa-venue-1900.jpg",
+    "w": 1900,
+    "h": 1082,
+    "bytes": 222941
+   }
+  ]
+ },
+ {
+  "name": "fifa-render",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p29_x196_1068x1088.jpg",
+  "cropped_size": [
+   1068,
+   1068
+  ],
+  "outputs": [
+   {
+    "file": "fifa-render-1000.webp",
+    "w": 1000,
+    "h": 1000,
+    "bytes": 75920
+   },
+   {
+    "file": "fifa-render-1000.jpg",
+    "w": 1000,
+    "h": 1000,
+    "bytes": 134785
+   }
+  ]
+ },
+ {
+  "name": "fifa-wide",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p30_x200_1600x951.jpg",
+  "cropped_size": [
+   1600,
+   951
+  ],
+  "outputs": [
+   {
+    "file": "fifa-wide-1200.webp",
+    "w": 1200,
+    "h": 713,
+    "bytes": 98622
+   },
+   {
+    "file": "fifa-wide-1200.jpg",
+    "w": 1200,
+    "h": 713,
+    "bytes": 142682
+   },
+   {
+    "file": "fifa-wide-1600.webp",
+    "w": 1600,
+    "h": 951,
+    "bytes": 163306
+   },
+   {
+    "file": "fifa-wide-1600.jpg",
+    "w": 1600,
+    "h": 951,
+    "bytes": 226508
+   }
+  ]
+ },
+ {
+  "name": "cw-gate",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p31_x203_1600x995.jpg",
+  "cropped_size": [
+   1600,
+   995
+  ],
+  "outputs": [
+   {
+    "file": "cw-gate-1200.webp",
+    "w": 1200,
+    "h": 746,
+    "bytes": 137190
+   },
+   {
+    "file": "cw-gate-1200.jpg",
+    "w": 1200,
+    "h": 746,
+    "bytes": 172769
+   },
+   {
+    "file": "cw-gate-1600.webp",
+    "w": 1600,
+    "h": 995,
+    "bytes": 216536
+   },
+   {
+    "file": "cw-gate-1600.jpg",
+    "w": 1600,
+    "h": 995,
+    "bytes": 266887
+   }
+  ]
+ },
+ {
+  "name": "cw-crowd",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p32_x207_1068x1088.jpg",
+  "cropped_size": [
+   1068,
+   1068
+  ],
+  "outputs": [
+   {
+    "file": "cw-crowd-1000.webp",
+    "w": 1000,
+    "h": 1000,
+    "bytes": 100878
+   },
+   {
+    "file": "cw-crowd-1000.jpg",
+    "w": 1000,
+    "h": 1000,
+    "bytes": 147321
+   }
+  ]
+ },
+ {
+  "name": "cw-aerial-1",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p33_x210_3118x1856.jpg",
+  "cropped_size": [
+   3118,
+   1856
+  ],
+  "outputs": [
+   {
+    "file": "cw-aerial-1-1200.webp",
+    "w": 1200,
+    "h": 714,
+    "bytes": 115914
+   },
+   {
+    "file": "cw-aerial-1-1200.jpg",
+    "w": 1200,
+    "h": 714,
+    "bytes": 147450
+   },
+   {
+    "file": "cw-aerial-1-2000.webp",
+    "w": 2000,
+    "h": 1191,
+    "bytes": 257956
+   },
+   {
+    "file": "cw-aerial-1-2000.jpg",
+    "w": 2000,
+    "h": 1191,
+    "bytes": 354405
+   }
+  ]
+ },
+ {
+  "name": "cw-aerial-2",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p33_x212_3115x1808.jpg",
+  "cropped_size": [
+   3115,
+   1808
+  ],
+  "outputs": [
+   {
+    "file": "cw-aerial-2-1200.webp",
+    "w": 1200,
+    "h": 697,
+    "bytes": 54640
+   },
+   {
+    "file": "cw-aerial-2-1200.jpg",
+    "w": 1200,
+    "h": 697,
+    "bytes": 92249
+   },
+   {
+    "file": "cw-aerial-2-2000.webp",
+    "w": 2000,
+    "h": 1161,
+    "bytes": 99714
+   },
+   {
+    "file": "cw-aerial-2-2000.jpg",
+    "w": 2000,
+    "h": 1161,
+    "bytes": 194977
+   }
+  ]
+ },
+ {
+  "name": "cw-asia",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p33_x213_2048x1202.jpg",
+  "cropped_size": [
+   2048,
+   1202
+  ],
+  "outputs": [
+   {
+    "file": "cw-asia-1200.webp",
+    "w": 1200,
+    "h": 704,
+    "bytes": 107038
+   },
+   {
+    "file": "cw-asia-1200.jpg",
+    "w": 1200,
+    "h": 704,
+    "bytes": 141653
+   },
+   {
+    "file": "cw-asia-2000.webp",
+    "w": 2000,
+    "h": 1174,
+    "bytes": 247208
+   },
+   {
+    "file": "cw-asia-2000.jpg",
+    "w": 2000,
+    "h": 1174,
+    "bytes": 332598
+   }
+  ]
+ },
+ {
+  "name": "cw-dragons",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p34_x216_3298x3302.jpg",
+  "cropped_size": [
+   3298,
+   3298
+  ],
+  "outputs": [
+   {
+    "file": "cw-dragons-1000.webp",
+    "w": 1000,
+    "h": 1000,
+    "bytes": 150588
+   },
+   {
+    "file": "cw-dragons-1000.jpg",
+    "w": 1000,
+    "h": 1000,
+    "bytes": 190263
+   },
+   {
+    "file": "cw-dragons-1600.webp",
+    "w": 1600,
+    "h": 1600,
+    "bytes": 310114
+   },
+   {
+    "file": "cw-dragons-1600.jpg",
+    "w": 1600,
+    "h": 1600,
+    "bytes": 418477
+   }
+  ]
+ },
+ {
+  "name": "cw-wonderwall",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p34_x217_3115x1856.jpg",
+  "cropped_size": [
+   3115,
+   1856
+  ],
+  "outputs": [
+   {
+    "file": "cw-wonderwall-1200.webp",
+    "w": 1200,
+    "h": 715,
+    "bytes": 161398
+   },
+   {
+    "file": "cw-wonderwall-1200.jpg",
+    "w": 1200,
+    "h": 715,
+    "bytes": 193288
+   },
+   {
+    "file": "cw-wonderwall-2000.webp",
+    "w": 2000,
+    "h": 1192,
+    "bytes": 377668
+   },
+   {
+    "file": "cw-wonderwall-2000.jpg",
+    "w": 2000,
+    "h": 1192,
+    "bytes": 470709
+   }
+  ]
+ },
+ {
+  "name": "cw-aerial-3",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p34_x218_4240x2489.jpg",
+  "cropped_size": [
+   4240,
+   2489
+  ],
+  "outputs": [
+   {
+    "file": "cw-aerial-3-1200.webp",
+    "w": 1200,
+    "h": 704,
+    "bytes": 102564
+   },
+   {
+    "file": "cw-aerial-3-1200.jpg",
+    "w": 1200,
+    "h": 704,
+    "bytes": 131575
+   },
+   {
+    "file": "cw-aerial-3-2000.webp",
+    "w": 2000,
+    "h": 1174,
+    "bytes": 230762
+   },
+   {
+    "file": "cw-aerial-3-2000.jpg",
+    "w": 2000,
+    "h": 1174,
+    "bytes": 311548
+   }
+  ]
+ },
+ {
+  "name": "ww-riyadh-1",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p35_x222_1416x1358.jpg",
+  "cropped_size": [
+   1358,
+   1358
+  ],
+  "outputs": [
+   {
+    "file": "ww-riyadh-1-1000.webp",
+    "w": 1000,
+    "h": 1000,
+    "bytes": 169916
+   },
+   {
+    "file": "ww-riyadh-1-1000.jpg",
+    "w": 1000,
+    "h": 1000,
+    "bytes": 208190
+   },
+   {
+    "file": "ww-riyadh-1-1350.webp",
+    "w": 1350,
+    "h": 1350,
+    "bytes": 263000
+   },
+   {
+    "file": "ww-riyadh-1-1350.jpg",
+    "w": 1350,
+    "h": 1350,
+    "bytes": 342626
+   }
+  ]
+ },
+ {
+  "name": "ww-riyadh-2",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p35_x224_1414x1358.jpg",
+  "cropped_size": [
+   1358,
+   1358
+  ],
+  "outputs": [
+   {
+    "file": "ww-riyadh-2-1000.webp",
+    "w": 1000,
+    "h": 1000,
+    "bytes": 77020
+   },
+   {
+    "file": "ww-riyadh-2-1000.jpg",
+    "w": 1000,
+    "h": 1000,
+    "bytes": 119249
+   },
+   {
+    "file": "ww-riyadh-2-1350.webp",
+    "w": 1350,
+    "h": 1350,
+    "bytes": 109620
+   },
+   {
+    "file": "ww-riyadh-2-1350.jpg",
+    "w": 1350,
+    "h": 1350,
+    "bytes": 183505
+   }
+  ]
+ },
+ {
+  "name": "ww-show",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p36_x229_1920x1143.jpg",
+  "cropped_size": [
+   1920,
+   1143
+  ],
+  "outputs": [
+   {
+    "file": "ww-show-1200.webp",
+    "w": 1200,
+    "h": 714,
+    "bytes": 122168
+   },
+   {
+    "file": "ww-show-1200.jpg",
+    "w": 1200,
+    "h": 714,
+    "bytes": 162050
+   },
+   {
+    "file": "ww-show-1900.webp",
+    "w": 1900,
+    "h": 1131,
+    "bytes": 237664
+   },
+   {
+    "file": "ww-show-1900.jpg",
+    "w": 1900,
+    "h": 1131,
+    "bytes": 334662
+   }
+  ]
+ },
+ {
+  "name": "blvd-greece-aerial",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p39_x241_5000x2954.jpg",
+  "cropped_size": [
+   5000,
+   2812
+  ],
+  "outputs": [
+   {
+    "file": "blvd-greece-aerial-1200.webp",
+    "w": 1200,
+    "h": 675,
+    "bytes": 144956
+   },
+   {
+    "file": "blvd-greece-aerial-1200.jpg",
+    "w": 1200,
+    "h": 675,
+    "bytes": 175502
+   },
+   {
+    "file": "blvd-greece-aerial-2000.webp",
+    "w": 2000,
+    "h": 1125,
+    "bytes": 335360
+   },
+   {
+    "file": "blvd-greece-aerial-2000.jpg",
+    "w": 2000,
+    "h": 1125,
+    "bytes": 427298
+   },
+   {
+    "file": "blvd-greece-aerial-2800.webp",
+    "w": 2800,
+    "h": 1575,
+    "bytes": 555330
+   },
+   {
+    "file": "blvd-greece-aerial-2800.jpg",
+    "w": 2800,
+    "h": 1575,
+    "bytes": 752710
+   }
+  ]
+ },
+ {
+  "name": "blvd-greece",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p37_x234_2752x1536.jpg",
+  "cropped_size": [
+   2752,
+   1228
+  ],
+  "outputs": [
+   {
+    "file": "blvd-greece-1200.webp",
+    "w": 1200,
+    "h": 535,
+    "bytes": 76910
+   },
+   {
+    "file": "blvd-greece-1200.jpg",
+    "w": 1200,
+    "h": 535,
+    "bytes": 108615
+   },
+   {
+    "file": "blvd-greece-2000.webp",
+    "w": 2000,
+    "h": 892,
+    "bytes": 160256
+   },
+   {
+    "file": "blvd-greece-2000.jpg",
+    "w": 2000,
+    "h": 892,
+    "bytes": 250991
+   }
+  ]
+ },
+ {
+  "name": "blvd-boat",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p38_x238_1668x1699.jpg",
+  "cropped_size": [
+   1668,
+   1668
+  ],
+  "outputs": [
+   {
+    "file": "blvd-boat-1000.webp",
+    "w": 1000,
+    "h": 1000,
+    "bytes": 184698
+   },
+   {
+    "file": "blvd-boat-1000.jpg",
+    "w": 1000,
+    "h": 1000,
+    "bytes": 221161
+   },
+   {
+    "file": "blvd-boat-1600.webp",
+    "w": 1600,
+    "h": 1600,
+    "bytes": 415950
+   },
+   {
+    "file": "blvd-boat-1600.jpg",
+    "w": 1600,
+    "h": 1600,
+    "bytes": 515831
+   }
+  ]
+ },
+ {
+  "name": "blvd-gate",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p40_x246_3240x3454.jpg",
+  "cropped_size": [
+   3240,
+   3240
+  ],
+  "outputs": [
+   {
+    "file": "blvd-gate-1000.webp",
+    "w": 1000,
+    "h": 1000,
+    "bytes": 123882
+   },
+   {
+    "file": "blvd-gate-1000.jpg",
+    "w": 1000,
+    "h": 1000,
+    "bytes": 159872
+   },
+   {
+    "file": "blvd-gate-1600.webp",
+    "w": 1600,
+    "h": 1600,
+    "bytes": 299090
+   },
+   {
+    "file": "blvd-gate-1600.jpg",
+    "w": 1600,
+    "h": 1600,
+    "bytes": 400746
+   }
+  ]
+ },
+ {
+  "name": "blvd-spain",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p40_x245_4017x2191.jpg",
+  "cropped_size": [
+   4017,
+   2191
+  ],
+  "outputs": [
+   {
+    "file": "blvd-spain-1200.webp",
+    "w": 1200,
+    "h": 655,
+    "bytes": 86376
+   },
+   {
+    "file": "blvd-spain-1200.jpg",
+    "w": 1200,
+    "h": 655,
+    "bytes": 129005
+   },
+   {
+    "file": "blvd-spain-2000.webp",
+    "w": 2000,
+    "h": 1091,
+    "bytes": 188492
+   },
+   {
+    "file": "blvd-spain-2000.jpg",
+    "w": 2000,
+    "h": 1091,
+    "bytes": 305398
+   }
+  ]
+ },
+ {
+  "name": "blvd-night",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p40_x244_1024x701.jpg",
+  "cropped_size": [
+   1024,
+   701
+  ],
+  "outputs": [
+   {
+    "file": "blvd-night-1000.webp",
+    "w": 1000,
+    "h": 685,
+    "bytes": 86310
+   },
+   {
+    "file": "blvd-night-1000.jpg",
+    "w": 1000,
+    "h": 685,
+    "bytes": 112515
+   }
+  ]
+ },
+ {
+  "name": "sphere-night",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p41_x383_1891x1671.jpg",
+  "cropped_size": [
+   1891,
+   1671
+  ],
+  "outputs": [
+   {
+    "file": "sphere-night-1000.webp",
+    "w": 1000,
+    "h": 884,
+    "bytes": 112220
+   },
+   {
+    "file": "sphere-night-1000.jpg",
+    "w": 1000,
+    "h": 884,
+    "bytes": 143610
+   },
+   {
+    "file": "sphere-night-1800.webp",
+    "w": 1800,
+    "h": 1591,
+    "bytes": 250416
+   },
+   {
+    "file": "sphere-night-1800.jpg",
+    "w": 1800,
+    "h": 1591,
+    "bytes": 364533
+   }
+  ]
+ },
+ {
+  "name": "sphere-v1",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p42_x437_989x1415.jpg",
+  "cropped_size": [
+   989,
+   1415
+  ],
+  "outputs": [
+   {
+    "file": "sphere-v1-900.webp",
+    "w": 900,
+    "h": 1288,
+    "bytes": 48832
+   },
+   {
+    "file": "sphere-v1-900.jpg",
+    "w": 900,
+    "h": 1288,
+    "bytes": 86727
+   }
+  ]
+ },
+ {
+  "name": "sphere-v2",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p42_x439_1085x1391.jpg",
+  "cropped_size": [
+   1085,
+   1391
+  ],
+  "outputs": [
+   {
+    "file": "sphere-v2-1000.webp",
+    "w": 1000,
+    "h": 1282,
+    "bytes": 37368
+   },
+   {
+    "file": "sphere-v2-1000.jpg",
+    "w": 1000,
+    "h": 1282,
+    "bytes": 78057
+   }
+  ]
+ },
+ {
+  "name": "sphere-v3",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p42_x441_992x1391.jpg",
+  "cropped_size": [
+   992,
+   1391
+  ],
+  "outputs": [
+   {
+    "file": "sphere-v3-900.webp",
+    "w": 900,
+    "h": 1262,
+    "bytes": 64386
+   },
+   {
+    "file": "sphere-v3-900.jpg",
+    "w": 900,
+    "h": 1262,
+    "bytes": 103153
+   }
+  ]
+ },
+ {
+  "name": "ai-f1-1",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p46_x461_1144x1370.jpg",
+  "cropped_size": [
+   1144,
+   1370
+  ],
+  "outputs": [
+   {
+    "file": "ai-f1-1-1100.webp",
+    "w": 1100,
+    "h": 1317,
+    "bytes": 336374
+   },
+   {
+    "file": "ai-f1-1-1100.jpg",
+    "w": 1100,
+    "h": 1317,
+    "bytes": 345999
+   }
+  ]
+ },
+ {
+  "name": "ai-f1-2",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p46_x462_749x853.jpg",
+  "cropped_size": [
+   749,
+   853
+  ],
+  "outputs": [
+   {
+    "file": "ai-f1-2-740.webp",
+    "w": 740,
+    "h": 843,
+    "bytes": 142558
+   },
+   {
+    "file": "ai-f1-2-740.jpg",
+    "w": 740,
+    "h": 843,
+    "bytes": 156739
+   }
+  ]
+ },
+ {
+  "name": "ai-f1-3",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p44_x450_1144x1947.jpg",
+  "cropped_size": [
+   1144,
+   1947
+  ],
+  "outputs": [
+   {
+    "file": "ai-f1-3-1100.webp",
+    "w": 1100,
+    "h": 1872,
+    "bytes": 461636
+   },
+   {
+    "file": "ai-f1-3-1100.jpg",
+    "w": 1100,
+    "h": 1872,
+    "bytes": 481834
+   }
+  ]
+ },
+ {
+  "name": "ai-snow-1",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p45_x456_1499x1628.jpg",
+  "cropped_size": [
+   1499,
+   1628
+  ],
+  "outputs": [
+   {
+    "file": "ai-snow-1-1200.webp",
+    "w": 1200,
+    "h": 1303,
+    "bytes": 266892
+   },
+   {
+    "file": "ai-snow-1-1200.jpg",
+    "w": 1200,
+    "h": 1303,
+    "bytes": 321076
+   },
+   {
+    "file": "ai-snow-1-1490.webp",
+    "w": 1490,
+    "h": 1618,
+    "bytes": 400286
+   },
+   {
+    "file": "ai-snow-1-1490.jpg",
+    "w": 1490,
+    "h": 1618,
+    "bytes": 484087
+   }
+  ]
+ },
+ {
+  "name": "ai-snow-2",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p45_x457_2748x1435.jpg",
+  "cropped_size": [
+   2748,
+   1435
+  ],
+  "outputs": [
+   {
+    "file": "ai-snow-2-1200.webp",
+    "w": 1200,
+    "h": 627,
+    "bytes": 147506
+   },
+   {
+    "file": "ai-snow-2-1200.jpg",
+    "w": 1200,
+    "h": 627,
+    "bytes": 175911
+   },
+   {
+    "file": "ai-snow-2-2000.webp",
+    "w": 2000,
+    "h": 1044,
+    "bytes": 353462
+   },
+   {
+    "file": "ai-snow-2-2000.jpg",
+    "w": 2000,
+    "h": 1044,
+    "bytes": 441001
+   }
+  ]
+ },
+ {
+  "name": "ai-snow-3",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p45_x458_1920x1085.jpg",
+  "cropped_size": [
+   1920,
+   1085
+  ],
+  "outputs": [
+   {
+    "file": "ai-snow-3-1200.webp",
+    "w": 1200,
+    "h": 678,
+    "bytes": 122034
+   },
+   {
+    "file": "ai-snow-3-1200.jpg",
+    "w": 1200,
+    "h": 678,
+    "bytes": 146537
+   },
+   {
+    "file": "ai-snow-3-1900.webp",
+    "w": 1900,
+    "h": 1074,
+    "bytes": 252884
+   },
+   {
+    "file": "ai-snow-3-1900.jpg",
+    "w": 1900,
+    "h": 1074,
+    "bytes": 318544
+   }
+  ]
+ },
+ {
+  "name": "ai-snow-4",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p44_x451_452x768.jpg",
+  "cropped_size": [
+   452,
+   768
+  ],
+  "outputs": [
+   {
+    "file": "ai-snow-4-450.webp",
+    "w": 450,
+    "h": 765,
+    "bytes": 31090
+   },
+   {
+    "file": "ai-snow-4-450.jpg",
+    "w": 450,
+    "h": 765,
+    "bytes": 48684
+   }
+  ]
+ },
+ {
+  "name": "ai-past-1",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p47_x465_1074x1251.jpg",
+  "cropped_size": [
+   1074,
+   1251
+  ],
+  "outputs": [
+   {
+    "file": "ai-past-1-1070.webp",
+    "w": 1070,
+    "h": 1246,
+    "bytes": 156588
+   },
+   {
+    "file": "ai-past-1-1070.jpg",
+    "w": 1070,
+    "h": 1246,
+    "bytes": 199449
+   }
+  ]
+ },
+ {
+  "name": "ai-past-2",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p47_x466_1074x1223.jpg",
+  "cropped_size": [
+   1074,
+   1223
+  ],
+  "outputs": [
+   {
+    "file": "ai-past-2-1070.webp",
+    "w": 1070,
+    "h": 1218,
+    "bytes": 144924
+   },
+   {
+    "file": "ai-past-2-1070.jpg",
+    "w": 1070,
+    "h": 1218,
+    "bytes": 189643
+   }
+  ]
+ },
+ {
+  "name": "ai-past-3",
+  "src": "C:\\Users\\C107B~1.NAS\\AppData\\Local\\Temp\\claude\\C--Varieities\\5e2ba264-7e19-44f3-96ad-0b6fe01f8ade\\scratchpad\\pdf\\img\\p44_x452_755x1284.jpg",
+  "cropped_size": [
+   755,
+   1284
+  ],
+  "outputs": [
+   {
+    "file": "ai-past-3-750.webp",
+    "w": 750,
+    "h": 1275,
+    "bytes": 190556
+   },
+   {
+    "file": "ai-past-3-750.jpg",
+    "w": 750,
+    "h": 1275,
+    "bytes": 216536
+   }
+  ]
+ }
+]
