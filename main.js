@@ -206,7 +206,7 @@
   }
 
   /* ---------- drift collage ---------- */
-  var drift = $('#drift'), track = $('#driftTrack'), pagerCur = $('#pagerCur'), pagerTot = $('#pagerTot');
+  var drift = $('#drift'), track = $('#driftTrack'), pagerCur = $('#pagerCur'), pagerTot = $('#pagerTot'), bar = $('#driftBar');
   var items = $$('.drift-item', track);
   if (pagerTot) pagerTot.textContent = String(items.length).padStart(2, '0');
   function setPager(i) { if (pagerCur) pagerCur.textContent = String(Math.min(items.length, Math.max(1, i))).padStart(2, '0'); }
@@ -214,10 +214,7 @@
     var dist = function () { return Math.max(0, track.scrollWidth - window.innerWidth); };
     var span = function () { return Math.round(dist() * 0.5); };
     gsap.to(track, { x: function () { return -dist(); }, ease: 'none', scrollTrigger: { trigger: drift, start: 'top top', end: function () { return '+=' + span(); }, pin: true, scrub: 0.5, invalidateOnRefresh: true, anticipatePin: 1,
-      onUpdate: function (st) { setPager(Math.round(st.progress * (items.length - 1)) + 1); } } });
-    items.forEach(function (it, i) {
-      gsap.to(it, { y: (i % 2 ? -1 : 1) * 24, ease: 'none', scrollTrigger: { trigger: drift, start: 'top top', end: function () { return '+=' + span(); }, scrub: 1 } });
-    });
+      onUpdate: function (st) { setPager(Math.round(st.progress * (items.length - 1)) + 1); if (bar) bar.style.width = (st.progress * 100).toFixed(1) + '%'; } } });
   } else if (drift) {
     drift.classList.add('static');
     drift.addEventListener('scroll', function () {
@@ -243,6 +240,7 @@
         c.addEventListener('pointerleave', function () { gsap.to(c, { rotateX: 0, rotateY: 0, duration: .8, ease: 'power3.out' }); });
       });
     }
+    if ($('.band')) gsap.fromTo('.band-media img', { yPercent: -8 }, { yPercent: 8, ease: 'none', scrollTrigger: { trigger: '.band', start: 'top bottom', end: 'bottom top', scrub: true } });
     gsap.to('.brush', { xPercent: 12, ease: 'none', scrollTrigger: { trigger: '#ai', start: 'top bottom', end: 'bottom top', scrub: true } });
     gsap.to('.footer-media', { yPercent: -6, ease: 'none', scrollTrigger: { trigger: '.footer', start: 'top bottom', end: 'bottom bottom', scrub: true } });
   }
