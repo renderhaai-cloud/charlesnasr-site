@@ -5,7 +5,7 @@
 @font-face { font-family: "Rawrote"; src: url("assets/fonts/rawrote.woff2") format("woff2"); font-weight: 400; font-display: swap; }
 
 :root {
-  --ink: #0B0B0C; --deep: #131115; --paper: #F2EFE8; --paper-2: #E7E3DA;
+  --ink: #0B0B0C; --deep: #0B0B0C; --paper: #F2EFE8; --paper-2: #E7E3DA;
   --on-dark: #F4F2ED; --on-dark-2: #B3AFA7; --on-light: #131115; --on-light-2: #6B665F;
   --accent: #F2923E; --plum: #A23063; --accent-2: #C24C57; --accent-ink: #FFFFFF;
   --grad: linear-gradient(90deg, #F2923E 0%, #A23063 50%, #F2923E 100%); --grad-2: linear-gradient(120deg, #F2923E 0%, #C24C57 48%, #A23063 100%);
@@ -48,7 +48,7 @@ html.js:not(.nomotion):not(.reduced) .reveal.in { opacity: 1; transform: none; }
 
 /* --- texture --- */
 .tex { position: absolute; inset: 0; pointer-events: none; background: url("assets/img/contours.webp") center / 1100px repeat; opacity: .14; }
-[data-theme="light"] .tex, .works .tex, .architect .tex { filter: invert(1); opacity: .28; }
+[data-theme="light"] .tex, .architect .tex { filter: invert(1); opacity: .28; }
 
 /* --- utilities --- */
 .skip { position: absolute; left: 16px; top: -60px; z-index: 300; background: #fff; color: #000; padding: 10px 14px; border-radius: 6px; text-decoration: none; }
@@ -132,9 +132,9 @@ html.loading .hero-title, html.loading .hero-sub, html.loading .now-card, html.l
 /* ==========================================================================
    Hero
    ========================================================================== */
-.hero { position: relative; min-height: 100svh; background: #050505; color: var(--on-dark); overflow: hidden; }
+.hero { position: relative; min-height: 100svh; background: var(--ink); color: var(--on-dark); overflow: hidden; }
 .hero .tex { -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, #000 30%, transparent 75%); mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, #000 30%, transparent 75%); }
-.hero-title { position: absolute; left: 0; right: 0; top: 9vh; text-align: center; font-size: 15vw; line-height: .8; letter-spacing: -.03em; z-index: 3; padding: 0 2vw; white-space: nowrap; pointer-events: none; }
+.hero-title { position: absolute; left: 0; right: 0; top: 10vh; text-align: center; font-size: 11.5vw; line-height: .8; letter-spacing: -.03em; z-index: 3; padding: 0 2vw; white-space: nowrap; pointer-events: none; }
 .hero-title .w { display: inline-block; }
 .hero-media { position: absolute; left: 50%; bottom: -6vh; transform: translateX(-50%); width: min(100vw, calc(80vh * 16 / 9)); aspect-ratio: 16 / 9; z-index: 2; -webkit-mask-image: radial-gradient(ellipse 58% 60% at 50% 56%, #000 52%, transparent 100%); mask-image: radial-gradient(ellipse 58% 60% at 50% 56%, #000 52%, transparent 100%); }
 .hero-pic { position: absolute; inset: 0; }
@@ -172,13 +172,13 @@ html:not(.js) .mani .mw, html.reduced .mani .mw, html.nomotion .mani .mw { opaci
 /* ==========================================================================
    Selected works · drift collage
    ========================================================================== */
-.works { position: relative; background: var(--paper); color: var(--on-light); padding-top: var(--pad); overflow: hidden; }
+.works { position: relative; background: var(--ink); color: var(--on-dark); padding-top: var(--pad); overflow: hidden; }
 .works-head { position: relative; display: grid; grid-template-columns: 1fr auto; grid-template-areas: "title pager" "sub pager"; align-items: end; gap: 10px 40px; padding-bottom: 20px; }
 .works-head h2 { grid-area: title; font-size: clamp(64px, 11vw, 176px); line-height: .82; letter-spacing: -.03em; }
 .works-head h2 .serif { font-size: .82em; color: var(--accent); }
-.works-sub { grid-area: sub; font-size: 17px; max-width: 46ch; color: var(--on-light-2); }
+.works-sub { grid-area: sub; font-size: 17px; max-width: 46ch; color: var(--on-dark-2); }
 .pager { grid-area: pager; font-family: var(--heavy); font-weight: 700; font-size: 24px; letter-spacing: .04em; align-self: end; display: flex; gap: 8px; }
-.pager-sep { color: var(--on-light-2); }
+.pager-sep { color: var(--on-dark-2); }
 .drift { position: relative; height: 100vh; }
 .drift-track { position: relative; height: 100%; display: flex; align-items: center; gap: 2.2vw; padding: 0 6vw 6vh; width: max-content; will-change: transform; }
 .drift-item { position: relative; display: block; flex: 0 0 auto; width: clamp(300px, 30vw, 520px); aspect-ratio: 4 / 5; border-radius: 22px; overflow: hidden; background: #111; text-decoration: none; color: #fff; box-shadow: 0 40px 80px -30px rgba(0, 0, 0, .45); }
@@ -190,7 +190,7 @@ html:not(.js) .mani .mw, html.reduced .mani .mw, html.nomotion .mani .mw { opaci
 .drift-item .cap { position: absolute; left: 22px; right: 22px; bottom: 22px; z-index: 1; display: grid; gap: 6px; }
 .drift-item .cap b { font-size: clamp(22px, 2.1vw, 32px); line-height: .95; }
 .drift-item .cap .eyebrow { color: rgba(255, 255, 255, .72); }
-.drift-bar { position: absolute; left: 6vw; right: 6vw; bottom: 5vh; height: 3px; background: var(--line-light); border-radius: 3px; overflow: hidden; }
+.drift-bar { position: absolute; left: 6vw; right: 6vw; bottom: 5vh; height: 3px; background: var(--line-dark); border-radius: 3px; overflow: hidden; }
 .drift-bar i { display: block; height: 100%; width: 0; background: var(--grad); }
 html:not(.js) .drift, html.reduced .drift, html.nomotion .drift, .drift.static { height: auto; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; padding-bottom: 32px; }
 html:not(.js) .drift-track, html.reduced .drift-track, html.nomotion .drift-track, .drift.static .drift-track { height: auto; padding: 16px 4vw 24px; gap: 18px; transform: none !important; align-items: stretch; }
@@ -200,7 +200,7 @@ html:not(.js) .drift-bar, html.reduced .drift-bar, html.nomotion .drift-bar, .dr
 /* ==========================================================================
    Partners marquee
    ========================================================================== */
-.partners { position: relative; background: var(--ink); color: var(--on-dark); padding: 26px 0 30px; border-top: 1px solid var(--line-dark); border-bottom: 1px solid var(--line-dark); overflow: hidden; }
+.partners { position: relative; background: var(--ink); color: var(--on-dark); padding: 26px 0 30px; border-top: 1px solid var(--line-dark); overflow: hidden; }
 .partners-head { display: flex; justify-content: space-between; color: var(--on-dark-2); margin-bottom: 18px; }
 .marquee-partners .marquee-track { gap: 34px; animation: marquee 38s linear infinite; }
 .marquee-partners span { font-family: var(--heavy); font-weight: 700; font-size: clamp(24px, 2.8vw, 40px); text-transform: uppercase; letter-spacing: .02em; white-space: nowrap; }
@@ -429,7 +429,7 @@ html.reduced .hero-media.gl .hero-pic { opacity: 1; }
 @media (max-width: 699px) {
   .hero-pic-wide { display: none; }
   .hero-pic-tall { display: block; }
-  .hero-title { top: 84px; font-size: 27vw; white-space: normal; line-height: .8; }
+  .hero-title { top: 84px; font-size: 22vw; white-space: normal; line-height: .8; }
   .hero-title .w { display: block; }
   .hero-media { width: 100vw; aspect-ratio: 3 / 4; bottom: 0; -webkit-mask-image: linear-gradient(to bottom, transparent, #000 14%); mask-image: linear-gradient(to bottom, transparent, #000 14%); }
   .poster-pic-wide { display: none; }
