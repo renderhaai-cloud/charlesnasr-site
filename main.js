@@ -11,7 +11,7 @@
   var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
 
   d.classList.add('booted');
-  if (hasGsap) gsap.registerPlugin(ScrollTrigger);
+  if (hasGsap) { gsap.registerPlugin(ScrollTrigger); ScrollTrigger.config({ ignoreMobileResize: true }); }
   if (!motion) { d.classList.remove('loading'); d.classList.add('ready'); if (!hasGsap) d.classList.add('nomotion'); }
 
   /* ---------- smooth scroll ---------- */
@@ -208,7 +208,7 @@
   /* ---------- posters parallax + cards tilt ---------- */
   if (motion) {
     $$('.poster').forEach(function (p) {
-      gsap.fromTo($('.poster-media img', p), { yPercent: -8 }, { yPercent: 8, ease: 'none', scrollTrigger: { trigger: p, start: 'top bottom', end: 'bottom top', scrub: true } });
+      if (fine) gsap.fromTo($('.poster-media img', p), { yPercent: -8 }, { yPercent: 8, ease: 'none', scrollTrigger: { trigger: p, start: 'top bottom', end: 'bottom top', scrub: true } });
       gsap.fromTo($('.poster-copy', p), { y: 60, opacity: 0 }, { y: 0, opacity: 1, duration: 1.1, ease: 'expo.out', scrollTrigger: { trigger: p, start: 'top 60%' } });
     });
     if (fine) {
@@ -228,7 +228,10 @@
 
   /* ---------- parallax layers ---------- */
   if (motion) {
-    var PAR = [['.architect-portrait picture', 0.45], ['.works-head h2', 0.22], ['.hof-head h2', 0.22], ['.ai-head h2', 0.22], ['.mani', 0.1], ['.posters-head', 0.18], ['.card-media', 0.16], ['.world-media', 0.26]];
+    // touch devices get a lighter set: no per-card scrubs, no texture drift (background-position repaints every frame on mobile GPUs)
+    var PAR = fine
+      ? [['.architect-portrait picture', 0.45], ['.hof-head h2', 0.22], ['.ai-head h2', 0.22], ['.mani', 0.1], ['.posters-head', 0.18], ['.card-media', 0.16], ['.world-media', 0.26]]
+      : [['.architect-portrait picture', 0.45], ['.hof-head h2', 0.22], ['.ai-head h2', 0.22], ['.posters-head', 0.18]];
     PAR.forEach(function (p) {
       $$(p[0]).forEach(function (el, i) {
         var s = p[1] * (p[0] === '.world-media' ? (i === 1 ? 1.7 : 1) : 1);
@@ -239,18 +242,24 @@
     });
     var cut = $('.footer-cutout');
     if (cut) gsap.fromTo(cut, { yPercent: -47, y: 70 }, { yPercent: -47, y: -20, ease: 'none', immediateRender: false, scrollTrigger: { trigger: '.footer', start: 'top bottom', end: 'top 25%', scrub: true } });
-    $$('.tex').forEach(function (t) {
+    if (fine) $$('.tex').forEach(function (t) {
       if (t.closest('.menu')) return;
       gsap.fromTo(t, { backgroundPositionY: '0px' }, { backgroundPositionY: '-240px', ease: 'none', immediateRender: false, scrollTrigger: { trigger: t.parentElement, start: 'top bottom', end: 'bottom top', scrub: true } });
     });
     if (fine) {
       var heroEl = $('#hero');
       // only the background reacts to the pointer; the portrait stays still
+      var glowX = gsap.quickTo('.hero-glow', 'x', { duration: .9, ease: 'power3.out' });
+      var glowY = gsap.quickTo('.hero-glow', 'y', { duration: .9, ease: 'power3.out' });
       heroEl.addEventListener('pointermove', function (e) {
+        var r = heroEl.getBoundingClientRect();
         var hx = e.clientX / window.innerWidth - .5, hy = e.clientY / window.innerHeight - .5;
-        gsap.to('.hero .tex', { x: hx * 46, y: hy * 30, duration: 1.2, ease: 'power2.out' });
+        heroEl.classList.add('lit');
+        glowX(e.clientX - r.left); glowY(e.clientY - r.top);
+        gsap.to('.hero .tex', { x: hx * 110, y: hy * 70, scale: 1.04, duration: 1.2, ease: 'power2.out' });
+        gsap.to('.hero-title', { x: -hx * 18, duration: 1.1, ease: 'power2.out' });
       });
-      heroEl.addEventListener('pointerleave', function () { gsap.to('.hero .tex', { x: 0, y: 0, duration: 1.4, ease: 'power3.out' }); });
+      heroEl.addEventListener('pointerleave', function () { heroEl.classList.remove('lit'); gsap.to('.hero .tex', { x: 0, y: 0, scale: 1, duration: 1.4, ease: 'power3.out' }); gsap.to('.hero-title', { x: 0, duration: 1.2, ease: 'power3.out' }); });
     }
   }
 
