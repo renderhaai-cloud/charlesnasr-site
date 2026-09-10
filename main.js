@@ -245,6 +245,35 @@
     gsap.to('.footer-media', { yPercent: -6, ease: 'none', scrollTrigger: { trigger: '.footer', start: 'top bottom', end: 'bottom bottom', scrub: true } });
   }
 
+  /* ---------- parallax layers ---------- */
+  if (motion) {
+    var PAR = [['.architect-portrait picture', 0.45], ['.works-head h2', 0.22], ['.hof-head h2', 0.22], ['.ai-head h2', 0.22], ['.band-copy', 0.2], ['.mani', 0.1], ['.posters-head', 0.18], ['.card-media', 0.16], ['.world-media', 0.26]];
+    PAR.forEach(function (p) {
+      $$(p[0]).forEach(function (el, i) {
+        var s = p[1] * (p[0] === '.world-media' ? (i === 1 ? 1.7 : 1) : 1);
+        var amp = (isDesktop() ? 110 : 48) * s;
+        var sc = p[0] === '.architect-portrait picture' ? 1.14 : 1;
+        gsap.fromTo(el, { y: amp, scale: sc }, { y: -amp, scale: sc, ease: 'none', immediateRender: false, scrollTrigger: { trigger: el, start: 'top bottom', end: 'bottom top', scrub: true } });
+      });
+    });
+    var cut = $('.footer-cutout');
+    if (cut) gsap.fromTo(cut, { yPercent: -47, y: 70 }, { yPercent: -47, y: -20, ease: 'none', immediateRender: false, scrollTrigger: { trigger: '.footer', start: 'top bottom', end: 'top 25%', scrub: true } });
+    $$('.tex').forEach(function (t) {
+      if (t.closest('.menu')) return;
+      gsap.fromTo(t, { backgroundPositionY: '0px' }, { backgroundPositionY: '-240px', ease: 'none', immediateRender: false, scrollTrigger: { trigger: t.parentElement, start: 'top bottom', end: 'bottom top', scrub: true } });
+    });
+    if (fine) {
+      var heroEl = $('#hero');
+      heroEl.addEventListener('pointermove', function (e) {
+        var hx = e.clientX / window.innerWidth - .5, hy = e.clientY / window.innerHeight - .5;
+        gsap.to('.hero-title', { x: -hx * 26, duration: .9, ease: 'power2.out' });
+        gsap.to('.hero-media', { x: hx * 16, duration: 1, ease: 'power2.out' });
+        gsap.to('.hero .tex', { x: hx * 30, y: hy * 20, duration: 1.2, ease: 'power2.out' });
+      });
+      heroEl.addEventListener('pointerleave', function () { gsap.to(['.hero-title', '.hero-media', '.hero .tex'], { x: 0, duration: 1.2, ease: 'power3.out' }); });
+    }
+  }
+
   /* ---------- compare slider ---------- */
   var cmp = $('#compare');
   if (cmp) {
