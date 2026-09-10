@@ -96,40 +96,18 @@
     });
   });
 
-  /* ---------- custom cursor ---------- */
-  var cursor = $('#cursor');
-  if (cursor && fine && !reduced) {
-    var cx = -100, cy = -100, tx = -100, ty = -100;
-    window.addEventListener('pointermove', function (e) { tx = e.clientX; ty = e.clientY; cursor.classList.remove('is-hidden'); }, { passive: true });
-    document.addEventListener('pointerleave', function () { cursor.classList.add('is-hidden'); });
-    (function loop() { cx += (tx - cx) * 0.22; cy += (ty - cy) * 0.22; cursor.style.transform = 'translate(' + cx + 'px,' + cy + 'px)'; requestAnimationFrame(loop); })();
-    $$('[data-case], .poster, .card, .drift-item').forEach(function (el) {
-      el.addEventListener('pointerenter', function () { cursor.classList.add('is-view'); });
-      el.addEventListener('pointerleave', function () { cursor.classList.remove('is-view'); });
-    });
-  }
-
-  /* ---------- magnetic pills ---------- */
-  if (fine && motion) {
-    $$('.magnetic').forEach(function (el) {
-      el.addEventListener('pointermove', function (e) {
-        var r = el.getBoundingClientRect();
-        var x = (e.clientX - r.left - r.width / 2) * 0.28, y = (e.clientY - r.top - r.height / 2) * 0.28;
-        gsap.to(el, { x: x, y: y, duration: .5, ease: 'power3.out' });
-      });
-      el.addEventListener('pointerleave', function () { gsap.to(el, { x: 0, y: 0, duration: .7, ease: 'elastic.out(1, .5)' }); });
-    });
-  }
-
   /* ---------- loader ---------- */
   var loader = $('#loader');
   var heroScrollDone = false;
   function heroScroll() {
     if (heroScrollDone || !motion) return;
     heroScrollDone = true;
-    gsap.fromTo('.hero-title', { yPercent: 0, opacity: 1 }, { yPercent: -30, opacity: 0, ease: 'none', immediateRender: false, scrollTrigger: { trigger: '#hero', start: 'top top', end: '80% top', scrub: true } });
-    gsap.fromTo('.hero-media', { yPercent: 0, scale: 1 }, { yPercent: 12, scale: 1.06, ease: 'none', immediateRender: false, scrollTrigger: { trigger: '#hero', start: 'top top', end: 'bottom top', scrub: true } });
-    gsap.fromTo(['.now-card', '.hero-sub'], { opacity: 1, y: 0 }, { opacity: 0, y: 20, ease: 'none', immediateRender: false, scrollTrigger: { trigger: '#hero', start: 'top top', end: '40% top', scrub: true } });
+    // the name sinks behind his head (the cutout layer sits above the title), then fades
+    // the name almost holds its place while the portrait scrolls up over it, so his head covers the letters mid-screen
+    gsap.fromTo('.hero-title', { y: 0 }, { y: function () { return window.innerHeight * 0.98; }, ease: 'none', immediateRender: false, scrollTrigger: { trigger: '#hero', start: 'top top', end: 'bottom top', scrub: true, invalidateOnRefresh: true } });
+    gsap.fromTo('.hero-title', { opacity: 1 }, { opacity: 0, ease: 'none', immediateRender: false, scrollTrigger: { trigger: '#hero', start: '48% top', end: '78% top', scrub: true } });
+    gsap.fromTo(['.hero-media', '.hero-cut-box'], { yPercent: 0 }, { yPercent: 42, ease: 'none', immediateRender: false, scrollTrigger: { trigger: '#hero', start: 'top top', end: 'bottom top', scrub: true } });
+    gsap.fromTo('.hero-sub', { opacity: 1, y: 0 }, { opacity: 0, y: 20, ease: 'none', immediateRender: false, scrollTrigger: { trigger: '#hero', start: 'top top', end: '40% top', scrub: true } });
   }
   function finishReady() {
     d.classList.remove('loading');
@@ -140,10 +118,10 @@
     if (hasGsap) ScrollTrigger.refresh();
   }
   function heroIn() {
-    gsap.set(['.nav', '.hero-media', '.hero-title', '.hero-sub', '.now-card', '.hero-scroll'], { opacity: 1 });
-    gsap.fromTo('.hero-media', { yPercent: 18, opacity: 0 }, { yPercent: 0, opacity: 1, duration: 1.4, ease: 'expo.out' });
+    gsap.set(['.nav', '.hero-media', '.hero-cut-box', '.hero-title', '.hero-sub', '.hero-scroll'], { opacity: 1 });
+    gsap.fromTo(['.hero-media', '.hero-cut-box'], { yPercent: 18, opacity: 0 }, { yPercent: 0, opacity: 1, duration: 1.4, ease: 'expo.out' });
     gsap.fromTo('.hero-title .w', { yPercent: 110 }, { yPercent: 0, duration: 1.2, ease: 'expo.out', stagger: .08, delay: .15 });
-    gsap.fromTo(['.hero-sub', '.now-card', '.hero-scroll'], { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: .9, ease: 'power2.out', stagger: .1, delay: .7, onComplete: heroScroll });
+    gsap.fromTo(['.hero-sub', '.hero-scroll'], { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: .9, ease: 'power2.out', stagger: .1, delay: .7, onComplete: heroScroll });
     gsap.fromTo('.nav', { opacity: 0, y: -10 }, { opacity: 1, y: 0, duration: .8, delay: .9 });
   }
   if (d.classList.contains('loading') && motion && loader) {
@@ -205,23 +183,26 @@
     }
   }
 
-  /* ---------- drift collage ---------- */
+  /* ---------- works strip (native horizontal scroll) ---------- */
   var drift = $('#drift'), track = $('#driftTrack'), pagerCur = $('#pagerCur'), pagerTot = $('#pagerTot'), bar = $('#driftBar');
   var items = $$('.drift-item', track);
   if (pagerTot) pagerTot.textContent = String(items.length).padStart(2, '0');
-  function setPager(i) { if (pagerCur) pagerCur.textContent = String(Math.min(items.length, Math.max(1, i))).padStart(2, '0'); }
-  if (drift && track && motion && isDesktop() && fine) {
-    var dist = function () { return Math.max(0, track.scrollWidth - window.innerWidth); };
-    var span = function () { return Math.round(dist() * 0.5); };
-    gsap.to(track, { x: function () { return -dist(); }, ease: 'none', scrollTrigger: { trigger: drift, start: 'top top', end: function () { return '+=' + span(); }, pin: true, scrub: 0.5, invalidateOnRefresh: true, anticipatePin: 1,
-      onUpdate: function (st) { setPager(Math.round(st.progress * (items.length - 1)) + 1); if (bar) bar.style.width = (st.progress * 100).toFixed(1) + '%'; } } });
-  } else if (drift) {
-    drift.classList.add('static');
-    drift.addEventListener('scroll', function () {
-      var x = drift.scrollLeft + drift.clientWidth * 0.3, best = 1;
-      items.forEach(function (it, i) { if (it.offsetLeft <= x) best = i + 1; });
-      setPager(best);
-    }, { passive: true });
+  function driftUpdate() {
+    if (!drift) return;
+    var max = drift.scrollWidth - drift.clientWidth;
+    var p = max > 0 ? drift.scrollLeft / max : 0;
+    if (bar) bar.style.width = Math.max(8, p * 100).toFixed(1) + '%';
+    if (pagerCur) pagerCur.textContent = String(Math.min(items.length, Math.round(p * (items.length - 1)) + 1)).padStart(2, '0');
+  }
+  if (drift) {
+    drift.addEventListener('scroll', driftUpdate, { passive: true });
+    driftUpdate();
+    $$('.drift-btn').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var step = (items[0] ? items[0].getBoundingClientRect().width : 300) + window.innerWidth * 0.02;
+        drift.scrollBy({ left: step * parseInt(b.getAttribute('data-dir'), 10), behavior: reduced ? 'auto' : 'smooth' });
+      });
+    });
   }
 
   /* ---------- posters parallax + cards tilt ---------- */
@@ -247,7 +228,7 @@
 
   /* ---------- parallax layers ---------- */
   if (motion) {
-    var PAR = [['.architect-portrait picture', 0.45], ['.works-head h2', 0.22], ['.hof-head h2', 0.22], ['.ai-head h2', 0.22], ['.band-copy', 0.2], ['.mani', 0.1], ['.posters-head', 0.18], ['.card-media', 0.16], ['.world-media', 0.26]];
+    var PAR = [['.architect-portrait picture', 0.45], ['.works-head h2', 0.22], ['.hof-head h2', 0.22], ['.ai-head h2', 0.22], ['.mani', 0.1], ['.posters-head', 0.18], ['.card-media', 0.16], ['.world-media', 0.26]];
     PAR.forEach(function (p) {
       $$(p[0]).forEach(function (el, i) {
         var s = p[1] * (p[0] === '.world-media' ? (i === 1 ? 1.7 : 1) : 1);
@@ -264,13 +245,12 @@
     });
     if (fine) {
       var heroEl = $('#hero');
+      // only the background reacts to the pointer; the portrait stays still
       heroEl.addEventListener('pointermove', function (e) {
         var hx = e.clientX / window.innerWidth - .5, hy = e.clientY / window.innerHeight - .5;
-        gsap.to('.hero-title', { x: -hx * 26, duration: .9, ease: 'power2.out' });
-        gsap.to('.hero-media', { x: hx * 16, duration: 1, ease: 'power2.out' });
-        gsap.to('.hero .tex', { x: hx * 30, y: hy * 20, duration: 1.2, ease: 'power2.out' });
+        gsap.to('.hero .tex', { x: hx * 46, y: hy * 30, duration: 1.2, ease: 'power2.out' });
       });
-      heroEl.addEventListener('pointerleave', function () { gsap.to(['.hero-title', '.hero-media', '.hero .tex'], { x: 0, duration: 1.2, ease: 'power3.out' }); });
+      heroEl.addEventListener('pointerleave', function () { gsap.to('.hero .tex', { x: 0, y: 0, duration: 1.4, ease: 'power3.out' }); });
     }
   }
 
