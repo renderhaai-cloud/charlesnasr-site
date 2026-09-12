@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Charles Nasr — Event Creative Director</title>
-<meta name="description" content="Charles Nasr directs the creative for live events at world scale from Riyadh: Riyadh Comedy Festival, Six Kings Slam live on Netflix, Usyk × Fury 2, BLVD World and the Sphere. From designing buildings to designing emotions.">
+<meta name="description" content="Charles Nasr is an Event Creative Director at Sela in Riyadh. Explore live events, destinations, visual content and personal AI projects.">
 <meta name="theme-color" content="#0B0B0C">
-<link rel="canonical" href="https://charlesnasr.com/">
+<link rel="canonical" href="https://renderhaai-cloud.github.io/charlesnasr-site/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Charles Nasr — Event Creative Director">
-<meta property="og:description" content="From designing buildings to designing emotions. Arena spectacles, broadcast ceremonies and entire themed worlds, directed live from Riyadh.">
-<meta property="og:url" content="https://charlesnasr.com/">
-<meta property="og:image" content="https://charlesnasr.com/assets/og.jpg">
+<meta property="og:description" content="Selected events, destinations and visual content by Charles Nasr, Event Creative Director at Sela in Riyadh.">
+<meta property="og:url" content="https://renderhaai-cloud.github.io/charlesnasr-site/">
+<meta property="og:image" content="https://renderhaai-cloud.github.io/charlesnasr-site/assets/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -20,12 +20,11 @@
 <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/ragam.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/rawrote.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/barlow-condensed-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" as="image" href="assets/img/hero-cloud-1600.webp" type="image/webp" media="(min-width: 700px)">
 <link rel="preload" as="image" href="assets/img/hero-cloud-m-1080.webp" type="image/webp" media="(max-width: 699px)">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600&family=Amiri:ital@0;1&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css?v=197d46b2e9">
 <script>
 (function () {
   var d = document.documentElement;
@@ -43,7 +42,7 @@
 })();
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Charles Nasr","jobTitle":"Event Creative Director","worksFor":{"@type":"Organization","name":"Sela"},"address":{"@type":"PostalAddress","addressLocality":"Riyadh","addressCountry":"SA"},"email":"mailto:charlesanasr@gmail.com","url":"https://charlesnasr.com/","image":"https://charlesnasr.com/assets/og.jpg","knowsAbout":["Creative Direction","Opening Ceremonies","Projection Mapping","Event Identity","Venue Design","Live Entertainment","Broadcast Design","Generative AI"]}
+{"@context":"https://schema.org","@type":"Person","name":"Charles Nasr","jobTitle":"Event Creative Director","worksFor":{"@type":"Organization","name":"Sela"},"address":{"@type":"PostalAddress","addressLocality":"Riyadh","addressCountry":"SA"},"email":"mailto:charlesanasr@gmail.com","url":"https://renderhaai-cloud.github.io/charlesnasr-site/","image":"https://renderhaai-cloud.github.io/charlesnasr-site/assets/og.jpg","knowsAbout":["Creative Direction","Opening Ceremonies","Projection Mapping","Event Identity","Venue Design","Live Entertainment","Broadcast Design","Generative AI"]}
 </script>
 </head>
 <body data-theme="dark">
@@ -79,14 +78,14 @@
   </div>
 </header>
 
-<div class="menu" id="menu" hidden data-lenis-prevent>
+<div class="menu" id="menu" hidden>
   <div class="tex" aria-hidden="true"></div>
   <div class="menu-inner">
     <nav class="menu-links" aria-label="Menu">
       <a class="heavy" href="#flagships" data-preview="kings-key-1200.webp">The work</a>
       <a class="heavy" href="#hof" data-preview="rcf-theatre-1200.webp">All projects</a>
       <a class="heavy" href="#architect" data-preview="about-portrait-1200.webp">About</a>
-      <a class="heavy" href="#ai" data-preview="ai-f1-1-1100.webp">AI worlds</a>
+      <a class="heavy" href="#ai" data-preview="ai-f1-1-1100.webp">AI explorations</a>
       <a class="heavy" href="#contact" data-preview="gen-sphere-red-1200.webp">Contact</a>
     </nav>
     <div class="menu-side">
@@ -102,8 +101,17 @@
 
   <!-- ============ HERO ============ -->
   <section class="hero" id="hero" data-theme="dark" aria-label="Introduction">
+    <svg class="hero-mask-defs" width="0" height="0" aria-hidden="true" focusable="false">
+      <defs>
+        <!-- Key only the black backdrop; the existing portrait cutout preserves dark clothing. -->
+        <filter id="hero-cloud-key" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+          <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  3.4016 11.4432 1.1552 0 -0.125"/>
+        </filter>
+      </defs>
+    </svg>
     <div class="tex" aria-hidden="true"></div>
     <div class="hero-glow" aria-hidden="true"></div>
+    <span class="lens-layer" aria-hidden="true"><i class="lens-flare"></i><i class="lens-echo"></i><i class="lens-ring"></i></span>
     <h1 class="hero-title heavy" aria-label="Charles Nasr"><span class="w" aria-hidden="true">Charles</span> <span class="w" aria-hidden="true">Nasr</span></h1>
     <div class="hero-media" id="heroMedia">
       <picture class="hero-pic hero-pic-wide"><source type="image/webp" srcset="assets/img/hero-cloud-960.webp 960w, assets/img/hero-cloud-1600.webp 1600w, assets/img/hero-cloud-2400.webp 2400w" sizes="100vw"><img src="assets/img/hero-cloud-2400.jpg" srcset="assets/img/hero-cloud-960.jpg 960w, assets/img/hero-cloud-1600.jpg 1600w, assets/img/hero-cloud-2400.jpg 2400w" sizes="100vw" width="2400" height="1350" alt="Charles Nasr seated on a cloud against black" loading="eager" fetchpriority="high" decoding="async" class="hero-img hero-img-wide"></picture>
@@ -111,16 +119,19 @@
     </div>
     <div class="hero-cut-box" aria-hidden="true"><img class="hero-cut" src="assets/img/charles-cutout.png" alt="" width="367" height="876" decoding="async"></div>
     <p class="hero-sub"><span class="eyebrow">Event Creative Director</span><em class="serif">Riyadh, Saudi Arabia</em></p>
-    <a class="hero-scroll" href="#manifesto"><span class="eyebrow">Scroll</span><i aria-hidden="true"></i></a>
+    <a class="hero-scroll" href="#hof"><span class="eyebrow">Explore the work</span><i aria-hidden="true"></i></a>
   </section>
 
   <!-- ============ MANIFESTO ============ -->
-  <section class="manifesto" id="manifesto" data-theme="dark" aria-label="Manifesto">
+  <section class="manifesto" id="manifesto" data-theme="dark" aria-label="Why I do this work">
     <div class="tex" aria-hidden="true"></div>
     <div class="wrap">
-      <p class="eyebrow center reveal"><svg class="mark mark-tiny" viewBox="0 0 2000 1233" aria-hidden="true"><path class="mark-fill" d="M514.0 1232.3C469.0 1229.3 437.4 1224.4 399.3 1214.5C342.0 1199.6 285.7 1174.8 238.4 1143.6C146.3 1082.7 78.7 997.2 38.5 890.5C4.6 800.4 -7.1 700.1 4.1 596.5C15.3 493.2 55.6 397.2 122.1 315.5C144.6 287.9 183.3 251.1 214.5 227.5C226.6 218.4 255.0 199.7 268.0 192.3C380.5 127.9 508.2 103.7 637.9 122.1C710.0 132.3 787.1 158.8 833.6 189.5C887.6 225.2 926.7 276.3 937.5 325.1C939.8 335.5 940.6 357.9 939.1 369.3C936.8 386.0 929.2 405.4 918.7 421.0C900.9 447.5 850.3 498.2 815.5 524.4C806.7 531.1 806.4 531.2 801.6 530.6C796.6 530.0 789.8 526.7 786.6 523.1C785.0 521.4 784.8 520.0 785.3 515.1C786.0 507.2 789.9 499.4 801.0 483.5C811.6 468.4 819.0 456.4 822.1 449.4C835.0 419.7 835.1 391.8 822.3 354.0C797.4 280.6 732.6 222.7 644.5 195.2C602.7 182.1 566.8 177.3 519.7 178.3C479.2 179.2 449.6 183.9 413.5 195.1C339.0 218.3 272.9 266.1 223.1 332.7C178.8 391.9 149.8 464.3 137.1 547.5C132.4 578.1 131.6 590.6 131.5 634.5C131.5 678.3 132.3 691.2 137.0 724.0C151.2 823.1 188.7 919.3 239.3 986.5C266.1 1022.1 301.8 1056.7 337.2 1081.3C386.2 1115.4 444.8 1139.9 504.0 1151.0C534.0 1156.6 545.3 1157.5 583.5 1157.5C621.7 1157.5 633.0 1156.6 663.0 1151.0C757.3 1133.4 841.6 1086.1 918.5 1007.8C963.1 962.5 998.0 914.5 1030.6 853.5C1092.2 738.6 1126.7 608.3 1138.4 446.5C1142.6 389.3 1144.0 343.0 1144.4 252.9C1144.8 172.0 1144.5 175.7 1152.1 160.1C1157.4 149.4 1166.6 139.7 1176.0 135.1C1198.3 124.3 1224.2 126.4 1239.8 140.5C1243.1 143.5 1252.4 156.4 1268.0 179.7C1280.9 198.8 1297.7 223.9 1305.5 235.5C1313.3 247.1 1334.9 279.2 1353.5 307.0C1372.1 334.8 1397.3 372.4 1409.5 390.5C1421.7 408.6 1444.6 442.9 1460.5 466.5C1476.4 490.1 1498.4 523.0 1509.5 539.5C1520.6 556.0 1546.7 594.9 1567.5 626.0C1588.3 657.1 1612.2 692.6 1620.5 705.0C1628.8 717.4 1652.6 752.7 1673.2 783.5C1693.9 814.3 1724.3 859.8 1741.0 884.5C1757.6 909.2 1779.3 941.7 1789.3 956.6L1807.5 983.7L1808.1 785.1C1808.5 641.6 1809.0 584.1 1809.9 578.0C1814.8 542.2 1826.4 506.7 1839.8 486.0C1859.5 455.8 1884.0 435.7 1912.5 426.5C1924.3 422.7 1945.7 419.0 1956.0 419.0C1975.0 419.0 1989.7 427.5 1996.8 442.8C1999.2 447.8 1999.5 449.7 1999.5 458.5C1999.5 467.3 1999.1 469.2 1996.7 474.3C1989.7 489.5 1975.0 499.0 1958.7 499.0C1946.3 499.0 1924.7 505.4 1914.6 512.1C1896.6 524.1 1883.6 549.5 1877.0 585.3C1871.6 615.4 1871.8 603.3 1871.0 890.5C1870.6 1036.8 1870.2 1170.3 1870.1 1187.2L1870.0 1218.0L1851.2 1218.0C1840.9 1218.0 1828.2 1217.7 1822.9 1217.4L1813.3 1216.7L1789.9 1181.6C1759.1 1135.5 1392.3 585.9 1312.7 466.6C1246.6 367.8 1247.4 368.8 1237.5 365.8C1231.9 364.2 1225.6 364.4 1222.5 366.4C1221.1 367.3 1218.7 369.8 1217.1 372.0C1212.0 379.1 1210.3 387.2 1207.5 418.0C1201.7 481.4 1194.1 536.0 1183.4 589.5C1171.3 650.6 1157.1 702.5 1138.0 755.5C1096.1 871.7 1035.4 969.8 952.3 1055.6C842.2 1169.4 691.1 1234.1 538.7 1232.8C527.6 1232.7 516.5 1232.5 514.0 1232.3Z"/><circle class="mark-dot" cx="1718" cy="110" r="118"/></svg>The director</p>
-      <p class="mani heavy" id="mani">I trained to design <em class="serif">buildings.</em> Now I design <em class="serif">emotions.</em> Directing the biggest <em class="serif">shows</em> in the region, <em class="serif">live,</em> with no <em class="serif">second takes.</em></p>
-      <p class="mani-foot eyebrow reveal">Sela · Riyadh · design architect since 2019 · creative director since 2024</p>
+      <p class="eyebrow center reveal"><svg class="mark mark-tiny" viewBox="0 0 2000 1233" aria-hidden="true"><path class="mark-fill" d="M514.0 1232.3C469.0 1229.3 437.4 1224.4 399.3 1214.5C342.0 1199.6 285.7 1174.8 238.4 1143.6C146.3 1082.7 78.7 997.2 38.5 890.5C4.6 800.4 -7.1 700.1 4.1 596.5C15.3 493.2 55.6 397.2 122.1 315.5C144.6 287.9 183.3 251.1 214.5 227.5C226.6 218.4 255.0 199.7 268.0 192.3C380.5 127.9 508.2 103.7 637.9 122.1C710.0 132.3 787.1 158.8 833.6 189.5C887.6 225.2 926.7 276.3 937.5 325.1C939.8 335.5 940.6 357.9 939.1 369.3C936.8 386.0 929.2 405.4 918.7 421.0C900.9 447.5 850.3 498.2 815.5 524.4C806.7 531.1 806.4 531.2 801.6 530.6C796.6 530.0 789.8 526.7 786.6 523.1C785.0 521.4 784.8 520.0 785.3 515.1C786.0 507.2 789.9 499.4 801.0 483.5C811.6 468.4 819.0 456.4 822.1 449.4C835.0 419.7 835.1 391.8 822.3 354.0C797.4 280.6 732.6 222.7 644.5 195.2C602.7 182.1 566.8 177.3 519.7 178.3C479.2 179.2 449.6 183.9 413.5 195.1C339.0 218.3 272.9 266.1 223.1 332.7C178.8 391.9 149.8 464.3 137.1 547.5C132.4 578.1 131.6 590.6 131.5 634.5C131.5 678.3 132.3 691.2 137.0 724.0C151.2 823.1 188.7 919.3 239.3 986.5C266.1 1022.1 301.8 1056.7 337.2 1081.3C386.2 1115.4 444.8 1139.9 504.0 1151.0C534.0 1156.6 545.3 1157.5 583.5 1157.5C621.7 1157.5 633.0 1156.6 663.0 1151.0C757.3 1133.4 841.6 1086.1 918.5 1007.8C963.1 962.5 998.0 914.5 1030.6 853.5C1092.2 738.6 1126.7 608.3 1138.4 446.5C1142.6 389.3 1144.0 343.0 1144.4 252.9C1144.8 172.0 1144.5 175.7 1152.1 160.1C1157.4 149.4 1166.6 139.7 1176.0 135.1C1198.3 124.3 1224.2 126.4 1239.8 140.5C1243.1 143.5 1252.4 156.4 1268.0 179.7C1280.9 198.8 1297.7 223.9 1305.5 235.5C1313.3 247.1 1334.9 279.2 1353.5 307.0C1372.1 334.8 1397.3 372.4 1409.5 390.5C1421.7 408.6 1444.6 442.9 1460.5 466.5C1476.4 490.1 1498.4 523.0 1509.5 539.5C1520.6 556.0 1546.7 594.9 1567.5 626.0C1588.3 657.1 1612.2 692.6 1620.5 705.0C1628.8 717.4 1652.6 752.7 1673.2 783.5C1693.9 814.3 1724.3 859.8 1741.0 884.5C1757.6 909.2 1779.3 941.7 1789.3 956.6L1807.5 983.7L1808.1 785.1C1808.5 641.6 1809.0 584.1 1809.9 578.0C1814.8 542.2 1826.4 506.7 1839.8 486.0C1859.5 455.8 1884.0 435.7 1912.5 426.5C1924.3 422.7 1945.7 419.0 1956.0 419.0C1975.0 419.0 1989.7 427.5 1996.8 442.8C1999.2 447.8 1999.5 449.7 1999.5 458.5C1999.5 467.3 1999.1 469.2 1996.7 474.3C1989.7 489.5 1975.0 499.0 1958.7 499.0C1946.3 499.0 1924.7 505.4 1914.6 512.1C1896.6 524.1 1883.6 549.5 1877.0 585.3C1871.6 615.4 1871.8 603.3 1871.0 890.5C1870.6 1036.8 1870.2 1170.3 1870.1 1187.2L1870.0 1218.0L1851.2 1218.0C1840.9 1218.0 1828.2 1217.7 1822.9 1217.4L1813.3 1216.7L1789.9 1181.6C1759.1 1135.5 1392.3 585.9 1312.7 466.6C1246.6 367.8 1247.4 368.8 1237.5 365.8C1231.9 364.2 1225.6 364.4 1222.5 366.4C1221.1 367.3 1218.7 369.8 1217.1 372.0C1212.0 379.1 1210.3 387.2 1207.5 418.0C1201.7 481.4 1194.1 536.0 1183.4 589.5C1171.3 650.6 1157.1 702.5 1138.0 755.5C1096.1 871.7 1035.4 969.8 952.3 1055.6C842.2 1169.4 691.1 1234.1 538.7 1232.8C527.6 1232.7 516.5 1232.5 514.0 1232.3Z"/><circle class="mark-dot" cx="1718" cy="110" r="118"/></svg>Why I do it</p>
+      <blockquote class="work-quote" cite="https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says">
+        <p class="mani heavy" id="mani">“The only way to do great work <em class="serif">is to love what you do.</em>”</p>
+        <cite class="quote-credit eyebrow"><a href="https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says" target="_blank" rel="noopener">Steve Jobs · Stanford, 2005</a></cite>
+      </blockquote>
+      <p class="hand mani-personal">I was lucky to find what I love: creating events.</p>
     </div>
   </section>
 
@@ -136,6 +147,15 @@
     <ul class="sr-only"><li>Sela</li><li>Riyadh Season</li><li>Netflix</li><li>aramco</li><li>FIFAe</li><li>Boulevard World</li><li>BLVD City</li><li>CityWalk Jeddah</li><li>Kingdom Arena</li><li>anb Arena</li></ul>
   </section>
 
+  <section class="cinema-intro wrap" aria-label="Selected work on film">
+    <div class="cinema-scene">
+      <video class="ambient-video" muted loop playsinline preload="none" poster="assets/video/intro-poster.jpg" data-src="assets/video/intro.mp4" aria-hidden="true" tabindex="-1"></video>
+      <span class="lens-layer" aria-hidden="true"><i class="lens-flare"></i><i class="lens-echo"></i><i class="lens-ring"></i></span>
+      <div class="cinema-caption"><p class="eyebrow">Selected work · Charles Nasr</p></div>
+      <button class="motion-toggle" type="button" aria-pressed="true">Pause motion</button>
+    </div>
+  </section>
+
 
   <!-- ============ FLAGSHIP POSTERS ============ -->
   <section class="posters" id="flagships" data-theme="dark" aria-labelledby="flagTitle">
@@ -144,7 +164,7 @@
       <h2 class="heavy reveal" id="flagTitle">Three nights <em class="serif">the world watched.</em></h2>
     </div>
     <a class="poster" href="#case-rcf" data-case="rcf">
-      <div class="poster-media"><picture><source type="image/webp" srcset="assets/img/gen-rcf-theatre-1200.webp 1200w, assets/img/gen-rcf-theatre-2000.webp 2000w" sizes="100vw"><img src="assets/img/gen-rcf-theatre-2000.jpg" srcset="assets/img/gen-rcf-theatre-1200.jpg 1200w, assets/img/gen-rcf-theatre-2000.jpg 2000w" sizes="100vw" width="2000" height="1125" alt="The Riyadh Comedy Festival main theatre at showtime" loading="lazy" decoding="async"></picture></div>
+      <div class="poster-media"><picture><source type="image/webp" srcset="assets/img/gen-rcf-theatre-1200.webp 1200w, assets/img/gen-rcf-theatre-2000.webp 2000w" sizes="100vw"><img src="assets/img/gen-rcf-theatre-2000.jpg" srcset="assets/img/gen-rcf-theatre-1200.jpg 1200w, assets/img/gen-rcf-theatre-2000.jpg 2000w" sizes="100vw" width="2000" height="1125" alt="The Riyadh Comedy Festival main theatre at showtime" loading="lazy" decoding="async"></picture></div><span class="lens-layer" aria-hidden="true"><i class="lens-flare"></i><i class="lens-echo"></i><i class="lens-ring"></i></span>
       <div class="poster-copy wrap">
         <span class="poster-n heavy">01</span>
         <h3 class="heavy">Riyadh Comedy <em class="serif">Festival</em></h3>
@@ -153,18 +173,18 @@
         <span class="pill pill-ghost"><span>View case</span></span>
       </div>
     </a>
-    <a class="poster" href="#case-sixkings" data-case="sixkings">
-      <div class="poster-media"><picture class="poster-pic-wide"><source type="image/webp" srcset="assets/img/kings-key-1200.webp 1200w, assets/img/kings-key-2000.webp 2000w" sizes="100vw"><img src="assets/img/kings-key-2000.jpg" srcset="assets/img/kings-key-1200.jpg 1200w, assets/img/kings-key-2000.jpg 2000w" sizes="100vw" width="2000" height="1125" alt="Six Kings Slam 2025 key visual" loading="lazy" decoding="async"></picture><picture class="poster-pic-tall"><source type="image/webp" srcset="assets/img/kings-key-m-800.webp 800w, assets/img/kings-key-m-1200.webp 1200w" sizes="100vw"><img src="assets/img/kings-key-m-1200.jpg" srcset="assets/img/kings-key-m-800.jpg 800w, assets/img/kings-key-m-1200.jpg 1200w" sizes="100vw" width="1200" height="1500" alt="Six Kings Slam 2025 key visual" loading="lazy" decoding="async"></picture></div>
+    <a class="poster poster-sixkings" href="#case-sixkings" data-case="sixkings">
+      <div class="poster-media"><picture><source type="image/webp" srcset="assets/img/kings-show-1-1200.webp 1200w, assets/img/kings-show-1-2000.webp 2000w" sizes="100vw"><img src="assets/img/kings-show-1-2000.jpg" srcset="assets/img/kings-show-1-1200.jpg 1200w, assets/img/kings-show-1-2000.jpg 2000w" sizes="100vw" width="2000" height="1037" alt="The live Six Kings Slam opening ceremony, with a crown above the projection-mapped court" loading="lazy" decoding="async"></picture></div><span class="lens-layer" aria-hidden="true"><i class="lens-flare"></i><i class="lens-echo"></i><i class="lens-ring"></i></span>
       <div class="poster-copy wrap">
-        <span class="poster-n heavy">02</span>
-        <h3 class="heavy">Six Kings <em class="serif">Slam</em></h3>
+        <span class="poster-n heavy">02</span><span class="film-available eyebrow">2 show films inside <span aria-hidden="true">↗</span></span>
+        <h3 class="heavy">Six Kings <em class="serif">Slam 2</em></h3>
         <p class="poster-line">Six kings. One crown. Broadcast to the world.</p>
-        <span class="poster-meta eyebrow">2025 · Event Creative Director · Live on Netflix · third year</span>
+        <span class="poster-meta eyebrow">2025 · Event Creative Director · Live on Netflix</span>
         <span class="pill pill-ghost"><span>View case</span></span>
       </div>
     </a>
     <a class="poster poster-usyk" href="#case-usyk" data-case="usyk">
-      <div class="poster-media"><picture><source type="image/webp" srcset="assets/img/gen-usyk-clock-1200.webp 1200w, assets/img/gen-usyk-clock-2000.webp 2000w" sizes="100vw"><img src="assets/img/gen-usyk-clock-2000.jpg" srcset="assets/img/gen-usyk-clock-1200.jpg 1200w, assets/img/gen-usyk-clock-2000.jpg 2000w" sizes="100vw" width="2000" height="1125" alt="The clock stage of Usyk × Fury 2 under beams of light" loading="lazy" decoding="async"></picture></div>
+      <div class="poster-media"><picture><source type="image/webp" srcset="assets/img/gen-usyk-clock-1200.webp 1200w, assets/img/gen-usyk-clock-2000.webp 2000w" sizes="100vw"><img src="assets/img/gen-usyk-clock-2000.jpg" srcset="assets/img/gen-usyk-clock-1200.jpg 1200w, assets/img/gen-usyk-clock-2000.jpg 2000w" sizes="100vw" width="2000" height="1125" alt="The clock stage of Usyk × Fury 2 under beams of light" loading="lazy" decoding="async"></picture></div><span class="lens-layer" aria-hidden="true"><i class="lens-flare"></i><i class="lens-echo"></i><i class="lens-ring"></i></span>
       <div class="poster-copy wrap">
         <span class="poster-n heavy">03</span>
         <h3 class="heavy">Usyk × Fury <em class="serif">Reignited</em></h3>
@@ -179,20 +199,31 @@
   <section class="hof" id="hof" data-theme="ink" aria-labelledby="hofTitle">
     <div class="wrap hof-head">
       <h2 id="hofTitle"><span class="heavy reveal">Projects</span> <em class="serif reveal">Hall of fame</em></h2>
-      <p class="lead reveal">Every world I've directed, 2022 → 2025. Arenas, courts, rings, cities, a sphere, and a few worlds that don't exist yet.</p>
+      <p class="lead reveal">A selection of live events, destinations and visual content from 2022 to 2026, alongside my personal AI explorations.</p>
     </div>
-    <div class="wrap hof-grid">
-      <a class="card card-wide reveal" href="#case-rcf" data-case="rcf"><span class="card-media"><picture><source type="image/webp" srcset="assets/img/rcf-arena-1200.webp 1200w, assets/img/rcf-arena-2000.webp 2000w" sizes="(min-width: 1024px) 47vw, 92vw"><img src="assets/img/rcf-arena-2000.jpg" srcset="assets/img/rcf-arena-1200.jpg 1200w, assets/img/rcf-arena-2000.jpg 2000w" sizes="(min-width: 1024px) 47vw, 92vw" width="2000" height="857" alt="Kevin Hart arena show at the Riyadh Comedy Festival" loading="lazy" decoding="async"></picture></span><span class="card-tab"><b>Riyadh Comedy Festival</b><i>2025</i></span></a>
-      <a class="card card-wide reveal" href="#case-sixkings" data-case="sixkings"><span class="card-media"><picture><source type="image/webp" srcset="assets/img/kings-show-1-1200.webp 1200w, assets/img/kings-show-1-2000.webp 2000w" sizes="(min-width: 1024px) 47vw, 92vw"><img src="assets/img/kings-show-1-2000.jpg" srcset="assets/img/kings-show-1-1200.jpg 1200w, assets/img/kings-show-1-2000.jpg 2000w" sizes="(min-width: 1024px) 47vw, 92vw" width="2000" height="1037" alt="The Six Kings Slam opening show on the mapped court" loading="lazy" decoding="async"></picture></span><span class="card-tab"><b>Six Kings Slam</b><i>2025</i></span></a>
-      <a class="card card-wide reveal" href="#case-usyk" data-case="usyk"><span class="card-media"><picture><source type="image/webp" srcset="assets/img/usyk-arena-1-1200.webp 1200w, assets/img/usyk-arena-1-2000.webp 2000w" sizes="(min-width: 1024px) 47vw, 92vw"><img src="assets/img/usyk-arena-1-2000.jpg" srcset="assets/img/usyk-arena-1-1200.jpg 1200w, assets/img/usyk-arena-1-2000.jpg 2000w" sizes="(min-width: 1024px) 47vw, 92vw" width="2000" height="1148" alt="The Usyk × Fury 2 arena light show" loading="lazy" decoding="async"></picture></span><span class="card-tab"><b>Usyk × Fury 2</b><i>2024</i></span></a>
-      <a class="card reveal" href="#case-sixkings-2024" data-case="sixkings-2024"><span class="card-media"><picture><source type="image/webp" srcset="assets/img/k24-hand-1000.webp 1000w" sizes="(min-width: 1024px) 23vw, 46vw"><img src="assets/img/k24-hand-1000.jpg" srcset="assets/img/k24-hand-1000.jpg 1000w" sizes="(min-width: 1024px) 23vw, 46vw" width="1000" height="1000" alt="Golden hand hologram over the court" loading="lazy" decoding="async"></picture></span><span class="card-tab"><b>Six Kings Slam · I</b><i>2024</i></span></a>
-      <a class="card reveal" href="#case-kingdom" data-case="kingdom"><span class="card-media"><picture><source type="image/webp" srcset="assets/img/ka-render-1000.webp 1000w, assets/img/ka-render-1500.webp 1500w" sizes="(min-width: 1024px) 23vw, 46vw"><img src="assets/img/ka-render-1500.jpg" srcset="assets/img/ka-render-1000.jpg 1000w, assets/img/ka-render-1500.jpg 1500w" sizes="(min-width: 1024px) 23vw, 46vw" width="1500" height="1500" alt="Kingdom Arena concept render" loading="lazy" decoding="async"></picture></span><span class="card-tab"><b>Kingdom Arena → Stadium</b><i>2024</i></span></a>
-      <a class="card reveal" href="#case-fifae" data-case="fifae"><span class="card-media"><picture><source type="image/webp" srcset="assets/img/fifa-render-1000.webp 1000w" sizes="(min-width: 1024px) 23vw, 46vw"><img src="assets/img/fifa-render-1000.jpg" srcset="assets/img/fifa-render-1000.jpg 1000w" sizes="(min-width: 1024px) 23vw, 46vw" width="1000" height="1000" alt="FIFAe venue render" loading="lazy" decoding="async"></picture></span><span class="card-tab"><b>FIFAe World Cup Final</b><i>2023</i></span></a>
-      <a class="card reveal" href="#case-citywalk" data-case="citywalk"><span class="card-media"><picture><source type="image/webp" srcset="assets/img/cw-dragons-1000.webp 1000w, assets/img/cw-dragons-1600.webp 1600w" sizes="(min-width: 1024px) 23vw, 46vw"><img src="assets/img/cw-dragons-1600.jpg" srcset="assets/img/cw-dragons-1000.jpg 1000w, assets/img/cw-dragons-1600.jpg 1600w" sizes="(min-width: 1024px) 23vw, 46vw" width="1600" height="1600" alt="Little Asia gate with dragons" loading="lazy" decoding="async"></picture></span><span class="card-tab"><b>CityWalk &amp; Little Asia</b><i>2022–25</i></span></a>
-      <a class="card reveal" href="#case-wonderwall" data-case="wonderwall"><span class="card-media"><picture><source type="image/webp" srcset="assets/img/ww-riyadh-2-1000.webp 1000w, assets/img/ww-riyadh-2-1350.webp 1350w" sizes="(min-width: 1024px) 23vw, 46vw"><img src="assets/img/ww-riyadh-2-1350.jpg" srcset="assets/img/ww-riyadh-2-1000.jpg 1000w, assets/img/ww-riyadh-2-1350.jpg 1350w" sizes="(min-width: 1024px) 23vw, 46vw" width="1350" height="1350" alt="Wonderwall Riyadh" loading="lazy" decoding="async"></picture></span><span class="card-tab"><b>Wonderwall</b><i>2023–25</i></span></a>
-      <a class="card reveal" href="#case-blvd" data-case="blvd"><span class="card-media"><picture><source type="image/webp" srcset="assets/img/blvd-boat-1000.webp 1000w, assets/img/blvd-boat-1600.webp 1600w" sizes="(min-width: 1024px) 23vw, 46vw"><img src="assets/img/blvd-boat-1600.jpg" srcset="assets/img/blvd-boat-1000.jpg 1000w, assets/img/blvd-boat-1600.jpg 1600w" sizes="(min-width: 1024px) 23vw, 46vw" width="1600" height="1600" alt="A boat on the lake at BLVD World" loading="lazy" decoding="async"></picture></span><span class="card-tab"><b>BLVD World</b><i>2022–24</i></span></a>
-      <a class="card reveal" href="#case-sphere" data-case="sphere"><span class="card-media"><picture><source type="image/webp" srcset="assets/img/sphere-v1-900.webp 900w" sizes="(min-width: 1024px) 23vw, 46vw"><img src="assets/img/sphere-v1-900.jpg" srcset="assets/img/sphere-v1-900.jpg 900w" sizes="(min-width: 1024px) 23vw, 46vw" width="900" height="1288" alt="The Sphere with honeycomb content" loading="lazy" decoding="async"></picture></span><span class="card-tab"><b>The Sphere</b><i>4 years</i></span></a>
-      <a class="card reveal" href="#case-ai" data-case="ai"><span class="card-media"><picture><source type="image/webp" srcset="assets/img/ai-snow-1-1200.webp 1200w, assets/img/ai-snow-1-1490.webp 1490w" sizes="(min-width: 1024px) 23vw, 46vw"><img src="assets/img/ai-snow-1-1490.jpg" srcset="assets/img/ai-snow-1-1200.jpg 1200w, assets/img/ai-snow-1-1490.jpg 1490w" sizes="(min-width: 1024px) 23vw, 46vw" width="1490" height="1618" alt="Snow falling in Riyadh, an AI world" loading="lazy" decoding="async"></picture></span><span class="card-tab"><b>AI worlds</b><i>2025</i></span></a>
+    <div class="wrap work-toolbar">
+      <div class="work-filters" role="group" aria-label="Filter projects by type">
+        <button type="button" class="work-filter is-active" data-filter="all" aria-pressed="true" aria-controls="projectGrid">All work <span>12</span></button>
+        <button type="button" class="work-filter" data-filter="live" aria-pressed="false" aria-controls="projectGrid">Live experiences <span>5</span></button>
+        <button type="button" class="work-filter" data-filter="destinations" aria-pressed="false" aria-controls="projectGrid">Destinations <span>4</span></button>
+        <button type="button" class="work-filter" data-filter="content" aria-pressed="false" aria-controls="projectGrid">Visual content <span>2</span></button>
+        <button type="button" class="work-filter" data-filter="ai" aria-pressed="false" aria-controls="projectGrid">AI explorations <span>1</span></button>
+      </div>
+      <p class="work-count eyebrow" id="filterStatus" role="status" aria-live="polite" aria-atomic="true">Showing all 12 projects</p>
+    </div>
+    <div class="wrap hof-grid" id="projectGrid">
+      <a class="card card-wide reveal" href="#case-rcf" data-case="rcf" data-category="live"><span class="card-media"><picture><source type="image/webp" srcset="assets/img/rcf-arena-1200.webp 1200w, assets/img/rcf-arena-2000.webp 2000w" sizes="(min-width: 1500px) 450px, (min-width: 1101px) 31vw, (min-width: 700px) 46vw, 94vw"><img src="assets/img/rcf-arena-2000.jpg" srcset="assets/img/rcf-arena-1200.jpg 1200w, assets/img/rcf-arena-2000.jpg 2000w" sizes="(min-width: 1500px) 450px, (min-width: 1101px) 31vw, (min-width: 700px) 46vw, 94vw" width="2000" height="857" alt="Kevin Hart arena show at the Riyadh Comedy Festival" loading="lazy" decoding="async"></picture></span><span class="card-tab"><b>Riyadh Comedy Festival</b><i>2025</i></span><span class="card-kind eyebrow">Live experience</span></a>
+      <a class="card card-wide reveal" href="#case-sixkings" data-case="sixkings" data-category="live"><span class="card-media"><picture><source type="image/webp" srcset="assets/img/kings-show-1-1200.webp 1200w, assets/img/kings-show-1-2000.webp 2000w" sizes="(min-width: 1500px) 450px, (min-width: 1101px) 31vw, (min-width: 700px) 46vw, 94vw"><img src="assets/img/kings-show-1-2000.jpg" srcset="assets/img/kings-show-1-1200.jpg 1200w, assets/img/kings-show-1-2000.jpg 2000w" sizes="(min-width: 1500px) 450px, (min-width: 1101px) 31vw, (min-width: 700px) 46vw, 94vw" width="2000" height="1037" alt="The Six Kings Slam opening show on the mapped court" loading="lazy" decoding="async"></picture></span><span class="card-film-badge">2 films <span aria-hidden="true">↗</span></span><span class="card-tab"><b>Six Kings Slam 2</b><i>2025</i></span><span class="card-kind eyebrow">Live experience</span></a>
+      <a class="card card-wide reveal" href="#case-usyk" data-case="usyk" data-category="live"><span class="card-media"><picture><source type="image/webp" srcset="assets/img/usyk-arena-1-1200.webp 1200w, assets/img/usyk-arena-1-2000.webp 2000w" sizes="(min-width: 1500px) 450px, (min-width: 1101px) 31vw, (min-width: 700px) 46vw, 94vw"><img src="assets/img/usyk-arena-1-2000.jpg" srcset="assets/img/usyk-arena-1-1200.jpg 1200w, assets/img/usyk-arena-1-2000.jpg 2000w" sizes="(min-width: 1500px) 450px, (min-width: 1101px) 31vw, (min-width: 700px) 46vw, 94vw" width="2000" height="1148" alt="The Usyk × Fury 2 arena light show" loading="lazy" decoding="async"></picture></span><span class="card-tab"><b>Usyk × Fury 2</b><i>2024</i></span><span class="card-kind eyebrow">Live experience</span></a>
+      <a class="card reveal" href="#case-samurai" data-case="samurai" data-category="live"><span class="card-media"><picture><source type="image/webp" srcset="assets/img/samurai-opening-720.webp 720w, assets/img/samurai-opening-1400.webp 1400w, assets/img/samurai-opening-2000.webp 2000w" sizes="(min-width: 1500px) 450px, (min-width: 1101px) 31vw, (min-width: 700px) 46vw, 94vw"><img src="assets/img/samurai-opening-2000.jpg" srcset="assets/img/samurai-opening-720.jpg 720w, assets/img/samurai-opening-1400.jpg 1400w, assets/img/samurai-opening-2000.jpg 2000w" sizes="(min-width: 1500px) 450px, (min-width: 1101px) 31vw, (min-width: 700px) 46vw, 94vw" width="2000" height="1334" alt="Live opening performance at Night of the Samurai in Riyadh" loading="lazy" decoding="async"></picture></span><span class="card-tab"><b>Night of the Samurai</b><i>2025</i></span><span class="card-kind eyebrow">Live experience</span></a>
+      <a class="card reveal" href="#case-sixkings-2024" data-case="sixkings-2024" data-category="live"><span class="card-media"><picture><source type="image/webp" srcset="assets/img/k24-hand-1000.webp 1000w" sizes="(min-width: 1500px) 450px, (min-width: 1101px) 31vw, (min-width: 700px) 46vw, 94vw"><img src="assets/img/k24-hand-1000.jpg" srcset="assets/img/k24-hand-1000.jpg 1000w" sizes="(min-width: 1500px) 450px, (min-width: 1101px) 31vw, (min-width: 700px) 46vw, 94vw" width="1000" height="1000" alt="Golden hand hologram over the court" loading="lazy" decoding="async"></picture></span><span class="card-tab"><b>Six Kings Slam 1</b><i>2024</i></span><span class="card-kind eyebrow">Live experience</span></a>
+      <a class="card reveal" href="#case-fifae" data-case="fifae" data-category="destinations"><span class="card-media"><picture><source type="image/webp" srcset="assets/img/fifa-render-1000.webp 1000w" sizes="(min-width: 1500px) 450px, (min-width: 1101px) 31vw, (min-width: 700px) 46vw, 94vw"><img src="assets/img/fifa-render-1000.jpg" srcset="assets/img/fifa-render-1000.jpg 1000w" sizes="(min-width: 1500px) 450px, (min-width: 1101px) 31vw, (min-width: 700px) 46vw, 94vw" width="1000" height="1000" alt="FIFAe venue render" loading="lazy" decoding="async"></picture></span><span class="card-tab"><b>FIFAe World Cup Final</b><i>2023</i></span><span class="card-kind eyebrow">Venue design</span></a>
+      <a class="card reveal" href="#case-winter" data-case="winter" data-category="destinations"><span class="card-media"><picture><source type="image/webp" srcset="assets/img/winter-castle-720.webp 720w, assets/img/winter-castle-1400.webp 1400w, assets/img/winter-castle-1672.webp 1672w" sizes="(min-width: 1500px) 450px, (min-width: 1101px) 31vw, (min-width: 700px) 46vw, 94vw"><img src="assets/img/winter-castle-1672.jpg" srcset="assets/img/winter-castle-720.jpg 720w, assets/img/winter-castle-1400.jpg 1400w, assets/img/winter-castle-1672.jpg 1672w" sizes="(min-width: 1500px) 450px, (min-width: 1101px) 31vw, (min-width: 700px) 46vw, 94vw" width="1672" height="941" alt="Winter Wonderland Jeddah castle entrance — AI-enhanced photograph" loading="lazy" decoding="async"></picture></span><span class="card-tab"><b>Winter Wonderland · Jeddah</b><i>2025–26</i></span><span class="card-kind eyebrow">Destination</span></a>
+      <a class="card reveal" href="#case-citywalk" data-case="citywalk" data-category="destinations"><span class="card-media"><picture><source type="image/webp" srcset="assets/img/cw-gate-1200.webp 1200w, assets/img/cw-gate-1600.webp 1600w" sizes="(min-width: 1500px) 450px, (min-width: 1101px) 31vw, (min-width: 700px) 46vw, 94vw"><img src="assets/img/cw-gate-1600.jpg" srcset="assets/img/cw-gate-1200.jpg 1200w, assets/img/cw-gate-1600.jpg 1600w" sizes="(min-width: 1500px) 450px, (min-width: 1101px) 31vw, (min-width: 700px) 46vw, 94vw" width="1600" height="995" alt="The illuminated City Walk entrance in Jeddah" loading="lazy" decoding="async"></picture></span><span class="card-tab"><b>City Walk · Jeddah</b><i>2022–25</i></span><span class="card-kind eyebrow">Destination</span></a>
+      <a class="card reveal" href="#case-wonderwall" data-case="wonderwall" data-category="content"><span class="card-media"><picture><source type="image/webp" srcset="assets/img/ww-riyadh-2-1000.webp 1000w, assets/img/ww-riyadh-2-1350.webp 1350w" sizes="(min-width: 1500px) 450px, (min-width: 1101px) 31vw, (min-width: 700px) 46vw, 94vw"><img src="assets/img/ww-riyadh-2-1350.jpg" srcset="assets/img/ww-riyadh-2-1000.jpg 1000w, assets/img/ww-riyadh-2-1350.jpg 1350w" sizes="(min-width: 1500px) 450px, (min-width: 1101px) 31vw, (min-width: 700px) 46vw, 94vw" width="1350" height="1350" alt="Wonderwall Riyadh" loading="lazy" decoding="async"></picture></span><span class="card-tab"><b>Wonder Wall · Boulevard City Edition</b><i>2023–25</i></span><span class="card-kind eyebrow">Visual content</span></a>
+      <a class="card reveal" href="#case-blvd" data-case="blvd" data-category="destinations"><span class="card-media"><picture><source type="image/webp" srcset="assets/img/blvd-boat-1000.webp 1000w, assets/img/blvd-boat-1600.webp 1600w" sizes="(min-width: 1500px) 450px, (min-width: 1101px) 31vw, (min-width: 700px) 46vw, 94vw"><img src="assets/img/blvd-boat-1600.jpg" srcset="assets/img/blvd-boat-1000.jpg 1000w, assets/img/blvd-boat-1600.jpg 1600w" sizes="(min-width: 1500px) 450px, (min-width: 1101px) 31vw, (min-width: 700px) 46vw, 94vw" width="1600" height="1600" alt="A boat on the lake at BLVD World" loading="lazy" decoding="async"></picture></span><span class="card-tab"><b>BLVD World</b><i>2022–24</i></span><span class="card-kind eyebrow">Destination</span></a>
+      <a class="card reveal" href="#case-sphere" data-case="sphere" data-category="content"><span class="card-media"><picture><source type="image/webp" srcset="assets/img/sphere-v1-900.webp 900w" sizes="(min-width: 1500px) 450px, (min-width: 1101px) 31vw, (min-width: 700px) 46vw, 94vw"><img src="assets/img/sphere-v1-900.jpg" srcset="assets/img/sphere-v1-900.jpg 900w" sizes="(min-width: 1500px) 450px, (min-width: 1101px) 31vw, (min-width: 700px) 46vw, 94vw" width="900" height="1288" alt="The Sphere with honeycomb content" loading="lazy" decoding="async"></picture></span><span class="card-film-badge">3 films <span aria-hidden="true">↗</span></span><span class="card-tab"><b>The Sphere</b><i>4 years</i></span><span class="card-kind eyebrow">Visual content</span></a>
+      <a class="card reveal" href="#case-ai" data-case="ai" data-category="ai"><span class="card-media"><picture><source type="image/webp" srcset="assets/img/ai-snow-1-1200.webp 1200w, assets/img/ai-snow-1-1490.webp 1490w" sizes="(min-width: 1500px) 450px, (min-width: 1101px) 31vw, (min-width: 700px) 46vw, 94vw"><img src="assets/img/ai-snow-1-1490.jpg" srcset="assets/img/ai-snow-1-1200.jpg 1200w, assets/img/ai-snow-1-1490.jpg 1490w" sizes="(min-width: 1500px) 450px, (min-width: 1101px) 31vw, (min-width: 700px) 46vw, 94vw" width="1490" height="1618" alt="Snow falling in Riyadh, an AI world" loading="lazy" decoding="async"></picture></span><span class="card-tab"><b>AI explorations</b><i>2025</i></span><span class="card-kind eyebrow">AI exploration</span></a>
       <a class="card card-cta reveal" href="#contact"><span class="card-cta-inner"><svg class="mark" viewBox="0 0 2000 1233" aria-hidden="true"><path class="mark-fill" d="M514.0 1232.3C469.0 1229.3 437.4 1224.4 399.3 1214.5C342.0 1199.6 285.7 1174.8 238.4 1143.6C146.3 1082.7 78.7 997.2 38.5 890.5C4.6 800.4 -7.1 700.1 4.1 596.5C15.3 493.2 55.6 397.2 122.1 315.5C144.6 287.9 183.3 251.1 214.5 227.5C226.6 218.4 255.0 199.7 268.0 192.3C380.5 127.9 508.2 103.7 637.9 122.1C710.0 132.3 787.1 158.8 833.6 189.5C887.6 225.2 926.7 276.3 937.5 325.1C939.8 335.5 940.6 357.9 939.1 369.3C936.8 386.0 929.2 405.4 918.7 421.0C900.9 447.5 850.3 498.2 815.5 524.4C806.7 531.1 806.4 531.2 801.6 530.6C796.6 530.0 789.8 526.7 786.6 523.1C785.0 521.4 784.8 520.0 785.3 515.1C786.0 507.2 789.9 499.4 801.0 483.5C811.6 468.4 819.0 456.4 822.1 449.4C835.0 419.7 835.1 391.8 822.3 354.0C797.4 280.6 732.6 222.7 644.5 195.2C602.7 182.1 566.8 177.3 519.7 178.3C479.2 179.2 449.6 183.9 413.5 195.1C339.0 218.3 272.9 266.1 223.1 332.7C178.8 391.9 149.8 464.3 137.1 547.5C132.4 578.1 131.6 590.6 131.5 634.5C131.5 678.3 132.3 691.2 137.0 724.0C151.2 823.1 188.7 919.3 239.3 986.5C266.1 1022.1 301.8 1056.7 337.2 1081.3C386.2 1115.4 444.8 1139.9 504.0 1151.0C534.0 1156.6 545.3 1157.5 583.5 1157.5C621.7 1157.5 633.0 1156.6 663.0 1151.0C757.3 1133.4 841.6 1086.1 918.5 1007.8C963.1 962.5 998.0 914.5 1030.6 853.5C1092.2 738.6 1126.7 608.3 1138.4 446.5C1142.6 389.3 1144.0 343.0 1144.4 252.9C1144.8 172.0 1144.5 175.7 1152.1 160.1C1157.4 149.4 1166.6 139.7 1176.0 135.1C1198.3 124.3 1224.2 126.4 1239.8 140.5C1243.1 143.5 1252.4 156.4 1268.0 179.7C1280.9 198.8 1297.7 223.9 1305.5 235.5C1313.3 247.1 1334.9 279.2 1353.5 307.0C1372.1 334.8 1397.3 372.4 1409.5 390.5C1421.7 408.6 1444.6 442.9 1460.5 466.5C1476.4 490.1 1498.4 523.0 1509.5 539.5C1520.6 556.0 1546.7 594.9 1567.5 626.0C1588.3 657.1 1612.2 692.6 1620.5 705.0C1628.8 717.4 1652.6 752.7 1673.2 783.5C1693.9 814.3 1724.3 859.8 1741.0 884.5C1757.6 909.2 1779.3 941.7 1789.3 956.6L1807.5 983.7L1808.1 785.1C1808.5 641.6 1809.0 584.1 1809.9 578.0C1814.8 542.2 1826.4 506.7 1839.8 486.0C1859.5 455.8 1884.0 435.7 1912.5 426.5C1924.3 422.7 1945.7 419.0 1956.0 419.0C1975.0 419.0 1989.7 427.5 1996.8 442.8C1999.2 447.8 1999.5 449.7 1999.5 458.5C1999.5 467.3 1999.1 469.2 1996.7 474.3C1989.7 489.5 1975.0 499.0 1958.7 499.0C1946.3 499.0 1924.7 505.4 1914.6 512.1C1896.6 524.1 1883.6 549.5 1877.0 585.3C1871.6 615.4 1871.8 603.3 1871.0 890.5C1870.6 1036.8 1870.2 1170.3 1870.1 1187.2L1870.0 1218.0L1851.2 1218.0C1840.9 1218.0 1828.2 1217.7 1822.9 1217.4L1813.3 1216.7L1789.9 1181.6C1759.1 1135.5 1392.3 585.9 1312.7 466.6C1246.6 367.8 1247.4 368.8 1237.5 365.8C1231.9 364.2 1225.6 364.4 1222.5 366.4C1221.1 367.3 1218.7 369.8 1217.1 372.0C1212.0 379.1 1210.3 387.2 1207.5 418.0C1201.7 481.4 1194.1 536.0 1183.4 589.5C1171.3 650.6 1157.1 702.5 1138.0 755.5C1096.1 871.7 1035.4 969.8 952.3 1055.6C842.2 1169.4 691.1 1234.1 538.7 1232.8C527.6 1232.7 516.5 1232.5 514.0 1232.3Z"/><circle class="mark-dot" cx="1718" cy="110" r="118"/></svg><b class="heavy">Your project <em class="serif">next?</em></b><span class="eyebrow">Let's talk →</span></span></a>
     </div>
   </section>
@@ -202,11 +233,11 @@
     <div class="wrap architect-grid">
       <figure class="architect-portrait reveal"><picture><source type="image/webp" srcset="assets/img/about-close-720.webp 720w, assets/img/about-close-800.webp 800w" sizes="(min-width: 1024px) 40vw, 100vw"><img src="assets/img/about-close-800.jpg" srcset="assets/img/about-close-720.jpg 720w, assets/img/about-close-800.jpg 800w" sizes="(min-width: 1024px) 40vw, 100vw" width="800" height="1001" alt="Charles Nasr" loading="lazy" decoding="async"></picture><figcaption class="eyebrow">Riyadh · 2026</figcaption></figure>
       <div class="architect-copy">
-        <p class="eyebrow reveal">The architect</p>
-        <h2 class="heavy reveal" id="archTitle">Buildings shape how people live. <em class="serif">Experiences shape how they feel.</em></h2>
+        <p class="eyebrow reveal">About Charles</p>
+        <h2 class="heavy reveal" id="archTitle">From architecture <em class="serif">to events.</em></h2>
         <div class="lead architect-lead">
-          <p class="reveal">I trained as an architect with a strong interest in technology, and started as a visualiser and 3D artist across architecture and interior design. Seven years ago I joined Sela as a design architect, and that's where things shifted: I was introduced to the world of entertainment and events, and I realised this is where I belong. The scale, the freedom and the impact felt different.</p>
-          <p class="reveal">Today I lead three territories at Sela: ideation and concept design; graphics and event identity; visual and media content, including projection mapping. For the last two years I've been Creative Director on some of the biggest entertainment projects in the region and the world.</p>
+          <p class="reveal">I started in architecture and 3D visualisation. When I joined Sela as a design architect in 2019, I began working on entertainment projects. That was how I found my way into events, and the work I wanted to keep doing.</p>
+          <p class="reveal">Today my work covers concept design, event identity and visual content, including projection mapping. I work with our designers, production teams and partners to take an idea from the first sketch through to the live event.</p>
         </div>
         <p class="signature reveal" aria-hidden="true">Charles Nasr</p>
         <ul class="facts reveal">
@@ -217,31 +248,15 @@
         </ul>
       </div>
     </div>
-    <div class="wrap compare-block">
-      <div class="compare-copy">
-        <p class="eyebrow reveal">Kingdom Arena → Stadium · Riyadh Season · 2024</p>
-        <h3 class="heavy reveal">Render <em class="serif">to reality.</em></h3>
-        <p class="lead reveal">One of the biggest challenges we faced while turning Kingdom Arena into a stadium was planting natural grass inside a closed building, which somehow connected to the virtual trees in Pixar's WALL-E. We overcame the grass. This time, let's have sixteen-metre trees.</p>
-        <p class="hand reveal">initially inspired by PIXAR's WALL-E</p>
-      </div>
-      <div class="compare reveal" id="compare" style="--pos: 50%;">
-        <figure class="compare-after"><picture><source type="image/webp" srcset="assets/img/ka-palms-1000.webp 1000w, assets/img/ka-palms-1350.webp 1350w" sizes="(min-width: 1024px) 50vw, 100vw"><img src="assets/img/ka-palms-1350.jpg" srcset="assets/img/ka-palms-1000.jpg 1000w, assets/img/ka-palms-1350.jpg 1350w" sizes="(min-width: 1024px) 50vw, 100vw" width="1350" height="1350" alt="Palm trees inside the stadium at night" loading="lazy" decoding="async"></picture></figure>
-        <figure class="compare-before"><picture><source type="image/webp" srcset="assets/img/ka-render-1000.webp 1000w, assets/img/ka-render-1500.webp 1500w" sizes="(min-width: 1024px) 50vw, 100vw"><img src="assets/img/ka-render-1500.jpg" srcset="assets/img/ka-render-1000.jpg 1000w, assets/img/ka-render-1500.jpg 1500w" sizes="(min-width: 1024px) 50vw, 100vw" width="1500" height="1500" alt="Black and white concept render of the arena with sixteen-metre trees" loading="lazy" decoding="async"></picture></figure>
-        <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Reveal the built stadium over the concept render">
-        <span class="compare-handle" aria-hidden="true"></span>
-        <span class="compare-label compare-label-l eyebrow" aria-hidden="true">Render</span>
-        <span class="compare-label compare-label-r eyebrow" aria-hidden="true">Built</span>
-      </div>
-    </div>
+
   </section>
 
   <!-- ============ AI WORLDS ============ -->
   <section class="ai" id="ai" data-theme="dark" aria-labelledby="aiTitle">
     <div class="tex" aria-hidden="true"></div>
     <div class="wrap ai-head">
-      <span class="brush" aria-hidden="true">Worlds</span>
       <h2 id="aiTitle"><span class="heavy reveal">AI</span> <em class="serif reveal">explorations</em></h2>
-      <p class="lead reveal">Three worlds that don't exist yet. Over the past three years I've integrated AI into our creative workflows, upskilled all eleven of my team members, launched a page teaching creative AI, and I'm building a course for creatives on AI for storytelling, design and content.</p>
+      <p class="lead reveal">Personal projects made while trying new tools, visual styles and ways to tell a story. I also use AI in our studio work and help the team learn how to use it.</p>
     </div>
     <div class="wrap worlds">
       <article class="world reveal">
@@ -293,16 +308,17 @@
 
 <!-- ============ FOOTER ============ -->
 <footer class="footer" id="contact" data-theme="accent">
-  <img class="footer-cutout" src="assets/img/charles-cutout.png" alt="" aria-hidden="true" width="367" height="876" loading="lazy" decoding="async">
   <div class="footer-card">
+    <video class="ambient-video footer-cloud" data-play-once="true" muted playsinline preload="none" poster="assets/video/cloud-poster.jpg" data-src="assets/video/cloud.mp4" aria-hidden="true" tabindex="-1"></video>
     <div class="tex" aria-hidden="true"></div>
     <div class="footer-top">
       <p class="footer-sign" aria-hidden="true">Charles</p>
       <h2 class="heavy footer-title">Now, let's create <em class="serif">what's next.</em></h2>
       <a class="pill pill-accent big magnetic" href="mailto:charlesanasr@gmail.com"><span>Business enquiries</span></a>
     </div>
+    <button class="motion-toggle footer-motion" type="button" aria-pressed="true">Pause motion</button>
     <div class="footer-cols">
-      <div><p class="eyebrow">Pages</p><a class="heavy" href="#flagships">Work</a><a class="heavy" href="#hof">All projects</a><a class="heavy" href="#architect">About</a><a class="heavy" href="#ai">AI worlds</a></div>
+      <div><p class="eyebrow">Pages</p><a class="heavy" href="#flagships">Work</a><a class="heavy" href="#hof">All projects</a><a class="heavy" href="#architect">About</a><a class="heavy" href="#ai">AI explorations</a></div>
       <div><p class="eyebrow">Contact</p><a class="heavy" href="mailto:charlesanasr@gmail.com">Email</a><a class="heavy" href="#architect">About Charles</a></div>
     </div>
     <div class="footer-mark" aria-hidden="true"><svg class="mark" viewBox="0 0 2000 1233"><path class="mark-fill" d="M514.0 1232.3C469.0 1229.3 437.4 1224.4 399.3 1214.5C342.0 1199.6 285.7 1174.8 238.4 1143.6C146.3 1082.7 78.7 997.2 38.5 890.5C4.6 800.4 -7.1 700.1 4.1 596.5C15.3 493.2 55.6 397.2 122.1 315.5C144.6 287.9 183.3 251.1 214.5 227.5C226.6 218.4 255.0 199.7 268.0 192.3C380.5 127.9 508.2 103.7 637.9 122.1C710.0 132.3 787.1 158.8 833.6 189.5C887.6 225.2 926.7 276.3 937.5 325.1C939.8 335.5 940.6 357.9 939.1 369.3C936.8 386.0 929.2 405.4 918.7 421.0C900.9 447.5 850.3 498.2 815.5 524.4C806.7 531.1 806.4 531.2 801.6 530.6C796.6 530.0 789.8 526.7 786.6 523.1C785.0 521.4 784.8 520.0 785.3 515.1C786.0 507.2 789.9 499.4 801.0 483.5C811.6 468.4 819.0 456.4 822.1 449.4C835.0 419.7 835.1 391.8 822.3 354.0C797.4 280.6 732.6 222.7 644.5 195.2C602.7 182.1 566.8 177.3 519.7 178.3C479.2 179.2 449.6 183.9 413.5 195.1C339.0 218.3 272.9 266.1 223.1 332.7C178.8 391.9 149.8 464.3 137.1 547.5C132.4 578.1 131.6 590.6 131.5 634.5C131.5 678.3 132.3 691.2 137.0 724.0C151.2 823.1 188.7 919.3 239.3 986.5C266.1 1022.1 301.8 1056.7 337.2 1081.3C386.2 1115.4 444.8 1139.9 504.0 1151.0C534.0 1156.6 545.3 1157.5 583.5 1157.5C621.7 1157.5 633.0 1156.6 663.0 1151.0C757.3 1133.4 841.6 1086.1 918.5 1007.8C963.1 962.5 998.0 914.5 1030.6 853.5C1092.2 738.6 1126.7 608.3 1138.4 446.5C1142.6 389.3 1144.0 343.0 1144.4 252.9C1144.8 172.0 1144.5 175.7 1152.1 160.1C1157.4 149.4 1166.6 139.7 1176.0 135.1C1198.3 124.3 1224.2 126.4 1239.8 140.5C1243.1 143.5 1252.4 156.4 1268.0 179.7C1280.9 198.8 1297.7 223.9 1305.5 235.5C1313.3 247.1 1334.9 279.2 1353.5 307.0C1372.1 334.8 1397.3 372.4 1409.5 390.5C1421.7 408.6 1444.6 442.9 1460.5 466.5C1476.4 490.1 1498.4 523.0 1509.5 539.5C1520.6 556.0 1546.7 594.9 1567.5 626.0C1588.3 657.1 1612.2 692.6 1620.5 705.0C1628.8 717.4 1652.6 752.7 1673.2 783.5C1693.9 814.3 1724.3 859.8 1741.0 884.5C1757.6 909.2 1779.3 941.7 1789.3 956.6L1807.5 983.7L1808.1 785.1C1808.5 641.6 1809.0 584.1 1809.9 578.0C1814.8 542.2 1826.4 506.7 1839.8 486.0C1859.5 455.8 1884.0 435.7 1912.5 426.5C1924.3 422.7 1945.7 419.0 1956.0 419.0C1975.0 419.0 1989.7 427.5 1996.8 442.8C1999.2 447.8 1999.5 449.7 1999.5 458.5C1999.5 467.3 1999.1 469.2 1996.7 474.3C1989.7 489.5 1975.0 499.0 1958.7 499.0C1946.3 499.0 1924.7 505.4 1914.6 512.1C1896.6 524.1 1883.6 549.5 1877.0 585.3C1871.6 615.4 1871.8 603.3 1871.0 890.5C1870.6 1036.8 1870.2 1170.3 1870.1 1187.2L1870.0 1218.0L1851.2 1218.0C1840.9 1218.0 1828.2 1217.7 1822.9 1217.4L1813.3 1216.7L1789.9 1181.6C1759.1 1135.5 1392.3 585.9 1312.7 466.6C1246.6 367.8 1247.4 368.8 1237.5 365.8C1231.9 364.2 1225.6 364.4 1222.5 366.4C1221.1 367.3 1218.7 369.8 1217.1 372.0C1212.0 379.1 1210.3 387.2 1207.5 418.0C1201.7 481.4 1194.1 536.0 1183.4 589.5C1171.3 650.6 1157.1 702.5 1138.0 755.5C1096.1 871.7 1035.4 969.8 952.3 1055.6C842.2 1169.4 691.1 1234.1 538.7 1232.8C527.6 1232.7 516.5 1232.5 514.0 1232.3Z"/><circle class="mark-glow" cx="1718" cy="110" r="330" fill="url(#cnGlow)"/><circle class="mark-dot" cx="1718" cy="110" r="118"/></svg></div>
@@ -314,12 +330,12 @@
 </footer>
 
 <!-- ============ CASE OVERLAY ============ -->
-<div class="overlay" id="overlay" aria-hidden="true">
+<div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="overlayTitle" aria-hidden="true" tabindex="-1">
   <div class="overlay-bar">
     <a class="overlay-brand" href="#top"><svg class="mark" viewBox="0 0 2000 1233" aria-hidden="true"><path class="mark-fill" d="M514.0 1232.3C469.0 1229.3 437.4 1224.4 399.3 1214.5C342.0 1199.6 285.7 1174.8 238.4 1143.6C146.3 1082.7 78.7 997.2 38.5 890.5C4.6 800.4 -7.1 700.1 4.1 596.5C15.3 493.2 55.6 397.2 122.1 315.5C144.6 287.9 183.3 251.1 214.5 227.5C226.6 218.4 255.0 199.7 268.0 192.3C380.5 127.9 508.2 103.7 637.9 122.1C710.0 132.3 787.1 158.8 833.6 189.5C887.6 225.2 926.7 276.3 937.5 325.1C939.8 335.5 940.6 357.9 939.1 369.3C936.8 386.0 929.2 405.4 918.7 421.0C900.9 447.5 850.3 498.2 815.5 524.4C806.7 531.1 806.4 531.2 801.6 530.6C796.6 530.0 789.8 526.7 786.6 523.1C785.0 521.4 784.8 520.0 785.3 515.1C786.0 507.2 789.9 499.4 801.0 483.5C811.6 468.4 819.0 456.4 822.1 449.4C835.0 419.7 835.1 391.8 822.3 354.0C797.4 280.6 732.6 222.7 644.5 195.2C602.7 182.1 566.8 177.3 519.7 178.3C479.2 179.2 449.6 183.9 413.5 195.1C339.0 218.3 272.9 266.1 223.1 332.7C178.8 391.9 149.8 464.3 137.1 547.5C132.4 578.1 131.6 590.6 131.5 634.5C131.5 678.3 132.3 691.2 137.0 724.0C151.2 823.1 188.7 919.3 239.3 986.5C266.1 1022.1 301.8 1056.7 337.2 1081.3C386.2 1115.4 444.8 1139.9 504.0 1151.0C534.0 1156.6 545.3 1157.5 583.5 1157.5C621.7 1157.5 633.0 1156.6 663.0 1151.0C757.3 1133.4 841.6 1086.1 918.5 1007.8C963.1 962.5 998.0 914.5 1030.6 853.5C1092.2 738.6 1126.7 608.3 1138.4 446.5C1142.6 389.3 1144.0 343.0 1144.4 252.9C1144.8 172.0 1144.5 175.7 1152.1 160.1C1157.4 149.4 1166.6 139.7 1176.0 135.1C1198.3 124.3 1224.2 126.4 1239.8 140.5C1243.1 143.5 1252.4 156.4 1268.0 179.7C1280.9 198.8 1297.7 223.9 1305.5 235.5C1313.3 247.1 1334.9 279.2 1353.5 307.0C1372.1 334.8 1397.3 372.4 1409.5 390.5C1421.7 408.6 1444.6 442.9 1460.5 466.5C1476.4 490.1 1498.4 523.0 1509.5 539.5C1520.6 556.0 1546.7 594.9 1567.5 626.0C1588.3 657.1 1612.2 692.6 1620.5 705.0C1628.8 717.4 1652.6 752.7 1673.2 783.5C1693.9 814.3 1724.3 859.8 1741.0 884.5C1757.6 909.2 1779.3 941.7 1789.3 956.6L1807.5 983.7L1808.1 785.1C1808.5 641.6 1809.0 584.1 1809.9 578.0C1814.8 542.2 1826.4 506.7 1839.8 486.0C1859.5 455.8 1884.0 435.7 1912.5 426.5C1924.3 422.7 1945.7 419.0 1956.0 419.0C1975.0 419.0 1989.7 427.5 1996.8 442.8C1999.2 447.8 1999.5 449.7 1999.5 458.5C1999.5 467.3 1999.1 469.2 1996.7 474.3C1989.7 489.5 1975.0 499.0 1958.7 499.0C1946.3 499.0 1924.7 505.4 1914.6 512.1C1896.6 524.1 1883.6 549.5 1877.0 585.3C1871.6 615.4 1871.8 603.3 1871.0 890.5C1870.6 1036.8 1870.2 1170.3 1870.1 1187.2L1870.0 1218.0L1851.2 1218.0C1840.9 1218.0 1828.2 1217.7 1822.9 1217.4L1813.3 1216.7L1789.9 1181.6C1759.1 1135.5 1392.3 585.9 1312.7 466.6C1246.6 367.8 1247.4 368.8 1237.5 365.8C1231.9 364.2 1225.6 364.4 1222.5 366.4C1221.1 367.3 1218.7 369.8 1217.1 372.0C1212.0 379.1 1210.3 387.2 1207.5 418.0C1201.7 481.4 1194.1 536.0 1183.4 589.5C1171.3 650.6 1157.1 702.5 1138.0 755.5C1096.1 871.7 1035.4 969.8 952.3 1055.6C842.2 1169.4 691.1 1234.1 538.7 1232.8C527.6 1232.7 516.5 1232.5 514.0 1232.3Z"/><circle class="mark-dot" cx="1718" cy="110" r="118"/></svg><span class="eyebrow" id="overlayTitle">Case</span></a>
     <button class="pill pill-ghost magnetic" id="overlayClose" type="button"><span>Close</span></button>
   </div>
-  <div class="overlay-scroll" id="overlayScroll" data-lenis-prevent>
+  <div class="overlay-scroll" id="overlayScroll">
 
     <article class="case" id="case-rcf" data-title="Riyadh Comedy Festival" hidden>
       <header class="case-hero"><picture><source type="image/webp" srcset="assets/img/gen-rcf-theatre-1200.webp 1200w, assets/img/gen-rcf-theatre-2000.webp 2000w" sizes="100vw"><img src="assets/img/gen-rcf-theatre-2000.jpg" srcset="assets/img/gen-rcf-theatre-1200.jpg 1200w, assets/img/gen-rcf-theatre-2000.jpg 2000w" sizes="100vw" width="2000" height="1125" alt="The Riyadh Comedy Festival main theatre at showtime" loading="lazy" decoding="async"></picture><div class="case-head wrap"><p class="eyebrow">Arena · 2025 · Event Creative Director</p><h2 class="heavy">Riyadh Comedy <em class="serif">Festival</em></h2><p class="hand">Biggest Comedy Festival in the WORLD!!!</p></div></header>
@@ -343,14 +359,37 @@
         <figure class="tile"><picture><source type="image/webp" srcset="assets/img/rcf-street-5-900.webp 900w, assets/img/rcf-street-5-1400.webp 1400w" sizes="(min-width: 1024px) 44vw, 100vw"><img src="assets/img/rcf-street-5-1400.jpg" srcset="assets/img/rcf-street-5-900.jpg 900w, assets/img/rcf-street-5-1400.jpg 1400w" sizes="(min-width: 1024px) 44vw, 100vw" width="1400" height="782" alt="From Riyadh With Laughs neon over the blue festival sign" loading="lazy" decoding="async"></picture></figure>
         <figure class="tile"><picture><source type="image/webp" srcset="assets/img/rcf-street-4-800.webp 800w, assets/img/rcf-street-4-1200.webp 1200w" sizes="(min-width: 1024px) 44vw, 100vw"><img src="assets/img/rcf-street-4-1200.jpg" srcset="assets/img/rcf-street-4-800.jpg 800w, assets/img/rcf-street-4-1200.jpg 1200w" sizes="(min-width: 1024px) 44vw, 100vw" width="1200" height="1200" alt="Riyadh Comedy Festival infinity-mirror lettering in blue" loading="lazy" decoding="async"></picture></figure>
       </div>
-      <nav class="case-next wrap"><span class="eyebrow">Next</span><a class="heavy" href="#case-sixkings" data-case="sixkings">Six Kings Slam <em class="serif">2025</em> →</a></nav>
+      <nav class="case-next wrap"><span class="eyebrow">Next</span><a class="heavy" href="#case-sixkings" data-case="sixkings">Six Kings Slam <em class="serif">2</em> →</a></nav>
     </article>
 
-    <article class="case" id="case-sixkings" data-title="Six Kings Slam 2025" hidden>
-      <header class="case-hero"><picture><source type="image/webp" srcset="assets/img/kings-key-1200.webp 1200w, assets/img/kings-key-2000.webp 2000w" sizes="100vw"><img src="assets/img/kings-key-2000.jpg" srcset="assets/img/kings-key-1200.jpg 1200w, assets/img/kings-key-2000.jpg 2000w" sizes="100vw" width="2000" height="1125" alt="Six Kings Slam 2025 key visual: six players styled as kings" loading="lazy" decoding="async"></picture><div class="case-head wrap"><p class="eyebrow">Arena · 2025 · Event Creative Director · Live on Netflix</p><h2 class="heavy">Six Kings <em class="serif">Slam</em></h2><p class="hand">Third year in a row. Bigger event, bigger challenge. Broadcast on Netflix.</p></div></header>
-      <div class="wrap case-facts"><dl><div><dt>Role</dt><dd>Event Creative Director</dd></div><div><dt>Year</dt><dd>2025</dd></div><div><dt>Where</dt><dd>Riyadh · BLVD World</dd></div><div><dt>Broadcast</dt><dd>Live on Netflix, third year</dd></div></dl></div>
+    <article class="case" id="case-sixkings" data-title="Six Kings Slam 2" hidden>
+      <header class="case-hero case-hero-sixkings"><span class="lens-layer" aria-hidden="true"><i class="lens-flare"></i><i class="lens-echo"></i><i class="lens-ring"></i></span><picture><source type="image/webp" srcset="assets/img/kings-show-1-1200.webp 1200w, assets/img/kings-show-1-2000.webp 2000w" sizes="100vw"><img src="assets/img/kings-show-1-2000.jpg" srcset="assets/img/kings-show-1-1200.jpg 1200w, assets/img/kings-show-1-2000.jpg 2000w" sizes="100vw" width="2000" height="1037" alt="The live Six Kings Slam opening ceremony, with a crown above the projection-mapped court" loading="lazy" decoding="async"></picture><div class="case-head wrap"><p class="eyebrow">Arena · 2025 · Event Creative Director · Live on Netflix</p><h2 class="heavy">Six Kings <em class="serif">Slam 2</em></h2><p class="hand">Six kings. One crown. A live show on a global stage.</p></div></header>
+      <div class="wrap case-facts"><dl><div><dt>Role</dt><dd>Event Creative Director</dd></div><div><dt>Year</dt><dd>2025</dd></div><div><dt>Where</dt><dd>Riyadh · BLVD World</dd></div><div><dt>Broadcast</dt><dd>Live on Netflix</dd></div></dl></div>
+      <section class="wrap case-films" aria-labelledby="films-sixkings">
+        <div class="films-head"><p class="eyebrow">In motion</p><h3 class="heavy" id="films-sixkings">See it <em class="serif">happen.</em></h3></div>
+        <div class="film-grid">
+        <figure class="film-card">
+          <div class="film-player" data-drive="1GxezZytUadSR08Rf5vkBy703Gz9lxHTv" data-video="assets/video/sixkings-show-01.mp4" data-title="Six Kings Slam 2 · Show 01">
+            <button class="film-launch" type="button" aria-label="Play Six Kings Slam 2 · Show 01">
+              <picture><source type="image/webp" srcset="assets/img/kings-show-1-1200.webp 1200w, assets/img/kings-show-1-2000.webp 2000w" sizes="(min-width: 900px) 44vw, 100vw"><img src="assets/img/kings-show-1-2000.jpg" srcset="assets/img/kings-show-1-1200.jpg 1200w, assets/img/kings-show-1-2000.jpg 2000w" sizes="(min-width: 900px) 44vw, 100vw" width="2000" height="1037" alt="" loading="lazy" decoding="async"></picture>
+              <span class="film-play-icon" aria-hidden="true">▶</span><span class="film-play-label eyebrow">Watch film</span>
+            </button>
+          </div>
+          <figcaption><div><p class="eyebrow">Opening ceremony</p><h3>Six Kings Slam 2 · Show 01</h3></div><a href="https://drive.google.com/file/d/1GxezZytUadSR08Rf5vkBy703Gz9lxHTv/view" target="_blank" rel="noopener" aria-label="Open Six Kings Slam 2 · Show 01 in Google Drive">Open video <span aria-hidden="true">↗</span></a></figcaption>
+        </figure>
+        <figure class="film-card">
+          <div class="film-player" data-drive="1aXnT_S4N7r7dG7xmtdSJscB2_t9uqrf6" data-video="assets/video/sixkings-show-02.mp4" data-title="Six Kings Slam 2 · Show 02">
+            <button class="film-launch" type="button" aria-label="Play Six Kings Slam 2 · Show 02">
+              <picture><source type="image/webp" srcset="assets/img/kings-show-2-1200.webp 1200w, assets/img/kings-show-2-1500.webp 1500w" sizes="(min-width: 900px) 44vw, 100vw"><img src="assets/img/kings-show-2-1500.jpg" srcset="assets/img/kings-show-2-1200.jpg 1200w, assets/img/kings-show-2-1500.jpg 1500w" sizes="(min-width: 900px) 44vw, 100vw" width="1500" height="897" alt="" loading="lazy" decoding="async"></picture>
+              <span class="film-play-icon" aria-hidden="true">▶</span><span class="film-play-label eyebrow">Watch film</span>
+            </button>
+          </div>
+          <figcaption><div><p class="eyebrow">Show recording</p><h3>Six Kings Slam 2 · Show 02</h3></div><a href="https://drive.google.com/file/d/1aXnT_S4N7r7dG7xmtdSJscB2_t9uqrf6/view" target="_blank" rel="noopener" aria-label="Open Six Kings Slam 2 · Show 02 in Google Drive">Open video <span aria-hidden="true">↗</span></a></figcaption>
+        </figure>
+        </div>
+      </section>
       <div class="wrap case-story">
-        <div class="story-block"><p class="eyebrow">The brief</p><p>Third edition, bigger event, bigger challenge: the opening ceremonies of the Six Kings Slam, broadcast live on Netflix.</p></div>
+        <div class="story-block"><p class="eyebrow">The brief</p><p>A bigger event and a bigger challenge: the opening ceremonies of the Six Kings Slam, broadcast live on Netflix.</p></div>
         <div class="story-block"><p class="eyebrow">The idea</p><p>Six players staged as kings, and a show that left the arena: facade projection mapping across the venue, promos on the BLVD World Sphere, and a fan zone and VIP journey that felt like one premium world.</p></div>
         <div class="story-block"><p class="eyebrow">The hard part</p><p>Two audiences at once. With the international broadcast team, the show was directed for the people in the seats and for the Netflix cameras, with camera direction and storytelling planned together.</p></div>
         <div class="story-block"><p class="eyebrow">The result</p><p>“Production Value A++” (The Tennis Letter), “a five-minute cinematic experience with the best of the best” (The Tennis Channel), and “a world-class opening for a world-class event” in the words of H.E. Turki Al Alshikh.</p></div>
@@ -371,11 +410,11 @@
         <blockquote><p class="arabic" lang="ar" dir="rtl">«افتتاح عالمي لحدث عالمي في الرياض»</p><cite class="eyebrow">H.E. Turki Al Alshikh — “A world-class opening for a world-class event in Riyadh”</cite></blockquote>
         <blockquote><p class="heavy">“Great match and even better atmosphere. Thank you Riyadh for your support.”</p><cite class="eyebrow">Novak Djokovic</cite></blockquote>
       </div>
-      <nav class="case-next wrap"><span class="eyebrow">Next</span><a class="heavy" href="#case-sixkings-2024" data-case="sixkings-2024">Six Kings Slam, <em class="serif">the first one</em> →</a></nav>
+      <nav class="case-next wrap"><span class="eyebrow">Next</span><a class="heavy" href="#case-sixkings-2024" data-case="sixkings-2024">Six Kings Slam <em class="serif">1</em> →</a></nav>
     </article>
 
-    <article class="case" id="case-sixkings-2024" data-title="Six Kings Slam 2024" hidden>
-      <header class="case-hero"><picture><source type="image/webp" srcset="assets/img/k24-warriors-c-1200.webp 1200w, assets/img/k24-warriors-c-2000.webp 2000w" sizes="100vw"><img src="assets/img/k24-warriors-c-2000.jpg" srcset="assets/img/k24-warriors-c-1200.jpg 1200w, assets/img/k24-warriors-c-2000.jpg 2000w" sizes="100vw" width="2000" height="1125" alt="Six Kings Slam 2024 key visual: the players as fantasy warriors" loading="lazy" decoding="async"></picture><div class="case-head wrap"><p class="eyebrow">Court · 2024 · Event Creative Director</p><h2 class="heavy">Six Kings Slam <em class="serif">the first one</em></h2><p class="hand">The first time hologram technology was used in a tennis event.</p></div></header>
+    <article class="case" id="case-sixkings-2024" data-title="Six Kings Slam 1" hidden>
+      <header class="case-hero"><picture><source type="image/webp" srcset="assets/img/k24-warriors-c-1200.webp 1200w, assets/img/k24-warriors-c-2000.webp 2000w" sizes="100vw"><img src="assets/img/k24-warriors-c-2000.jpg" srcset="assets/img/k24-warriors-c-1200.jpg 1200w, assets/img/k24-warriors-c-2000.jpg 2000w" sizes="100vw" width="2000" height="1125" alt="Six Kings Slam 2024 key visual: the players as fantasy warriors" loading="lazy" decoding="async"></picture><div class="case-head wrap"><p class="eyebrow">Court · 2024 · Event Creative Director</p><h2 class="heavy">Six Kings <em class="serif">Slam 1</em></h2><p class="hand">The first time hologram technology was used in a tennis event.</p></div></header>
       <div class="wrap case-facts"><dl><div><dt>Role</dt><dd>Event Creative Director</dd></div><div><dt>Year</dt><dd>2024</dd></div><div><dt>Shows</dt><dd>6 opening shows + 1 branding show</dd></div><div><dt>Timeline</dt><dd>Under 25 days</dd></div></dl></div>
       <div class="wrap case-story">
         <div class="story-block"><p class="eyebrow">The brief</p><p>The first edition. Ideation and creative direction for the Opening Match Show and the Pre-Awarding Ceremony: narrative flow, visual style and show structure.</p></div>
@@ -405,6 +444,22 @@
         <div class="story-block"><p class="eyebrow">The hard part</p><p>Effects like this are normally only possible in post-production for the TV audience. Here the illusion had to happen once, live, in the room, in step with the promoters and broadcasters.</p></div>
         <div class="story-block"><p class="eyebrow">The result</p><p>A fully immersive live opening for more than 25,000 spectators, plus the full event branding and spatial design: fences, venue wraps, stage visuals, sponsor placements, accreditations, signage and access flows.</p></div>
       </div>
+    <div class="wrap compare-block">
+      <div class="compare-copy">
+        <p class="eyebrow">Usyk × Fury 2 · The arena setup · 2024</p>
+        <h3 class="heavy">Render <em class="serif">to reality.</em></h3>
+        <p class="lead">The initial show concept for Usyk × Fury 2 was inspired by Pixar’s WALL·E. After the challenge of bringing natural grass into Kingdom Arena, the trees in the film suggested another possibility for the event setup: sixteen-metre trees inside the venue.</p>
+        <p class="hand">A starting point from WALL·E.</p>
+      </div>
+      <div class="compare" id="compare" style="--pos: 50%;">
+        <figure class="compare-after"><picture><source type="image/webp" srcset="assets/img/ka-palms-1000.webp 1000w, assets/img/ka-palms-1350.webp 1350w" sizes="(min-width: 1024px) 50vw, 100vw"><img src="assets/img/ka-palms-1350.jpg" srcset="assets/img/ka-palms-1000.jpg 1000w, assets/img/ka-palms-1350.jpg 1350w" sizes="(min-width: 1024px) 50vw, 100vw" width="1350" height="1350" alt="Sixteen-metre trees in the Usyk × Fury 2 arena setup" loading="lazy" decoding="async"></picture></figure>
+        <figure class="compare-before"><picture><source type="image/webp" srcset="assets/img/ka-render-1000.webp 1000w, assets/img/ka-render-1500.webp 1500w" sizes="(min-width: 1024px) 50vw, 100vw"><img src="assets/img/ka-render-1500.jpg" srcset="assets/img/ka-render-1000.jpg 1000w, assets/img/ka-render-1500.jpg 1500w" sizes="(min-width: 1024px) 50vw, 100vw" width="1500" height="1500" alt="Concept for the Usyk × Fury 2 arena setup with sixteen-metre trees" loading="lazy" decoding="async"></picture></figure>
+        <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Compare the Usyk × Fury 2 arena concept with the completed setup">
+        <span class="compare-handle" aria-hidden="true"></span>
+        <span class="compare-label compare-label-l eyebrow" aria-hidden="true">Render</span>
+        <span class="compare-label compare-label-r eyebrow" aria-hidden="true">Built</span>
+      </div>
+    </div>
       <div class="wrap case-gallery">
         <figure class="tile"><picture><source type="image/webp" srcset="assets/img/usyk-clock-1000.webp 1000w" sizes="(min-width: 1024px) 44vw, 100vw"><img src="assets/img/usyk-clock-1000.jpg" srcset="assets/img/usyk-clock-1000.jpg 1000w" sizes="(min-width: 1024px) 44vw, 100vw" width="1000" height="1000" alt="The opening show stage: a giant clock between blue curtains" loading="lazy" decoding="async"></picture></figure>
         <figure class="tile"><picture><source type="image/webp" srcset="assets/img/usyk-arena-1-1200.webp 1200w, assets/img/usyk-arena-1-2000.webp 2000w" sizes="(min-width: 1024px) 44vw, 100vw"><img src="assets/img/usyk-arena-1-2000.jpg" srcset="assets/img/usyk-arena-1-1200.jpg 1200w, assets/img/usyk-arena-1-2000.jpg 2000w" sizes="(min-width: 1024px) 44vw, 100vw" width="2000" height="1148" alt="The arena light show: beams over the ring and the crowd" loading="lazy" decoding="async"></picture></figure>
@@ -413,21 +468,23 @@
         <figure class="tile tile-wide"><picture><source type="image/webp" srcset="assets/img/usyk-key-1200.webp 1200w, assets/img/usyk-key-1920.webp 1920w" sizes="(min-width: 1024px) 88vw, 100vw"><img src="assets/img/usyk-key-1920.jpg" srcset="assets/img/usyk-key-1200.jpg 1200w, assets/img/usyk-key-1920.jpg 1920w" sizes="(min-width: 1024px) 88vw, 100vw" width="1920" height="1080" alt="Usyk × Fury 2 Reignited key visual: the two fighters face to face" loading="lazy" decoding="async"></picture></figure>
         <figure class="tile tile-wide"><picture><source type="image/webp" srcset="assets/img/usyk-arena-2-1200.webp 1200w, assets/img/usyk-arena-2-2000.webp 2000w" sizes="(min-width: 1024px) 88vw, 100vw"><img src="assets/img/usyk-arena-2-2000.jpg" srcset="assets/img/usyk-arena-2-1200.jpg 1200w, assets/img/usyk-arena-2-2000.jpg 2000w" sizes="(min-width: 1024px) 88vw, 100vw" width="2000" height="1125" alt="The venue at night with its palm trees lit" loading="lazy" decoding="async"></picture></figure>
       </div>
-      <nav class="case-next wrap"><span class="eyebrow">Next</span><a class="heavy" href="#case-kingdom" data-case="kingdom">Kingdom Arena <em class="serif">→ Stadium</em> →</a></nav>
+      <nav class="case-next wrap"><span class="eyebrow">Next</span><a class="heavy" href="#case-samurai" data-case="samurai">Night of the <em class="serif">Samurai</em> →</a></nav>
     </article>
 
-    <article class="case" id="case-kingdom" data-title="Kingdom Arena → Stadium" hidden>
-      <header class="case-hero"><picture><source type="image/webp" srcset="assets/img/ka-palms-1000.webp 1000w, assets/img/ka-palms-1350.webp 1350w" sizes="100vw"><img src="assets/img/ka-palms-1350.jpg" srcset="assets/img/ka-palms-1000.jpg 1000w, assets/img/ka-palms-1350.jpg 1350w" sizes="100vw" width="1350" height="1350" alt="Palm trees inside Kingdom Arena at night" loading="lazy" decoding="async"></picture><div class="case-head wrap"><p class="eyebrow">Venue · 2024 · Riyadh Season</p><h2 class="heavy">Kingdom Arena <em class="serif">→ Stadium</em></h2><p class="hand">initially inspired by PIXAR's WALL-E</p></div></header>
-      <div class="wrap case-facts"><dl><div><dt>Role</dt><dd>Creative direction · venue transformation</dd></div><div><dt>Year</dt><dd>2024</dd></div><div><dt>Where</dt><dd>Kingdom Arena, Riyadh</dd></div><div><dt>The ask</dt><dd>Natural grass and sixteen-metre trees indoors</dd></div></dl></div>
+
+    <article class="case" id="case-samurai" data-title="Night of the Samurai" hidden>
+      <header class="case-hero"><picture><source type="image/webp" srcset="assets/img/samurai-opening-720.webp 720w, assets/img/samurai-opening-1400.webp 1400w, assets/img/samurai-opening-2000.webp 2000w" sizes="100vw"><img src="assets/img/samurai-opening-2000.jpg" srcset="assets/img/samurai-opening-720.jpg 720w, assets/img/samurai-opening-1400.jpg 1400w, assets/img/samurai-opening-2000.jpg 2000w" sizes="100vw" width="2000" height="1334" alt="The Night of the Samurai opening performance in Riyadh" loading="lazy" decoding="async"></picture><div class="case-head wrap"><p class="eyebrow">Boxing · Riyadh · December 2025</p><h2 class="heavy">Night of the <em class="serif">Samurai</em></h2><p class="hand">From the arrival to the opening bell.</p></div></header>
+      <div class="wrap case-facts"><dl><div><dt>Role</dt><dd>Creative direction</dd></div><div><dt>Year</dt><dd>2025</dd></div><div><dt>Where</dt><dd>Riyadh</dd></div><div><dt>Format</dt><dd>Boxing event</dd></div></dl></div>
       <div class="wrap case-story">
-        <div class="story-block"><p class="eyebrow">The brief</p><p>Turn Kingdom Arena, a closed venue, into a stadium for Riyadh Season, with natural grass inside a building.</p></div>
-        <div class="story-block"><p class="eyebrow">The idea</p><p>The grass reminded me of the virtual trees in Pixar's WALL-E, so the next question was obvious: if the grass works, why not sixteen-metre trees?</p></div>
-        <div class="story-block"><p class="eyebrow">The hard part</p><p>Growing and keeping natural grass alive inside a closed arena. That was the first problem to solve before anything could grow above it.</p></div>
-        <div class="story-block"><p class="eyebrow">The result</p><p>The grass challenge was overcome, and the concept moved on to full-height trees inside the arena.</p></div>
+        <div class="story-block"><p class="eyebrow">The event</p><p>A boxing night with a Japanese-inspired setting, from the fan-zone arrival to the live opening performance.</p></div>
+        <div class="story-block"><p class="eyebrow">The visual direction</p><p>Samurai figures, cherry blossoms and monumental boxing gloves connected the event identity to the physical space. On stage, performers, lighting and screen content carried that theme into the opening show.</p></div>
       </div>
       <div class="wrap case-gallery">
-        <figure class="tile"><picture><source type="image/webp" srcset="assets/img/ka-render-1000.webp 1000w, assets/img/ka-render-1500.webp 1500w" sizes="(min-width: 1024px) 44vw, 100vw"><img src="assets/img/ka-render-1500.jpg" srcset="assets/img/ka-render-1000.jpg 1000w, assets/img/ka-render-1500.jpg 1500w" sizes="(min-width: 1024px) 44vw, 100vw" width="1500" height="1500" alt="Black and white concept render of the arena with sixteen-metre trees" loading="lazy" decoding="async"></picture><figcaption class="eyebrow">Concept</figcaption></figure>
-        <figure class="tile"><picture><source type="image/webp" srcset="assets/img/ka-palms-1000.webp 1000w, assets/img/ka-palms-1350.webp 1350w" sizes="(min-width: 1024px) 44vw, 100vw"><img src="assets/img/ka-palms-1350.jpg" srcset="assets/img/ka-palms-1000.jpg 1000w, assets/img/ka-palms-1350.jpg 1350w" sizes="(min-width: 1024px) 44vw, 100vw" width="1350" height="1350" alt="Palm trees inside the stadium at night" loading="lazy" decoding="async"></picture><figcaption class="eyebrow">Built</figcaption></figure>
+        <figure class="tile photo-tile tile-wide"><picture><source type="image/webp" srcset="assets/img/samurai-opening-720.webp 720w, assets/img/samurai-opening-1400.webp 1400w, assets/img/samurai-opening-2000.webp 2000w" sizes="(min-width: 1024px) 88vw, 100vw"><img src="assets/img/samurai-opening-2000.jpg" srcset="assets/img/samurai-opening-720.jpg 720w, assets/img/samurai-opening-1400.jpg 1400w, assets/img/samurai-opening-2000.jpg 2000w" sizes="(min-width: 1024px) 88vw, 100vw" width="2000" height="1334" alt="Performers, cherry blossoms and red screen content in the live opening show" loading="lazy" decoding="async"></picture><figcaption class="photo-caption">Opening performance · Sela project archive</figcaption></figure>
+        <figure class="tile photo-tile"><picture><source type="image/webp" srcset="assets/img/samurai-fanzone-720.webp 720w, assets/img/samurai-fanzone-1400.webp 1400w, assets/img/samurai-fanzone-2000.webp 2000w" sizes="(min-width: 1024px) 44vw, 100vw"><img src="assets/img/samurai-fanzone-2000.jpg" srcset="assets/img/samurai-fanzone-720.jpg 720w, assets/img/samurai-fanzone-1400.jpg 1400w, assets/img/samurai-fanzone-2000.jpg 2000w" sizes="(min-width: 1024px) 44vw, 100vw" width="2000" height="1123" alt="Fan-zone arrival framed by monumental red boxing gloves" loading="lazy" decoding="async"></picture><figcaption class="photo-caption">Fan-zone arrival · Sela project archive</figcaption></figure>
+        <figure class="tile photo-tile"><picture><source type="image/webp" srcset="assets/img/samurai-gate-720.webp 720w, assets/img/samurai-gate-1400.webp 1400w, assets/img/samurai-gate-2000.webp 2000w" sizes="(min-width: 1024px) 44vw, 100vw"><img src="assets/img/samurai-gate-2000.jpg" srcset="assets/img/samurai-gate-720.jpg 720w, assets/img/samurai-gate-1400.jpg 1400w, assets/img/samurai-gate-2000.jpg 2000w" sizes="(min-width: 1024px) 44vw, 100vw" width="2000" height="1123" alt="Sculptural boxing gloves at the venue entrance" loading="lazy" decoding="async"></picture><figcaption class="photo-caption">Sculptural entrance · Sela project archive</figcaption></figure>
+        <figure class="tile photo-tile photo-tile-portrait"><picture><source type="image/webp" srcset="assets/img/samurai-installation-720.webp 720w, assets/img/samurai-installation-1080.webp 1080w" sizes="(min-width: 1024px) 44vw, 100vw"><img src="assets/img/samurai-installation-1080.jpg" srcset="assets/img/samurai-installation-720.jpg 720w, assets/img/samurai-installation-1080.jpg 1080w" sizes="(min-width: 1024px) 44vw, 100vw" width="1080" height="1350" alt="A carved samurai installation within the event setting" loading="lazy" decoding="async"></picture><figcaption class="photo-caption">Samurai installation · Brother’s Creative</figcaption></figure>
+        <figure class="tile photo-tile photo-tile-portrait"><picture><source type="image/webp" srcset="assets/img/samurai-performers-720.webp 720w, assets/img/samurai-performers-1400.webp 1400w, assets/img/samurai-performers-2000.webp 2000w" sizes="(min-width: 1024px) 44vw, 100vw"><img src="assets/img/samurai-performers-2000.jpg" srcset="assets/img/samurai-performers-720.jpg 720w, assets/img/samurai-performers-1400.jpg 1400w, assets/img/samurai-performers-2000.jpg 2000w" sizes="(min-width: 1024px) 44vw, 100vw" width="2000" height="1334" alt="Live performers beneath illuminated cherry blossoms" loading="lazy" decoding="async"></picture><figcaption class="photo-caption">Performance and scenic detail · Sela project archive</figcaption></figure>
       </div>
       <nav class="case-next wrap"><span class="eyebrow">Next</span><a class="heavy" href="#case-fifae" data-case="fifae">FIFAe World Cup <em class="serif">Final</em> →</a></nav>
     </article>
@@ -446,11 +503,28 @@
         <figure class="tile"><picture><source type="image/webp" srcset="assets/img/fifa-render-1000.webp 1000w" sizes="(min-width: 1024px) 44vw, 100vw"><img src="assets/img/fifa-render-1000.jpg" srcset="assets/img/fifa-render-1000.jpg 1000w" sizes="(min-width: 1024px) 44vw, 100vw" width="1000" height="1000" alt="Concept render of the FIFAe venue" loading="lazy" decoding="async"></picture></figure>
         <figure class="tile tile-wide"><picture><source type="image/webp" srcset="assets/img/fifa-wide-1200.webp 1200w, assets/img/fifa-wide-1600.webp 1600w" sizes="(min-width: 1024px) 88vw, 100vw"><img src="assets/img/fifa-wide-1600.jpg" srcset="assets/img/fifa-wide-1200.jpg 1200w, assets/img/fifa-wide-1600.jpg 1600w" sizes="(min-width: 1024px) 88vw, 100vw" width="1600" height="951" alt="Wide view of the FIFAe stage and seating" loading="lazy" decoding="async"></picture></figure>
       </div>
-      <nav class="case-next wrap"><span class="eyebrow">Next</span><a class="heavy" href="#case-citywalk" data-case="citywalk">CityWalk &amp; <em class="serif">Little Asia</em> →</a></nav>
+      <nav class="case-next wrap"><span class="eyebrow">Next</span><a class="heavy" href="#case-winter" data-case="winter">Winter Wonderland <em class="serif">Jeddah</em> →</a></nav>
     </article>
 
-    <article class="case" id="case-citywalk" data-title="CityWalk & Little Asia" hidden>
-      <header class="case-hero"><picture><source type="image/webp" srcset="assets/img/cw-gate-1200.webp 1200w, assets/img/cw-gate-1600.webp 1600w" sizes="100vw"><img src="assets/img/cw-gate-1600.jpg" srcset="assets/img/cw-gate-1200.jpg 1200w, assets/img/cw-gate-1600.jpg 1600w" sizes="100vw" width="1600" height="995" alt="The illuminated CityWalk gate with fireworks" loading="lazy" decoding="async"></picture><div class="case-head wrap"><p class="eyebrow">Street · Jeddah · all seasons · 2022–2025</p><h2 class="heavy">CityWalk &amp; <em class="serif">Little Asia</em></h2><p class="hand">A hundred shows, a hundred loops, every season.</p></div></header>
+    <article class="case" id="case-winter" data-title="Winter Wonderland · Jeddah" hidden>
+      <header class="case-hero"><picture><source type="image/webp" srcset="assets/img/winter-castle-720.webp 720w, assets/img/winter-castle-1400.webp 1400w, assets/img/winter-castle-1672.webp 1672w" sizes="100vw"><img src="assets/img/winter-castle-1672.jpg" srcset="assets/img/winter-castle-720.jpg 720w, assets/img/winter-castle-1400.jpg 1400w, assets/img/winter-castle-1672.jpg 1672w" sizes="100vw" width="1672" height="941" alt="Winter Wonderland Jeddah castle at blue hour — AI-enhanced photograph" loading="lazy" decoding="async"></picture><div class="case-head wrap"><p class="eyebrow">Destination · Jeddah · 2025–2026</p><h2 class="heavy">Winter Wonderland <em class="serif">Jeddah</em></h2><p class="hand">A winter setting for a day out together.</p></div><span class="hero-photo-credit">AI-enhanced photograph · JeddahNow</span></header>
+      <div class="wrap case-facts"><dl><div><dt>Role</dt><dd>Creative direction</dd></div><div><dt>Season</dt><dd>2025–2026</dd></div><div><dt>Where</dt><dd>Jeddah</dd></div><div><dt>Format</dt><dd>Seasonal family destination</dd></div></dl></div>
+      <div class="wrap case-story">
+        <div class="story-block"><p class="eyebrow">The destination</p><p>Winter Wonderland in Jeddah: a seasonal setting built around rides, games, winter characters and time spent together.</p></div>
+        <div class="story-block"><p class="eyebrow">The visual direction</p><p>Castle gateways, illuminated trees and playful zone entrances give the park its winter character. The details work at different scales, from the first view of the destination to a child meeting a snowman.</p></div>
+      </div>
+      <div class="wrap case-gallery">
+        <figure class="tile photo-tile tile-wide"><picture><source type="image/webp" srcset="assets/img/winter-castle-720.webp 720w, assets/img/winter-castle-1400.webp 1400w, assets/img/winter-castle-1672.webp 1672w" sizes="(min-width: 1024px) 88vw, 100vw"><img src="assets/img/winter-castle-1672.jpg" srcset="assets/img/winter-castle-720.jpg 720w, assets/img/winter-castle-1400.jpg 1400w, assets/img/winter-castle-1672.jpg 1672w" sizes="(min-width: 1024px) 88vw, 100vw" width="1672" height="941" alt="Winter Wonderland Jeddah castle at blue hour — AI-enhanced photograph" loading="lazy" decoding="async"></picture><figcaption class="photo-caption">Castle entrance · AI-enhanced photograph · JeddahNow</figcaption></figure>
+        <figure class="tile photo-tile"><picture><source type="image/webp" srcset="assets/img/winter-toytown-720.webp 720w, assets/img/winter-toytown-1400.webp 1400w, assets/img/winter-toytown-1672.webp 1672w" sizes="(min-width: 1024px) 44vw, 100vw"><img src="assets/img/winter-toytown-1672.jpg" srcset="assets/img/winter-toytown-720.jpg 720w, assets/img/winter-toytown-1400.jpg 1400w, assets/img/winter-toytown-1672.jpg 1672w" sizes="(min-width: 1024px) 44vw, 100vw" width="1672" height="941" alt="Toy Town gateway in Winter Wonderland Jeddah — AI-enhanced photograph" loading="lazy" decoding="async"></picture><figcaption class="photo-caption">Toy Town · AI-enhanced photograph · Saudi Press Agency</figcaption></figure>
+        <figure class="tile photo-tile"><picture><source type="image/webp" srcset="assets/img/winter-wheel-720.webp 720w, assets/img/winter-wheel-1400.webp 1400w, assets/img/winter-wheel-1672.webp 1672w" sizes="(min-width: 1024px) 44vw, 100vw"><img src="assets/img/winter-wheel-1672.jpg" srcset="assets/img/winter-wheel-720.jpg 720w, assets/img/winter-wheel-1400.jpg 1400w, assets/img/winter-wheel-1672.jpg 1672w" sizes="(min-width: 1024px) 44vw, 100vw" width="1672" height="941" alt="Ferris wheel with illuminated winter scenery — AI-enhanced photograph" loading="lazy" decoding="async"></picture><figcaption class="photo-caption">Rides and winter scenery · AI-enhanced photograph · Saudi Press Agency</figcaption></figure>
+        <figure class="tile photo-tile"><picture><source type="image/webp" srcset="assets/img/winter-snowman-720.webp 720w, assets/img/winter-snowman-1400.webp 1400w, assets/img/winter-snowman-1672.webp 1672w" sizes="(min-width: 1024px) 44vw, 100vw"><img src="assets/img/winter-snowman-1672.jpg" srcset="assets/img/winter-snowman-720.jpg 720w, assets/img/winter-snowman-1400.jpg 1400w, assets/img/winter-snowman-1672.jpg 1672w" sizes="(min-width: 1024px) 44vw, 100vw" width="1672" height="941" alt="A child meeting a snowman character — AI-enhanced photograph" loading="lazy" decoding="async"></picture><figcaption class="photo-caption">Meeting the characters · AI-enhanced photograph · Al Hadath</figcaption></figure>
+        <figure class="tile photo-tile"><picture><source type="image/webp" srcset="assets/img/winter-audience-720.webp 720w, assets/img/winter-audience-1400.webp 1400w, assets/img/winter-audience-2000.webp 2000w" sizes="(min-width: 1024px) 44vw, 100vw"><img src="assets/img/winter-audience-2000.jpg" srcset="assets/img/winter-audience-720.jpg 720w, assets/img/winter-audience-1400.jpg 1400w, assets/img/winter-audience-2000.jpg 2000w" sizes="(min-width: 1024px) 44vw, 100vw" width="2000" height="1334" alt="Visitors laughing beside the polar-bear scene in Jeddah" loading="lazy" decoding="async"></picture><figcaption class="photo-caption">A day out together · Jeddah Calendar / 3adad</figcaption></figure>
+      </div>
+      <nav class="case-next wrap"><span class="eyebrow">Next</span><a class="heavy" href="#case-citywalk" data-case="citywalk">City Walk <em class="serif">Jeddah</em> →</a></nav>
+    </article>
+
+    <article class="case" id="case-citywalk" data-title="City Walk & Little Asia" hidden>
+      <header class="case-hero"><picture><source type="image/webp" srcset="assets/img/cw-gate-1200.webp 1200w, assets/img/cw-gate-1600.webp 1600w" sizes="100vw"><img src="assets/img/cw-gate-1600.jpg" srcset="assets/img/cw-gate-1200.jpg 1200w, assets/img/cw-gate-1600.jpg 1600w" sizes="100vw" width="1600" height="995" alt="The illuminated CityWalk gate with fireworks" loading="lazy" decoding="async"></picture><div class="case-head wrap"><p class="eyebrow">Street · Jeddah · all seasons · 2022–2025</p><h2 class="heavy">City Walk &amp; <em class="serif">Little Asia</em></h2><p class="hand">A hundred shows, a hundred loops, every season.</p></div></header>
       <div class="wrap case-facts"><dl><div><dt>Role</dt><dd>Zone ideation &amp; concept design · identity · content</dd></div><div><dt>Years</dt><dd>2022 → 2025</dd></div><div><dt>Where</dt><dd>Jeddah</dd></div><div><dt>Content</dt><dd>100+ shows · 100+ loops for Wonderwall</dd></div></dl></div>
       <div class="wrap case-story">
         <div class="story-block"><p class="eyebrow">The brief</p><p>Zones for CityWalk and Little Asia in Jeddah, season after season: theme, masterplan and concept, plus an identity for each zone.</p></div>
@@ -466,17 +540,17 @@
         <figure class="tile"><picture><source type="image/webp" srcset="assets/img/cw-aerial-2-1200.webp 1200w, assets/img/cw-aerial-2-2000.webp 2000w" sizes="(min-width: 1024px) 44vw, 100vw"><img src="assets/img/cw-aerial-2-2000.jpg" srcset="assets/img/cw-aerial-2-1200.jpg 1200w, assets/img/cw-aerial-2-2000.jpg 2000w" sizes="(min-width: 1024px) 44vw, 100vw" width="2000" height="1161" alt="Tokyo street facade at Little Asia with lightbox signs" loading="lazy" decoding="async"></picture></figure>
         <figure class="tile tile-wide"><picture><source type="image/webp" srcset="assets/img/cw-aerial-3-1200.webp 1200w, assets/img/cw-aerial-3-2000.webp 2000w" sizes="(min-width: 1024px) 88vw, 100vw"><img src="assets/img/cw-aerial-3-2000.jpg" srcset="assets/img/cw-aerial-3-1200.jpg 1200w, assets/img/cw-aerial-3-2000.jpg 2000w" sizes="(min-width: 1024px) 88vw, 100vw" width="2000" height="1174" alt="Aerial of CityWalk Jeddah and its lit walkways" loading="lazy" decoding="async"></picture></figure>
       </div>
-      <nav class="case-next wrap"><span class="eyebrow">Next</span><a class="heavy" href="#case-wonderwall" data-case="wonderwall">Wonderwall <em class="serif">Riyadh</em> →</a></nav>
+      <nav class="case-next wrap"><span class="eyebrow">Next</span><a class="heavy" href="#case-wonderwall" data-case="wonderwall">Wonder Wall <em class="serif">Boulevard City Edition</em> →</a></nav>
     </article>
 
-    <article class="case" id="case-wonderwall" data-title="Wonderwall, BLVD City" hidden>
-      <header class="case-hero"><picture><source type="image/webp" srcset="assets/img/ww-riyadh-1-1000.webp 1000w, assets/img/ww-riyadh-1-1350.webp 1350w" sizes="100vw"><img src="assets/img/ww-riyadh-1-1350.jpg" srcset="assets/img/ww-riyadh-1-1000.jpg 1000w, assets/img/ww-riyadh-1-1350.jpg 1350w" sizes="100vw" width="1350" height="1350" alt="The Wonderwall arch projected over the BLVD City fountain" loading="lazy" decoding="async"></picture><div class="case-head wrap"><p class="eyebrow">Show · BLVD City, Riyadh · 2023–24–25</p><h2 class="heavy">Wonderwall <em class="serif">Riyadh</em></h2><p class="hand">built in the middle of the fountain.</p></div></header>
+    <article class="case" id="case-wonderwall" data-title="Wonder Wall · Boulevard City Edition" hidden>
+      <header class="case-hero case-hero-wonderwall"><picture><source type="image/webp" srcset="assets/img/ww-riyadh-1-1000.webp 1000w, assets/img/ww-riyadh-1-1350.webp 1350w" sizes="100vw"><img src="assets/img/ww-riyadh-1-1350.jpg" srcset="assets/img/ww-riyadh-1-1000.jpg 1000w, assets/img/ww-riyadh-1-1350.jpg 1350w" sizes="100vw" width="1350" height="1350" alt="The Wonderwall arch projected over the BLVD City fountain" loading="lazy" decoding="async"></picture><div class="case-head wrap"><p class="eyebrow">Show · BLVD City, Riyadh · 2023–24–25</p><h2 class="heavy">Wonder Wall <em class="serif">Boulevard City Edition</em></h2><p class="hand">Projection shows at the Boulevard City fountain.</p></div></header>
       <div class="wrap case-facts"><dl><div><dt>Role</dt><dd>Concept · content creation &amp; curation</dd></div><div><dt>Years</dt><dd>2023 → 2025</dd></div><div><dt>Where</dt><dd>BLVD City, Riyadh</dd></div><div><dt>Stage</dt><dd>The dancing fountain</dd></div></dl></div>
       <div class="wrap case-story">
         <div class="story-block"><p class="eyebrow">The brief</p><p>After the success of Wonderwall Jeddah, bring the concept to BLVD City in Riyadh.</p></div>
         <div class="story-block"><p class="eyebrow">The idea</p><p>Build it in the middle of the fountain, and pair a completely new list of content, from old traditional Saudi to modern futuristic short stories, with the dancing fountain.</p></div>
         <div class="story-block"><p class="eyebrow">The hard part</p><p>A new list of content for a new stage: the stories had to work with the water, the light and the crowd around the fountain.</p></div>
-        <div class="story-block"><p class="eyebrow">The result</p><p>An experience the deck simply calls breathtaking, running across 2023, 2024 and 2025.</p></div>
+        <div class="story-block"><p class="eyebrow">The result</p><p>A new edition of Wonder Wall for Boulevard City, with a programme of stories created for the fountain setting across 2023, 2024 and 2025.</p></div>
       </div>
       <div class="wrap case-gallery">
         <figure class="tile"><picture><source type="image/webp" srcset="assets/img/ww-riyadh-2-1000.webp 1000w, assets/img/ww-riyadh-2-1350.webp 1350w" sizes="(min-width: 1024px) 44vw, 100vw"><img src="assets/img/ww-riyadh-2-1350.jpg" srcset="assets/img/ww-riyadh-2-1000.jpg 1000w, assets/img/ww-riyadh-2-1350.jpg 1350w" sizes="(min-width: 1024px) 44vw, 100vw" width="1350" height="1350" alt="Wonderwall Riyadh: projected arches and the fountain" loading="lazy" decoding="async"></picture></figure>
@@ -505,8 +579,40 @@
     </article>
 
     <article class="case" id="case-sphere" data-title="The Sphere" hidden>
-      <header class="case-hero"><picture><source type="image/webp" srcset="assets/img/sphere-night-1000.webp 1000w, assets/img/sphere-night-1800.webp 1800w" sizes="100vw"><img src="assets/img/sphere-night-1800.jpg" srcset="assets/img/sphere-night-1000.jpg 1000w, assets/img/sphere-night-1800.jpg 1800w" sizes="100vw" width="1800" height="1591" alt="The Sphere at BLVD World lit at night" loading="lazy" decoding="async"></picture><div class="case-head wrap"><p class="eyebrow">Content · BLVD World · four years · Creative Director</p><h2 class="heavy">The <em class="serif">Sphere</em></h2><p class="hand">We turned the sphere transparent!</p></div></header>
+      <header class="case-hero case-hero-sphere"><span class="lens-layer" aria-hidden="true"><i class="lens-flare"></i><i class="lens-echo"></i><i class="lens-ring"></i></span><picture><source type="image/webp" srcset="assets/img/sphere-night-1000.webp 1000w, assets/img/sphere-night-1800.webp 1800w" sizes="100vw"><img src="assets/img/sphere-night-1800.jpg" srcset="assets/img/sphere-night-1000.jpg 1000w, assets/img/sphere-night-1800.jpg 1800w" sizes="100vw" width="1800" height="1591" alt="The Sphere at BLVD World lit at night" loading="lazy" decoding="async"></picture><div class="case-head wrap"><p class="eyebrow">Content · BLVD World · four years · Creative Director</p><h2 class="heavy">The <em class="serif">Sphere</em></h2><p class="hand">We turned the sphere transparent!</p></div></header>
       <div class="wrap case-facts"><dl><div><dt>Role</dt><dd>Creative Director · content</dd></div><div><dt>Years</dt><dd>Four years of content</dd></div><div><dt>Where</dt><dd>BLVD World, Riyadh</dd></div><div><dt>Record</dt><dd>Biggest LED sphere in the world, before Vegas</dd></div></dl></div>
+      <section class="wrap case-films" aria-labelledby="films-sphere">
+        <div class="films-head"><p class="eyebrow">In motion</p><h3 class="heavy" id="films-sphere">See it <em class="serif">happen.</em></h3></div>
+        <div class="film-grid">
+        <figure class="film-card">
+          <div class="film-player" data-drive="1BLouA765cDeARU-G7HJPBVnkeiG5fWEi" data-video="assets/video/sphere-show-01.mp4" data-title="The Sphere · Show 01">
+            <button class="film-launch" type="button" aria-label="Play The Sphere · Show 01">
+              <img src="assets/video/sphere-show-01-poster.jpg" alt="" loading="lazy" decoding="async">
+              <span class="film-play-icon" aria-hidden="true">▶</span><span class="film-play-label eyebrow">Watch film</span>
+            </button>
+          </div>
+          <figcaption><div><p class="eyebrow">Content in motion</p><h3>The Sphere · Show 01</h3></div><a href="https://drive.google.com/file/d/1BLouA765cDeARU-G7HJPBVnkeiG5fWEi/view" target="_blank" rel="noopener" aria-label="Open The Sphere · Show 01 in Google Drive">Open video <span aria-hidden="true">↗</span></a></figcaption>
+        </figure>
+        <figure class="film-card">
+          <div class="film-player" data-drive="1Fr3_VqS3DRyAxgpniCKSyyajmxxGmDlh" data-video="assets/video/sphere-furry.mp4" data-title="The Sphere · Furry">
+            <button class="film-launch" type="button" aria-label="Play The Sphere · Furry">
+              <img src="assets/video/sphere-furry-poster.jpg" alt="" loading="lazy" decoding="async">
+              <span class="film-play-icon" aria-hidden="true">▶</span><span class="film-play-label eyebrow">Watch film</span>
+            </button>
+          </div>
+          <figcaption><div><p class="eyebrow">Character study</p><h3>The Sphere · Furry</h3></div><a href="https://drive.google.com/file/d/1Fr3_VqS3DRyAxgpniCKSyyajmxxGmDlh/view" target="_blank" rel="noopener" aria-label="Open The Sphere · Furry in Google Drive">Open video <span aria-hidden="true">↗</span></a></figcaption>
+        </figure>
+        <figure class="film-card">
+          <div class="film-player" data-drive="1C2cwwkg8oH9JCiqX9K-9A4VMVYXMTNOJ" data-video="assets/video/sphere-transparency.mp4" data-title="The Sphere · Transparency">
+            <button class="film-launch" type="button" aria-label="Play The Sphere · Transparency">
+              <img src="assets/video/sphere-transparency-poster.jpg" alt="" loading="lazy" decoding="async">
+              <span class="film-play-icon" aria-hidden="true">▶</span><span class="film-play-label eyebrow">Watch film</span>
+            </button>
+          </div>
+          <figcaption><div><p class="eyebrow">The disappearing surface</p><h3>The Sphere · Transparency</h3></div><a href="https://drive.google.com/file/d/1C2cwwkg8oH9JCiqX9K-9A4VMVYXMTNOJ/view" target="_blank" rel="noopener" aria-label="Open The Sphere · Transparency in Google Drive">Open video <span aria-hidden="true">↗</span></a></figcaption>
+        </figure>
+        </div>
+      </section>
       <div class="wrap case-story">
         <div class="story-block"><p class="eyebrow">The brief</p><p>Content for the Sphere in BLVD World, the previous record holder for the biggest LED sphere in the world before the Vegas Sphere.</p></div>
         <div class="story-block"><p class="eyebrow">The idea</p><p>Treat the Sphere as a canvas that can change its nature. At one point we turned it transparent.</p></div>
@@ -519,15 +625,15 @@
         <figure class="tile"><picture><source type="image/webp" srcset="assets/img/sphere-v3-900.webp 900w" sizes="(min-width: 1024px) 44vw, 100vw"><img src="assets/img/sphere-v3-900.jpg" srcset="assets/img/sphere-v3-900.jpg 900w" sizes="(min-width: 1024px) 44vw, 100vw" width="900" height="1262" alt="The Sphere showing a desert canyon scene" loading="lazy" decoding="async"></picture></figure>
         <figure class="tile"><picture><source type="image/webp" srcset="assets/img/kings-sphere-1200.webp 1200w, assets/img/kings-sphere-2000.webp 2000w" sizes="(min-width: 1024px) 44vw, 100vw"><img src="assets/img/kings-sphere-2000.jpg" srcset="assets/img/kings-sphere-1200.jpg 1200w, assets/img/kings-sphere-2000.jpg 2000w" sizes="(min-width: 1024px) 44vw, 100vw" width="2000" height="1125" alt="The Sphere lit red for Six Kings Slam" loading="lazy" decoding="async"></picture></figure>
       </div>
-      <nav class="case-next wrap"><span class="eyebrow">Next</span><a class="heavy" href="#case-ai" data-case="ai">AI <em class="serif">worlds</em> →</a></nav>
+      <nav class="case-next wrap"><span class="eyebrow">Next</span><a class="heavy" href="#case-ai" data-case="ai">AI <em class="serif">explorations</em> →</a></nav>
     </article>
 
-    <article class="case" id="case-ai" data-title="AI worlds" hidden>
-      <header class="case-hero"><picture><source type="image/webp" srcset="assets/img/ai-snow-2-1200.webp 1200w, assets/img/ai-snow-2-2000.webp 2000w" sizes="100vw"><img src="assets/img/ai-snow-2-2000.jpg" srcset="assets/img/ai-snow-2-1200.jpg 1200w, assets/img/ai-snow-2-2000.jpg 2000w" sizes="100vw" width="2000" height="1044" alt="Snow over the mud-brick streets of Diriyah, an AI world" loading="lazy" decoding="async"></picture><div class="case-head wrap"><p class="eyebrow">Personal explorations · 2025</p><h2 class="heavy">Three worlds <em class="serif">that don't exist yet</em></h2><p class="hand">cinematic worldbuilding with generative technology</p></div></header>
+    <article class="case" id="case-ai" data-title="AI explorations" hidden>
+      <header class="case-hero"><picture><source type="image/webp" srcset="assets/img/ai-snow-2-1200.webp 1200w, assets/img/ai-snow-2-2000.webp 2000w" sizes="100vw"><img src="assets/img/ai-snow-2-2000.jpg" srcset="assets/img/ai-snow-2-1200.jpg 1200w, assets/img/ai-snow-2-2000.jpg 2000w" sizes="100vw" width="2000" height="1044" alt="Snow over the mud-brick streets of Diriyah, an AI world" loading="lazy" decoding="async"></picture><div class="case-head wrap"><p class="eyebrow">Personal explorations · 2025</p><h2 class="heavy">AI <em class="serif">explorations</em></h2><p class="hand">Trying ideas, learning tools and seeing where they lead.</p></div></header>
       <div class="wrap case-facts"><dl><div><dt>Role</dt><dd>Director · worldbuilder</dd></div><div><dt>Year</dt><dd>2025</dd></div><div><dt>Team</dt><dd>11 teammates upskilled in AI</dd></div><div><dt>Next</dt><dd>A course on AI for storytelling, design and content</dd></div></dl></div>
       <div class="wrap case-story">
         <div class="story-block"><p class="eyebrow">The brief</p><p>Integrate AI into the studio's creative workflows without losing the craft.</p></div>
-        <div class="story-block"><p class="eyebrow">The idea</p><p>Personal worlds as the training ground: F1 in Egypt, A Snowy Day in Saudi, and A Trip Back in Time in our Arab Cities, each blending cinematic worldbuilding with generative technology.</p></div>
+        <div class="story-block"><p class="eyebrow">The idea</p><p>Personal worlds as the training ground: F1 in Egypt, A Snowy Day in Saudi, and A Trip Back in Time in our Arab Cities, each blending Trying ideas, learning tools and seeing where they lead..</p></div>
         <div class="story-block"><p class="eyebrow">The hard part</p><p>Upskilling: all eleven team members became proficient AI users.</p></div>
         <div class="story-block"><p class="eyebrow">The result</p><p>A social media page teaching creative AI tools, and a course in development on AI for storytelling, design and content creation.</p></div>
       </div>
@@ -556,7 +662,6 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js" defer></script>
-<script src="main.js" defer></script>
+<script src="main.js?v=2005a9087a" defer></script>
 </body>
 </html>

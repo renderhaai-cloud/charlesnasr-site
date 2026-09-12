@@ -1,0 +1,2 @@
+# Build manifest contains local source paths; runtime images are already expanded.
+assets/img/manifest.out.json
