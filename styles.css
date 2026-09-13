@@ -104,14 +104,14 @@ html.loading .hero-title, html.loading .hero-sub, html.loading .hero-scroll, htm
 .nav.scrolled { background: var(--ink); }
 .nav.on-light { color: var(--on-light); }
 .nav.scrolled.on-light { background: rgba(242, 239, 232, .72); }
-.nav.scrolled.on-accent { background: rgba(255, 95, 168, .94); }
+.nav.scrolled.on-accent { background: var(--ink); color: var(--on-dark); }
 .nav.menu-open { background: var(--ink) !important; -webkit-backdrop-filter: none; backdrop-filter: none; color: var(--on-dark); }
 .nav.on-accent { color: var(--accent-ink); }
 .wordmark { display: inline-grid; text-decoration: none; font-size: 22px; line-height: .86; letter-spacing: -.01em; justify-self: start; }
 .nav-mark { justify-self: center; }
 .nav-mark .mark { height: 26px; width: auto; }
 .nav-right { display: flex; gap: 10px; align-items: center; justify-self: end; }
-.nav.on-accent .pill-accent { background: var(--ink); color: var(--on-dark); }
+.nav.on-accent .pill-accent { background: var(--grad); color: var(--accent-ink); }
 
 .menu { position: fixed; inset: 0; z-index: 85; background: var(--ink); color: var(--on-dark); overflow-x: hidden; overflow-y: auto; overscroll-behavior: contain; }
 .menu[hidden] { display: none; }
@@ -324,7 +324,10 @@ html:not(.js) .mani .mw, html.reduced .mani .mw, html.nomotion .mani .mw { opaci
 /* ==========================================================================
    Praise marquee
    ========================================================================== */
-.praise { position: relative; background: var(--grad); color: var(--accent-ink); padding: 26px 0; overflow: hidden; }
+.praise { position: relative; background: var(--grad); color: var(--accent-ink); padding: 18px 0; overflow: hidden; }
+.praise .marquee { padding: 12px 0; }
+.praise .marquee-track > span { line-height: 1.35; padding-block: .12em; }
+.praise .marquee-track > .arabic { line-height: 1.8; font-weight: 400; }
 .marquee { overflow: hidden; }
 .marquee-track { display: flex; align-items: center; gap: 44px; width: max-content; animation: marquee 48s linear infinite; }
 .marquee-track span { font-size: clamp(28px, 4vw, 56px); white-space: nowrap; }
@@ -356,8 +359,8 @@ html:not(.js) .mani .mw, html.reduced .mani .mw, html.nomotion .mani .mw { opaci
 /* ==========================================================================
    Case overlay
    ========================================================================== */
-.overlay { position: fixed; inset: 0; z-index: 95; background: var(--ink); color: var(--on-dark); transform: translateY(100%); visibility: hidden; transition: transform .85s var(--ease), visibility 0s .85s; }
-.overlay.open { transform: none; visibility: visible; transition: transform .85s var(--ease), visibility 0s; }
+.overlay { position: fixed; inset: 0; z-index: 95; background: var(--ink); color: var(--on-dark); transform: translateY(100%); visibility: hidden; transition: transform .28s var(--ease), visibility 0s .28s; }
+.overlay.open { transform: none; visibility: visible; transition: transform .28s var(--ease), visibility 0s; }
 .overlay-bar { position: absolute; top: 0; left: 0; right: 0; z-index: 3; display: flex; justify-content: space-between; align-items: center; gap: 20px; min-height: 74px; padding: 16px clamp(18px, 3vw, 40px); background: rgba(11, 11, 12, .96); }
 .overlay-brand { display: flex; align-items: center; gap: 14px; text-decoration: none; min-width: 0; }
 .overlay-brand .mark { height: 24px; width: auto; }
@@ -547,9 +550,9 @@ html.reduced .giant-track, html.nomotion .giant-track { animation: none; }
 @keyframes lens-breathe { 0%, 100% { opacity: .18; transform: translate3d(-3%, 0, 0) scaleX(.84); } 45% { opacity: .52; transform: translate3d(4%, 0, 0) scaleX(1); } 70% { opacity: .26; transform: translate3d(1%, 0, 0) scaleX(.94); } }
 @keyframes lens-drift { 0%, 100% { opacity: .12; transform: translate3d(-5%, 0, 0); } 50% { opacity: .28; transform: translate3d(8%, 0, 0); } }
 .cinema-intro { margin-top: 30px; margin-bottom: clamp(70px, 9vw, 130px); }
-.cinema-scene { position: relative; aspect-ratio: 2.35; overflow: hidden; background: #0b0b0c; border-radius: 4px; }
+.cinema-scene { position: relative; aspect-ratio: 2.35; overflow: hidden; background: var(--ink); }
 .ambient-video { display: block; width: 100%; height: 100%; object-fit: cover; }
-.cinema-scene::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(5, 5, 7, .7), transparent 65%); pointer-events: none; }
+.cinema-scene::after { content: ""; position: absolute; inset: -1px; z-index: 2; background: linear-gradient(90deg, var(--ink) 0%, transparent 14%, transparent 86%, var(--ink) 100%), linear-gradient(0deg, var(--ink) 0%, transparent 30%, transparent 82%, var(--ink) 100%); pointer-events: none; }
 .cinema-caption { position: absolute; left: 4%; bottom: 10%; z-index: 2; }
 .cinema-caption .eyebrow { color: var(--on-dark-2); margin-bottom: 12px; }
 .cinema-caption .heavy { font-size: clamp(40px, 6vw, 88px); }
@@ -582,7 +585,9 @@ html.js #projectGrid .card.reveal { opacity: 1; transform: none; transition: non
 .card-film-badge { position: absolute; top: 12px; right: 12px; padding: 7px 10px; background: rgba(11, 11, 12, .84); border: 1px solid var(--line-dark); border-radius: 3px; font-size: 11px; color: var(--on-dark); pointer-events: none; }
 .hof-grid .card-cta { display: grid; place-items: center; min-height: 240px; height: 100%; background: var(--grad-2); border-radius: 8px; padding: 20px; }
 .hof-grid .card-cta-inner { position: static; inset: auto; }
-.hof-grid .card:focus-visible .card-media { outline: 2px solid var(--accent); outline-offset: 4px; }
+.hof-grid .card:focus, .hof-grid .card:focus-visible { outline: none; }
+.using-keyboard .hof-grid .card:focus-visible .card-media { outline: 2px solid var(--on-dark); outline-offset: 4px; }
+.using-keyboard .hof-grid .card-cta:focus-visible { outline: 2px solid var(--on-dark); outline-offset: 4px; }
 
 /* The supplied films load on demand. */
 .case-films { margin-top: 58px; margin-bottom: 16px; }
@@ -684,4 +689,77 @@ html.reduced .overlay, html.reduced .overlay.open { transition: none; }
   .film-play-icon { width: 56px; height: 56px; font-size: 17px; }
   .case-films { margin-top: 42px; }
   .poster-sixkings .poster-media img { object-position: 53% center; }
+}
+
+/* Homepage films are visible before the project stories. */
+.cinema-intro { margin-bottom: clamp(72px, 8vw, 120px); }
+.cinema-controls { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 18px 28px; padding: 12px 4% 0; }
+.cinema-controls .eyebrow { color: var(--on-dark-2); font-size: 10px; }
+.cinema-controls .motion-toggle { position: static; flex-shrink: 0; }
+.cinema-films-link { font-size: 14px; text-decoration-thickness: 1px; text-underline-offset: 6px; }
+.cinema-films-link span { margin-left: 12px; color: var(--accent); }
+.event-films { padding-bottom: clamp(90px, 10vw, 160px); scroll-margin-top: 110px; }
+.event-films-head { display: grid; grid-template-columns: 1fr 1fr; gap: 30px 6vw; align-items: end; margin-bottom: 42px; }
+.event-films-head .eyebrow { color: var(--accent); margin-bottom: 18px; }
+.event-films-head h2 { font-size: clamp(48px, 7vw, 100px); line-height: 1.15; }
+.event-films-head .serif { display: inline-block; line-height: 1.25; }
+.event-films-head .lead { color: var(--on-dark-2); max-width: 48ch; }
+.event-film-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 42px 24px; }
+.event-film-grid .film-landscape { grid-column: span 3; }
+.event-film-grid .film-portrait { grid-column: span 2; }
+.event-film-grid .film-portrait .film-player { aspect-ratio: 4 / 3; }
+.event-film-grid .film-portrait .film-launch img { object-fit: contain; }
+.event-film-grid .film-card figcaption { align-items: flex-start; flex-direction: column; gap: 4px; }
+.event-film-grid .film-card h3 { line-height: 1.2; }
+.event-film-grid .film-play-label { bottom: 14px; }
+
+/* Offscreen marquees do no animation work. */
+html.js .marquee-track { animation-play-state: paused; }
+html.js .marquee.is-visible .marquee-track { animation-play-state: running; }
+html.page-motion-paused .marquee-track,
+html.atmosphere-paused .marquee-track,
+html.page-motion-paused .lens-layer i { animation-play-state: paused !important; }
+.praise-swipe { display: none; }
+
+/* Phones keep native scrolling and load only the imagery they approach. */
+html.compact-motion .lens-layer, html.compact-motion .hero-glow { display: none; }
+html.compact-motion .reveal { opacity: 1 !important; transition: none !important; }
+html.compact-motion .overlay, html.compact-motion .overlay.open { transform: none; transition: none; }
+html.compact-motion .card-media img, html.compact-motion .tile img { filter: none; transition: none; }
+html.compact-motion .card:hover .card-media img, html.compact-motion .tile:hover img { transform: none; }
+html.compact-motion .nav.scrolled { background: var(--ink); }
+html.compact-motion .nav.scrolled.on-accent { background: var(--ink); color: var(--on-dark); }
+html.compact-motion .hero-scroll i::after { animation: none; }
+html.compact-motion .marquee-track { animation: none; transform: none; }
+html.compact-motion .partners .marquee-track { width: auto; flex-wrap: wrap; justify-content: center; gap: 14px 24px; padding: 0 6vw; }
+html.compact-motion .partners .marquee-track > :nth-child(n+21) { display: none; }
+html.compact-motion .partners .marquee-track span { font-size: 22px; line-height: 1.3; }
+html.compact-motion .partners .marquee-track i { width: 5px; height: 5px; }
+html.compact-motion .praise .marquee { display: none; }
+html.compact-motion .praise-swipe { display: block; margin: 8px 6vw 12px; font-size: 10px; }
+html.compact-motion .praise-list { position: static; display: flex; align-items: center; width: auto; height: auto; clip: auto; overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-x: contain; gap: 6vw; padding: 8px 6vw 22px; list-style: none; scrollbar-width: none; }
+html.compact-motion .praise-list::-webkit-scrollbar { display: none; }
+html.compact-motion .praise-list li { flex: 0 0 100%; min-width: 0; scroll-snap-align: center; }
+html.compact-motion .praise-list blockquote { margin: 0; }
+html.compact-motion .praise-list p { font-size: 30px; line-height: 1.25; text-wrap: balance; }
+html.compact-motion .praise-list .arabic { font-size: 34px; line-height: 1.7; }
+html.compact-motion .praise-list cite { display: block; font-style: normal; font-size: 11px; line-height: 1.6; margin-top: 14px; }
+@media (max-width: 899px) {
+  .event-films-head { grid-template-columns: 1fr; gap: 20px; }
+  .event-films-head h2 { font-size: clamp(48px, 10vw, 72px); }
+  .event-film-grid { gap: 32px 18px; }
+  .event-film-grid .film-card h3 { font-size: 22px; }
+}
+@media (max-width: 699px) {
+  .cinema-scene { aspect-ratio: 16 / 10; }
+  .cinema-controls { padding-inline: 0; gap: 16px; }
+  .cinema-controls .eyebrow { flex-basis: 100%; }
+  .cinema-films-link { font-size: 13px; }
+  .cinema-controls .motion-toggle { min-height: 44px; padding: 10px 12px; font-size: 11px; }
+  .event-films-head { margin-bottom: 26px; }
+  .event-film-grid { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .event-film-grid .film-card { grid-column: auto; }
+  .event-film-grid .film-portrait .film-player { aspect-ratio: 4 / 3; }
+  .event-film-grid .film-card figcaption { flex-direction: row; gap: 16px; }
+  .event-film-grid .film-card figcaption a { flex-shrink: 0; }
 }
