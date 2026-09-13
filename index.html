@@ -37,7 +37,8 @@
   try { seen = sessionStorage.getItem('cn-seen') === '1'; } catch (e) {}
   if (seen) d.classList.add('return');
   var nointro = /nointro/.test(location.search);
-  if (!reduced && !compact && !nointro) d.classList.add('loading');
+  var sectionLink = /^#[a-z][\w-]*$/i.test(location.hash) && location.hash !== '#top';
+  if (!reduced && !compact && !nointro && !sectionLink) d.classList.add('loading');
   window.addEventListener('load', function () {
     setTimeout(function () { if (!d.classList.contains('booted')) { d.classList.remove('loading'); d.classList.add('ready', 'nomotion'); } }, 3000);
   });
@@ -721,6 +722,6 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
-<script src="main.js?v=c5fc37eb00" defer></script>
+<script src="main.js?v=c72b86b73d" defer></script>
 </body>
 </html>

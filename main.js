@@ -140,6 +140,7 @@
     gsap.fromTo('.hero-sub', { opacity: 1, y: 0 }, { opacity: 0, y: 20, ease: 'none', immediateRender: false, scrollTrigger: { trigger: '#hero', start: 'top top', end: '40% top', scrub: true } });
   }
   function finishReady() {
+    clearTimeout(loaderGuard);
     d.classList.remove('loading');
     d.classList.add('ready');
     try { sessionStorage.setItem('cn-seen', '1'); } catch (e) {}
@@ -178,6 +179,15 @@
     tl.fromTo(glow, { opacity: 0 }, { opacity: 1, duration: .5 }, dur * .8);
     tl.to({}, { duration: .25 });
     loader.addEventListener('click', function () { tl.progress(1); });
+    // A throttled animation must never keep the portfolio behind the loader.
+    var loaderGuard = setTimeout(function () {
+      if (!d.classList.contains('loading')) return;
+      tl.kill();
+      var heroTargets = $$('.nav, .hero-media, .hero-cut-box, .hero-title, .hero-title .w, .hero-sub, .hero-scroll');
+      gsap.killTweensOf(heroTargets.concat([loader]));
+      gsap.set(heroTargets, { clearProps: 'opacity,transform' });
+      finishReady(); heroScroll();
+    }, 4500);
   } else if (motion) {
     heroScroll();
   }
