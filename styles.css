@@ -780,6 +780,14 @@ html.compact-motion .praise-list cite { display: block; font-style: normal; font
 .project-image { display: block; min-width: 0; min-height: 0; aspect-ratio: 16 / 9; border-radius: 6px; overflow: hidden; background: #121214; }
 .project-image picture, .project-image img { display: block; width: 100%; height: 100%; }
 .project-image img { object-fit: cover; }
+.project-slide[data-case="rcf"] .project-image img,
+.project-slide[data-case="sixkings"] .project-image img,
+.project-slide[data-case="sixkings-2024"] .project-image img,
+.project-slide[data-case="sphere"] .project-image img { object-position: 50% 15%; }
+#case-rcf .case-hero > picture img,
+#case-sixkings .case-hero > picture img,
+#case-sixkings-2024 .case-hero > picture img,
+#case-sphere .case-hero > picture img { object-position: 50% 15%; }
 .project-details { display: flex; align-items: center; justify-content: space-between; gap: 20px 36px; padding: 20px 0 18px; }
 .project-heading { display: block; min-width: 0; }
 .project-meta { display: block; color: var(--on-dark-2); font-size: 10px; margin-bottom: 7px; }
@@ -822,6 +830,10 @@ html.compact-motion .praise-list cite { display: block; font-style: normal; font
   .project-position { margin-right: auto; }
 }
 @media (max-width: 599px) {
+  .project-slide[data-case="citywalk"] .project-image img { object-position: 16% 50%; }
+  .project-slide[data-case="ai"] .project-image img { object-position: 75% 50%; }
+  #case-citywalk .case-hero > picture img { object-position: 16% 50%; }
+  #case-ai .case-hero > picture img { object-position: 75% 50%; }
   .showcase-head { margin-bottom: 28px; }
   .showcase-head h2 .serif { display: block; }
   .showcase .work-toolbar { gap: 14px; margin-bottom: 24px; }
