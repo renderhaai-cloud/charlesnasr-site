@@ -21,7 +21,8 @@
 
   /* ---------- native scrolling, with an offset for the fixed navigation ---------- */
   function scrollToEl(el) {
-    window.scrollTo({ top: el.id === 'top' ? 0 : Math.max(0, window.scrollY + el.getBoundingClientRect().top - 90), behavior: reduced ? 'auto' : 'smooth' });
+    var offset = $('#nav').getBoundingClientRect().height + 12;
+    window.scrollTo({ top: el.id === 'top' ? 0 : Math.max(0, window.scrollY + el.getBoundingClientRect().top - offset), behavior: reduced || compact ? 'auto' : 'smooth' });
   }
   function lockScroll(on) {
     d.style.overflow = on ? 'hidden' : '';
