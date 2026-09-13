@@ -214,54 +214,95 @@
     });
   }
 
-  /* ---------- browse the work by type ---------- */
-  var projectGrid = $('#projectGrid');
-  var filterButtons = $$('.work-filter');
-  var projectCards = $$('#projectGrid > [data-category]');
+  /* ---------- one large project frame, advanced by native page scrolling ---------- */
+  var projectGrid = $('#projectGrid'), runway = $('#projectRunway'), stage = $('#projectStage');
+  var filterButtons = $$('.work-filter'), projectCards = $$('#projectGrid > [data-category]');
   var filterStatus = $('#filterStatus');
   var filterLabels = { live: 'live experience', parks: 'theme park', venues: 'venue design', content: 'visual content', ai: 'AI exploration' };
-  var activeFilter = 'all';
-  var filterAnimation = null;
-  function warmProjectImages() {
-    $$('#projectGrid img').forEach(function (img) { img.loading = 'eager'; });
+  var previousProject = $('#projectPrevious'), nextProject = $('#projectNext');
+  var projectCurrent = $('#projectCurrent'), projectTotal = $('#projectTotal'), projectProgress = $('#projectProgress');
+  var projectAnnouncement = $('#projectAnnouncement'), projectCue = $('.project-scroll-cue');
+  var activeFilter = 'all', visibleProjects = projectCards.slice(), projectIndex = -1;
+  var projectStart = 0, projectStep = 400, projectTick = false, projectWidth = window.innerWidth;
+
+  function showProject(index) {
+    index = Math.max(0, Math.min(visibleProjects.length - 1, index));
+    if (index === projectIndex) return;
+    var restoreFocus = projectCards.indexOf(document.activeElement) !== -1;
+    projectIndex = index;
+    var current = visibleProjects[index];
+    projectCards.forEach(function (card) { card.hidden = card !== current; });
+    // Warm the next photograph without downloading the full collection on phones.
+    visibleProjects.slice(Math.max(0, index - 1), index + 2).forEach(function (card) {
+      var img = $('img', card); if (img) img.loading = 'eager';
+    });
+    projectCurrent.textContent = String(index + 1).padStart(2, '0');
+    projectTotal.textContent = String(visibleProjects.length).padStart(2, '0');
+    projectProgress.style.transform = 'scaleX(' + (index + 1) / visibleProjects.length + ')';
+    previousProject.disabled = index === 0;
+    nextProject.disabled = index === visibleProjects.length - 1;
+    projectCue.textContent = index === visibleProjects.length - 1 ? 'Event films below ↓' : 'Scroll to the next project ↓';
+    projectAnnouncement.textContent = 'Project ' + (index + 1) + ' of ' + visibleProjects.length + ': ' + $('.project-title', current).textContent;
+    if (restoreFocus) current.focus({ preventScroll: true });
   }
-  if ('IntersectionObserver' in window && !compact) {
-    var projectImageObserver = new IntersectionObserver(function (entries) {
-      if (entries.some(function (entry) { return entry.isIntersecting; })) {
-        warmProjectImages(); projectImageObserver.disconnect();
-      }
-    }, { rootMargin: '600px' });
-    projectImageObserver.observe($('#hof'));
+  function updateProjectScroll() {
+    projectTick = false;
+    if (overlayOpen || !menu.hidden) return;
+    showProject(Math.floor((window.scrollY - projectStart) / projectStep));
+  }
+  function measureProjects() {
+    var stageHeight = stage.getBoundingClientRect().height;
+    var stickyTop = parseFloat(getComputedStyle(stage).top) || 0;
+    projectStep = Math.max(300, Math.round(stageHeight * .75));
+    // The last photograph gets a full reading interval before the frame releases.
+    runway.style.height = (stageHeight + (visibleProjects.length > 1 ? visibleProjects.length * projectStep : 0)) + 'px';
+    projectStart = runway.getBoundingClientRect().top + window.scrollY - stickyTop;
+    updateProjectScroll();
+    measureNav();
+  }
+  function goToProject(index) {
+    index = Math.max(0, Math.min(visibleProjects.length - 1, index));
+    window.scrollTo({ top: projectStart + index * projectStep + 2, behavior: reduced || compact ? 'auto' : 'smooth' });
+  }
+  if (runway && stage && projectCards.length) {
+    runway.classList.add('is-enhanced');
+    showProject(0);
+    measureProjects();
+    previousProject.addEventListener('click', function () { goToProject(projectIndex - 1); });
+    nextProject.addEventListener('click', function () { goToProject(projectIndex + 1); });
+    stage.addEventListener('keydown', function (e) {
+      if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+      e.preventDefault(); goToProject(projectIndex + (e.key === 'ArrowRight' ? 1 : -1));
+    });
+    window.addEventListener('scroll', function () {
+      if (!projectTick) { projectTick = true; requestAnimationFrame(updateProjectScroll); }
+    }, { passive: true });
+    window.addEventListener('load', measureProjects);
+    window.addEventListener('resize', function () {
+      // Mobile browser chrome changes height while scrolling; the small viewport unit stays stable.
+      if (compact && projectWidth === window.innerWidth) return;
+      projectWidth = window.innerWidth; measureProjects();
+    });
+    if (document.fonts) document.fonts.ready.then(measureProjects);
   }
   filterButtons.forEach(function (button, index) {
     var category = button.getAttribute('data-filter');
-    var total = projectCards.filter(function (card) { return category === 'all' || card.getAttribute('data-category') === category; }).length;
-    $('span', button).textContent = total;
+    $('span', button).textContent = projectCards.filter(function (card) { return category === 'all' || card.getAttribute('data-category') === category; }).length;
     button.addEventListener('click', function () {
       if (activeFilter === category) return;
+      var wasInside = window.scrollY > projectStart;
       activeFilter = category;
-      if (filterAnimation) filterAnimation.cancel();
-      var visible = [];
       filterButtons.forEach(function (b) {
         var active = b === button;
-        b.classList.toggle('is-active', active);
-        b.setAttribute('aria-pressed', String(active));
+        b.classList.toggle('is-active', active); b.setAttribute('aria-pressed', String(active));
       });
-      projectCards.forEach(function (card) {
-        var show = category === 'all' || card.getAttribute('data-category') === category;
-        card.hidden = !show;
-        if (show) { card.classList.add('in'); visible.push(card); }
-      });
-      var cta = $('.card-cta', projectGrid);
-      if (cta) cta.hidden = category !== 'all';
+      visibleProjects = projectCards.filter(function (card) { return category === 'all' || card.getAttribute('data-category') === category; });
+      projectIndex = -1; showProject(0);
+      if (wasInside) window.scrollTo({ top: projectStart, behavior: 'instant' });
+      measureProjects();
       filterStatus.textContent = category === 'all'
-        ? 'Showing all ' + visible.length + ' projects'
-        : 'Showing ' + visible.length + ' ' + filterLabels[category] + (category === 'content' ? ' projects' : (visible.length === 1 ? ' project' : ' projects'));
-      if (!reduced && typeof projectGrid.animate === 'function') {
-        filterAnimation = projectGrid.animate([{ opacity: .85 }, { opacity: 1 }], { duration: 120, easing: 'ease-out' });
-      }
-      // Effects below the index use IntersectionObserver; filtering needs no global refresh.
-      requestAnimationFrame(measureNav);
+        ? 'Showing all ' + visibleProjects.length + ' projects'
+        : 'Showing ' + visibleProjects.length + ' ' + filterLabels[category] + (visibleProjects.length === 1 ? ' project' : ' projects');
     });
     button.addEventListener('keydown', function (e) {
       var next = index;
@@ -273,15 +314,6 @@
       e.preventDefault(); filterButtons[next].focus(); filterButtons[next].click();
     });
   });
-
-  /* ---------- poster imagery moves inside fixed frames; text stays crisp ---------- */
-  if (motion) {
-    $$('.poster').forEach(function (p) {
-      if (fine) gsap.fromTo($('.poster-media img', p), { yPercent: -8 }, { yPercent: 8, ease: 'none', scrollTrigger: { trigger: p, start: 'top bottom', end: 'bottom top', scrub: true } });
-      gsap.fromTo($('.poster-copy', p), { y: 60, opacity: 0 }, { y: 0, opacity: 1, duration: 1.1, ease: 'expo.out', scrollTrigger: { trigger: p, start: 'top 60%' } });
-    });
-    if ($('.band')) gsap.fromTo('.band-media img', { yPercent: -8 }, { yPercent: 8, ease: 'none', scrollTrigger: { trigger: '.band', start: 'top bottom', end: 'bottom top', scrub: true } });
-  }
 
   /* ---------- parallax layers ---------- */
   if (motion) {
