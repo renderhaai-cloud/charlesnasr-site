@@ -623,11 +623,11 @@ html.js #projectGrid .card.reveal { opacity: 1; transform: none; transition: non
 .ai-films-intro { position: relative; display: flex; justify-content: space-between; align-items: baseline; gap: 20px; margin-bottom: 24px; }
 .ai-films-intro .eyebrow { color: var(--accent); }
 .ai-films-intro > p:last-child { color: var(--on-dark-2); font-size: 13px; }
-.ai-film-grid { position: relative; display: grid; grid-template-columns: repeat(6,minmax(0,1fr)); gap: 40px 24px; }
-.ai-film { grid-column: span 2; align-self: start; }
-.ai-film.film-landscape { grid-column: span 3; }
-.ai-film .film-player { border: 0; border-radius: 4px; }
-.ai-film.film-portrait .film-player { aspect-ratio: 9 / 16; }
+.ai-film-grid { position: relative; columns: 3; column-gap: 28px; }
+.ai-film { break-inside: avoid; margin-bottom: 38px; }
+
+.ai-film .film-player { border: 0; border-radius: 4px; aspect-ratio: var(--film-ratio,16/9); }
+
 .ai-film .film-play-icon { background: var(--grad-2); color: var(--ink); border: 0; }
 .ai-film .film-play-label { bottom: 16px; }
 .ai-film .film-launch::after { background: linear-gradient(transparent 65%,rgba(11,11,12,.8)); }
@@ -637,15 +637,26 @@ html.js #projectGrid .card.reveal { opacity: 1; transform: none; transition: non
 .ai-studies-head { position: relative; margin-top: 90px; padding-top: 36px; padding-bottom: 28px; border-top: 1px solid var(--line-dark); }
 .ai-studies-head .eyebrow { color: var(--accent); margin-bottom: 16px; }
 .ai-studies-head h3 { font-size: clamp(36px,5vw,62px); line-height: 1.2; }
+.ai-collection-head { position: relative; display: flex; align-items: flex-end; justify-content: space-between; gap: 32px; margin-bottom: 32px; scroll-margin-top: 110px; }
+.ai-collection-head .eyebrow { color: var(--accent); margin-bottom: 14px; }
+.ai-collection-head h3 { font-size: clamp(42px,6vw,82px); line-height: 1.16; }
+.ai-collection-head .lead { max-width: 46ch; font-size: 16px; margin-top: 18px; }
+.ai-collection-head > a { color: var(--on-dark); white-space: nowrap; padding: 12px 0; text-underline-offset: 6px; }
+.ai-collection-head > a:hover { color: var(--accent); }
+.ai-collection-more { padding-top: 40px; margin-top: 30px; border-top: 1px solid var(--line-dark); }
+.ai-collection-more > p { color: var(--on-dark-2); font-size: 13px; }
+@media (max-width:699px) {
+  .ai-collection-head { display: block; scroll-margin-top: 90px; }
+  .ai-collection-head > a { display: inline-block; margin-top: 16px; }
+  .ai-collection-more > p { margin-top: 16px; }
+}
 @media (min-width:700px) and (max-width:999px) {
-  .ai-film-grid, .direction-two .project-film-grid.films-ai { grid-template-columns: repeat(2,minmax(0,1fr)); }
-  .ai-film, .ai-film.film-landscape { grid-column: auto; }
+  .ai-film-grid, .direction-two .project-film-grid.films-ai { columns: 2; }
 }
 @media (max-width:699px) {
   .ai-films-intro { display: block; }
   .ai-films-intro > p:last-child { margin-top: 12px; line-height: 1.6; }
-  .ai-film-grid { grid-template-columns: minmax(0,1fr); gap: 38px; }
-  .ai-film, .ai-film.film-landscape { grid-column: auto; }
+  .ai-film-grid { columns: 1; }
   .ai-studies-head { margin-top: 56px; }
 }
 

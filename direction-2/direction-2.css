@@ -73,8 +73,8 @@
 .direction-two .films-sphere { grid-template-columns: repeat(3, minmax(0,1fr)); }
 .direction-two .films-sphere .film-player { aspect-ratio: 4 / 5; }
 .direction-two .films-sphere .film-launch img { object-fit: contain; }
-.direction-two .films-ai { grid-template-columns: repeat(6,minmax(0,1fr)); }
-.direction-two .films-ai .film-portrait .film-player { aspect-ratio: 9 / 16; }
+.direction-two .films-ai { display: block; columns: 3; column-gap: 28px; }
+
 .direction-two .manifesto { padding-block: 56px 100px; }
 .direction-two .mani { font-size: clamp(42px, 5vw, 78px); max-width: 22ch; margin-inline: auto; }
 .direction-two .mani-personal { margin-top: 28px; }
@@ -147,7 +147,7 @@
   .direction-two .films-sphere { grid-template-columns: repeat(3, minmax(240px,78vw)); overflow-x: auto; scroll-snap-type: x mandatory; gap: 16px; }
   .direction-two .films-sphere > figure { scroll-snap-align: start; }
   .direction-two .films-sphere .film-player { aspect-ratio: 9 / 14; }
-  .direction-two .films-ai { grid-template-columns: minmax(0,1fr); }
+  .direction-two .films-ai { columns: 1; }
   .direction-two .manifesto { padding-block: 32px 64px; }
   .direction-two .mani { font-size: clamp(38px,10.5vw,58px); line-height: 1.12; }
   .direction-two .architect { padding-block: 48px; }
