@@ -315,8 +315,11 @@ html:not(.js) .mani .mw, html.reduced .mani .mw, html.nomotion .mani .mw { opaci
 .world-media picture { position: absolute; inset: 0; }
 .world-media img { width: 100%; height: 100%; object-fit: cover; transition: opacity 1.1s var(--ease), transform 1.4s var(--ease); }
 .world-media .world-b { opacity: 0; }
-.world:hover .world-b, .world.flip .world-b { opacity: 1; }
-.world:hover .world-media img { transform: scale(1.04); }
+.world.flip .world-b { opacity: 1; }
+.world-toggle { display: flex; justify-content: space-between; align-items: center; gap: 16px; width: 100%; min-height: 44px; padding: 10px 0; border: 0; border-bottom: 1px solid var(--line-dark); background: transparent; color: var(--on-dark-2); font-size: 12px; cursor: pointer; }
+.world-toggle[hidden] { display: none; }
+.world-toggle:hover { color: var(--on-dark); }
+.world-toggle > [aria-hidden] { color: var(--accent); font-size: 20px; }
 .world h3 { font-size: clamp(26px, 2.6vw, 38px); margin: 22px 0 8px; line-height: 1.18; text-wrap: balance; }
 .world h3 .serif { display: inline-block; margin-left: .08em; line-height: 1.2; }
 .world .eyebrow { color: var(--on-dark-2); }
@@ -396,6 +399,8 @@ html:not(.js) .mani .mw, html.reduced .mani .mw, html.nomotion .mani .mw { opaci
 .tile { position: relative; overflow: hidden; border-radius: 14px; background: #131315; }
 .tile picture { height: 100%; }
 .tile picture img { width: 100%; height: 100%; aspect-ratio: 16 / 10; object-fit: cover; transition: transform 1s var(--ease); cursor: zoom-in; }
+.gallery-zoom { display: block; width: 100%; padding: 0; border: 0; background: transparent; cursor: zoom-in; }
+.gallery-zoom:focus-visible { outline-offset: -4px; }
 .tile:hover picture img { transform: scale(1.03); }
 .tile-wide { grid-column: 1 / -1; }
 .tile-wide picture img { aspect-ratio: 21 / 9; }
@@ -413,12 +418,12 @@ html:not(.js) .mani .mw, html.reduced .mani .mw, html.nomotion .mani .mw { opaci
 .case-next a:hover { color: var(--accent); }
 .case-next a:hover .serif { color: var(--on-dark); }
 
-.lightbox { border: 0; background: transparent; padding: 0; width: 100vw; height: 100vh; max-width: 100vw; max-height: 100vh; margin: 0; }
-.lightbox[open] { display: grid; place-items: center; align-content: center; gap: 14px; }
+.lightbox { border: 0; background: transparent; padding: max(76px, calc(env(safe-area-inset-top) + 60px)) 4vw max(24px, env(safe-area-inset-bottom)); width: 100vw; height: 100dvh; max-width: 100vw; max-height: 100dvh; margin: 0; overflow-y: auto; overscroll-behavior: contain; }
+.lightbox[open] { display: grid; grid-template-rows: minmax(0, 1fr) auto; place-items: center; align-content: center; gap: 14px; }
 .lightbox::backdrop { background: rgba(11, 11, 12, .95); }
-.lightbox img { max-width: 92vw; max-height: 82vh; object-fit: contain; width: auto; height: auto; border-radius: 8px; }
-.lightbox-close { position: fixed; top: 18px; right: 22px; color: #fff; }
-.lightbox-cap { color: var(--on-dark-2); }
+.lightbox img { max-width: 100%; max-height: 100%; min-height: 0; object-fit: contain; width: auto; height: auto; border-radius: 8px; }
+.lightbox-close { position: fixed; top: max(18px, env(safe-area-inset-top)); right: max(22px, env(safe-area-inset-right)); color: #fff; }
+.lightbox-cap { max-width: 70ch; color: var(--on-dark-2); font-size: 12px; line-height: 1.6; letter-spacing: .02em; text-transform: none; text-align: center; }
 
 /* ==========================================================================
    Motion off

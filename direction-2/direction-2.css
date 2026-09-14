@@ -1,0 +1,98 @@
+/* Direction 02: a project index and a single stage, in the existing CN identity. */
+.direction-two .direction-link { font-size: 10px; text-decoration: none; letter-spacing: .04em; margin-right: 20px; color: var(--on-dark-2); }
+.direction-link span { padding-inline: 8px; color: var(--pink); }
+.direction-two .direction-link:hover { color: var(--on-dark); }
+.direction-two .hero { border-bottom: 1px solid var(--line-dark); }
+.direction-intro { display: grid; grid-template-columns: 1fr 1.8fr auto; align-items: start; gap: 32px; padding-block: 38px 90px; }
+.direction-intro .eyebrow { font-size: 10px; line-height: 1.9; color: var(--on-dark-2); }
+.direction-intro > p:nth-child(2) { max-width: 40ch; font-size: clamp(18px, 1.6vw, 23px); line-height: 1.5; text-wrap: pretty; }
+.direction-intro > a { min-height: 44px; display: flex; align-items: center; gap: 24px; text-decoration: none; font-size: 13px; border-bottom: 1px solid var(--line-dark); }
+.direction-intro > a span { color: var(--accent); font-size: 24px; }
+.direction-two .showcase { padding-bottom: clamp(72px, 8vw, 128px); }
+.direction-two .showcase-head { grid-template-columns: 1.7fr 1fr; padding-top: 32px; border-top: 1px solid var(--line-dark); }
+.direction-two .showcase-head h2 { font-size: clamp(52px, 5vw, 80px); }
+.direction-two .showcase-head .lead { font-size: 15px; max-width: 36ch; justify-self: end; }
+.direction-two .work-toolbar { margin-bottom: 32px; }
+.direction-two .project-runway { display: grid; grid-template-columns: minmax(220px, 1fr) minmax(0, 3.7fr); gap: 32px; height: auto; align-items: start; }
+.direction-two .project-index { min-width: 0; }
+.direction-two .index-heading { display: flex; justify-content: space-between; color: var(--on-dark-2); font-size: 9px; letter-spacing: .12em; padding: 0 0 16px; }
+.direction-two .index-list { border-top: 1px solid var(--line-dark); }
+.direction-two .index-list button { width: 100%; display: grid; grid-template-columns: 20px 1fr 12px; gap: 10px; align-items: center; min-height: 44px; border: 0; border-bottom: 1px solid var(--line-dark); text-align: left; padding: 10px 2px; background: transparent; color: var(--on-dark-2); font-family: var(--sans); font-size: 12px; line-height: 1.4; cursor: pointer; }
+.direction-two .index-list button[hidden] { display: none; }
+.direction-two .index-number { color: var(--on-dark-2); font-size: 9px; font-variant-numeric: tabular-nums; }
+.direction-two .index-arrow { opacity: 0; color: var(--accent); }
+.direction-two .index-list button[aria-pressed="true"] { color: var(--on-dark); }
+.direction-two .index-list button[aria-pressed="true"] .index-number { color: var(--accent); }
+.direction-two .index-list button[aria-pressed="true"] .index-arrow { opacity: 1; }
+@media (hover: hover) { .direction-two .index-list button:hover { color: var(--on-dark); background: rgba(244,242,237,.035); } }
+.direction-two .project-picker-label, .direction-two #projectPicker { display: none; }
+.direction-two .is-enhanced .project-stage { position: static; top: auto; height: auto; min-height: 0; display: block; }
+.direction-two .is-enhanced .project-slide { height: auto; grid-template-rows: auto auto; }
+.direction-two .project-image, .direction-two .is-enhanced .project-image { aspect-ratio: 16 / 9; background: var(--ink); border-radius: 3px; }
+.direction-two .project-image img { object-fit: contain; object-position: center !important; }
+.direction-two .project-details { min-height: 116px; align-items: center; padding: 20px 0; }
+.direction-two .project-title { font-size: clamp(30px, 3.15vw, 49px); line-height: 1.12; }
+.direction-two .project-edition { font-size: .7em; }
+.direction-two .project-progress { height: 2px; }
+.direction-two .project-scroll-cue { font-size: 8px; }
+.direction-two .event-films { padding-top: 32px; border-top: 1px solid var(--line-dark); }
+.direction-two .event-films-head h2 { font-size: clamp(56px, 7.4vw, 112px); }
+.direction-two .event-films-head .lead { font-size: 15px; }
+.direction-two .manifesto { padding-block: 80px 104px; }
+.direction-two .mani { font-size: clamp(42px, 5vw, 78px); max-width: 22ch; margin-inline: auto; }
+.direction-two .mani-personal { margin-top: 28px; }
+.direction-two .architect { padding-block: 80px; }
+.direction-two .partners { padding-block: 40px; }
+.direction-two .partners .marquee { display: none; }
+.direction-two .partners-list { position: static; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); width: var(--wrap); height: auto; margin: 0 auto; padding: 0; clip: auto; overflow: visible; white-space: normal; list-style: none; gap: 0 28px; }
+.direction-two .partners-list li { display: flex; align-items: center; min-height: 60px; padding: 14px 0; border-bottom: 1px solid var(--line-dark); font-family: var(--heavy); font-size: clamp(19px, 2vw, 27px); font-weight: 700; line-height: 1.2; text-transform: uppercase; }
+.direction-two .cinema-intro { max-width: 900px; margin-top: 32px; }
+.direction-two .footer-title { max-width: 800px; font-size: clamp(64px, 8vw, 124px); line-height: 1.06; }
+.direction-two .footer-title .serif { display: block; }
+.direction-return { text-decoration: none; min-height: 44px; display: inline-flex; align-items: center; }
+@media (max-width: 1099px) {
+  .direction-two .project-runway { grid-template-columns: 210px minmax(0, 1fr); gap: 24px; }
+  .direction-two .project-scroll-cue { display: none; }
+  .direction-two .project-open { font-size: 0; }
+  .direction-two .project-open > span { font-size: 20px; }
+}
+@media (max-width: 899px) {
+  .direction-two .direction-link { font-size: 9px; margin-right: 8px; }
+  .direction-intro { grid-template-columns: 1fr 2fr; gap: 20px; padding-bottom: 60px; }
+  .direction-intro > a { grid-column: 2; justify-self: start; }
+  .direction-two .showcase-head { grid-template-columns: 1fr; gap: 18px; }
+  .direction-two .showcase-head .lead { justify-self: start; max-width: 44ch; }
+  .direction-two .project-runway { display: block; }
+  .direction-two .project-index { margin-bottom: 20px; }
+  .direction-two .index-heading, .direction-two .index-list { display: none; }
+  .direction-two .project-picker-label { display: block; font-size: 11px; color: var(--on-dark-2); margin-bottom: 8px; }
+  .direction-two #projectPicker { display: block; width: 100%; min-height: 48px; border: 1px solid var(--line-dark); border-radius: 4px; background: var(--ink); color: var(--on-dark); padding: 12px; font: 14px var(--sans); }
+  .direction-two .project-details { min-height: 120px; }
+  .direction-two .partners-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 24px; }
+  .direction-two .partners-list li { min-height: 56px; font-size: 23px; }
+}
+@media (max-width: 599px) {
+  .direction-two .direction-link { display: none; }
+  .direction-intro { display: grid; grid-template-columns: 1fr; padding-block: 28px 48px; gap: 18px; }
+  .direction-intro > a { grid-column: auto; }
+  .direction-intro > p:nth-child(2) { font-size: 20px; }
+  .direction-two .showcase-head h2, .direction-two .event-films-head h2 { font-size: clamp(48px, 12vw, 72px); }
+  .direction-two .showcase-head h2 .serif { display: inline; }
+  .direction-two .work-filters { flex-wrap: nowrap; overflow-x: auto; width: 100%; padding-bottom: 8px; scrollbar-width: none; }
+  .direction-two .work-filters::-webkit-scrollbar { display: none; }
+  .direction-two .work-filter { flex-shrink: 0; min-height: 44px; }
+  .direction-two .work-toolbar { margin-bottom: 22px; }
+  .direction-two .project-title { font-size: clamp(27px, 7.2vw, 38px); }
+  .direction-two .project-details { padding-top: 16px; }
+  .direction-two .project-meta { margin-bottom: 18px; }
+  .direction-two .is-enhanced .project-navigation { grid-template-columns: 1fr auto; padding: 10px 0; }
+  .direction-two .project-films-link { grid-column: 1; grid-row: 2; justify-content: flex-start; }
+  .direction-two .project-arrows { grid-row: 1 / 3; }
+  .direction-two .event-film-grid .film-card figcaption { flex-direction: column; gap: 8px; }
+  .direction-two .manifesto { padding-block: 48px 64px; }
+  .direction-two .mani { font-size: clamp(38px, 10.5vw, 58px); line-height: 1.12; }
+  .direction-two .architect { padding-block: 48px; }
+  .direction-two .partners { padding-block: 24px; }
+  .direction-two .cinema-intro { max-width: 88vw; }
+  .direction-two .footer-title { font-size: clamp(40px, 10vw, 58px); }
+}
