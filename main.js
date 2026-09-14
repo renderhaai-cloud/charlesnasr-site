@@ -131,6 +131,7 @@
       e.preventDefault();
       closeMenu();
       if (overlayOpen) closeCase(false);
+      if (theatre && id === '#event-films') ensureProjectFilms();
       scrollToEl(t);
       focusSection(t);
       history.replaceState(null, '', id);
@@ -228,7 +229,7 @@
   var projectGrid = $('#projectGrid'), runway = $('#projectRunway'), stage = $('#projectStage');
   var filterButtons = $$('.work-filter'), projectCards = $$('#projectGrid > [data-category]');
   var filterStatus = $('#filterStatus');
-  var filterLabels = { live: 'live experience', parks: 'theme park', venues: 'venue design', content: 'visual content', ai: 'AI exploration' };
+  var filterLabels = { live: 'live experience', parks: 'theme park', venues: 'venue design', content: 'visual content', ai: 'AI exploration', films: 'filmed' };
   var previousProject = $('#projectPrevious'), nextProject = $('#projectNext');
   var projectCurrent = $('#projectCurrent'), projectTotal = $('#projectTotal'), projectProgress = $('#projectProgress');
   var projectAnnouncement = $('#projectAnnouncement'), projectCue = $('.project-scroll-cue');
@@ -236,10 +237,15 @@
   var projectStart = 0, projectStep = 400, projectTick = false, projectWidth = window.innerWidth;
   var theatre = runway && runway.getAttribute('data-project-mode') === 'theatre';
   var projectIndexButtons = $$('[data-project-select]'), projectPicker = $('#projectPicker');
+  var projectFilmSets = $$('[data-project-films]'), attachedFilms = $('.attached-project-films'), selectedFilmLink = $('#selectedFilmLink');
+  function matchesProjectFilter(card, category) {
+    return category === 'all' || (category === 'films' ? Number(card.getAttribute('data-film-count')) > 0 : card.getAttribute('data-category') === category);
+  }
 
   function showProject(index) {
     index = Math.max(0, Math.min(visibleProjects.length - 1, index));
     if (index === projectIndex) return;
+    if (theatre && projectIndex !== -1) stopFilms();
     var restoreFocus = projectCards.indexOf(document.activeElement) !== -1;
     projectIndex = index;
     var current = visibleProjects[index];
@@ -266,6 +272,16 @@
       });
       projectPicker.value = current.getAttribute('data-case');
     }
+    if (attachedFilms) {
+      var filmCount = Number(current.getAttribute('data-film-count'));
+      attachedFilms.hidden = !filmCount;
+      projectFilmSets.forEach(function (set) {
+        set.hidden = set.getAttribute('data-project-films') !== current.getAttribute('data-case');
+        if (!set.hidden) $$('img', set).forEach(function (img) { img.loading = 'eager'; });
+      });
+      selectedFilmLink.hidden = !filmCount;
+      selectedFilmLink.firstChild.nodeValue = 'Watch ' + filmCount + (filmCount === 1 ? ' film from this project ' : ' films from this project ');
+    }
     projectAnnouncement.textContent = 'Project ' + (index + 1) + ' of ' + visibleProjects.length + ': ' + $('.project-title', current).textContent;
     if (restoreFocus) current.focus({ preventScroll: true });
   }
@@ -290,6 +306,14 @@
     // Buttons choose a frame immediately; scrolling the page still advances it naturally.
     if (!theatre) window.scrollTo({ top: projectStart + index * projectStep + 2, behavior: 'instant' });
     showProject(index);
+    if (theatre) {
+      var rail = $('.index-list'), chosen = $('[data-project-select][aria-pressed="true"]');
+      if (rail && chosen) {
+        var target = rail.scrollLeft + chosen.getBoundingClientRect().left - rail.getBoundingClientRect().left - (rail.clientWidth - chosen.offsetWidth) / 2;
+        rail.scrollTo({ left: Math.max(0, target), behavior: reduced || compact ? 'auto' : 'smooth' });
+      }
+      measureNav();
+    }
   }
   if (runway && stage && projectCards.length) {
     runway.classList.add('is-enhanced');
@@ -298,6 +322,7 @@
     previousProject.addEventListener('click', function () { goToProject(projectIndex - 1); });
     nextProject.addEventListener('click', function () { goToProject(projectIndex + 1); });
     stage.addEventListener('keydown', function (e) {
+      if (e.target.matches('select, input, textarea')) return;
       if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
       e.preventDefault(); goToProject(projectIndex + (e.key === 'ArrowRight' ? 1 : -1));
     });
@@ -319,11 +344,14 @@
     var index = visibleProjects.findIndex(function (card) { return card.getAttribute('data-case') === id; });
     if (index !== -1) goToProject(index);
   }
-  projectIndexButtons.forEach(function (button) { button.addEventListener('click', function () { selectProject(button.getAttribute('data-project-select')); }); });
+  projectIndexButtons.forEach(function (button) { button.addEventListener('click', function () {
+    selectProject(button.getAttribute('data-project-select'));
+    if (theatre) { scrollToEl(stage); if (d.classList.contains('using-keyboard')) projectPicker.focus({ preventScroll: true }); }
+  }); });
   if (projectPicker) projectPicker.addEventListener('change', function () { selectProject(projectPicker.value); });
   filterButtons.forEach(function (button, index) {
     var category = button.getAttribute('data-filter');
-    $('span', button).textContent = projectCards.filter(function (card) { return category === 'all' || card.getAttribute('data-category') === category; }).length;
+    $('span', button).textContent = projectCards.filter(function (card) { return matchesProjectFilter(card, category); }).length;
     button.addEventListener('click', function () {
       if (activeFilter === category) return;
       var wasInside = window.scrollY > projectStart;
@@ -332,7 +360,8 @@
         var active = b === button;
         b.classList.toggle('is-active', active); b.setAttribute('aria-pressed', String(active));
       });
-      visibleProjects = projectCards.filter(function (card) { return category === 'all' || card.getAttribute('data-category') === category; });
+      if (theatre) stopFilms();
+      visibleProjects = projectCards.filter(function (card) { return matchesProjectFilter(card, category); });
       projectIndex = -1; showProject(0);
       if (!theatre && wasInside) window.scrollTo({ top: projectStart, behavior: 'instant' });
       measureProjects();
@@ -413,6 +442,18 @@
       $('.world-toggle-label', button).textContent = alternate ? 'Back to first image' : 'View alternate image';
     });
   });
+
+  function ensureProjectFilms() {
+    if (!attachedFilms || !attachedFilms.hidden) return;
+    var filmed = projectCards.find(function (card) { return Number(card.getAttribute('data-film-count')) > 0; });
+    if (!filmed) return;
+    if (!matchesProjectFilter(filmed, activeFilter)) $('[data-filter="all"]').click();
+    selectProject(filmed.getAttribute('data-case'));
+  }
+  if (theatre && location.hash === '#event-films') {
+    ensureProjectFilms();
+    window.addEventListener('load', function () { scrollToEl(attachedFilms); });
+  }
 
   /* ---------- quiet atmosphere, paused off screen ---------- */
   var atmosphereEnabled = !reduced && !compact;
